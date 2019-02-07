@@ -1,16 +1,16 @@
 # SEO settings
-title: "Shaurya's Blog"
+title: "Piyush's Blog"
 title2: "" # default: ""
-description: "Shaurya Gupta's Blog"
-keywords: "Shaurya, Blog, Competitive, Programming, Machine, Learning, Development, Haskell, Google, Internship, ICPC, Codeforces, Hackerrank"
-url: http://sureyeaah.github.io # site url
+description: "Piyush Tiwary's Blog"
+keywords: "Piyush, Blog, Competitive, Programming, Machine, Learning, Development, Internship, Codeforces, Hackerrank"
+url: http://aquarius31.github.io # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
 google_analytics: UA-XXXXX-XX
 repo: http://github.com/sureyeaah/sureyeaah.github.io
-disqus_shortname: "shauryab98"
-twitter_username: "sureyeaah"
+disqus_shortname: "aquarius31"
+twitter_username: "aquarius31"
 comments: true
 
 # Build settings
@@ -28,21 +28,21 @@ sass:
 
 # Author settings
 author:
-  name     : "Shaurya Gupta"
-  job      : "Junior at IIT Patna"
+  name     : "Piyush Tiwary"
+  job      : "Sophomore at IIT Patna"
   bio      : ""
   thumb    : /images/author.jpg
-  email    : shauryab98@outlook.com
-  url      : http://SureYeaah.github.io
-  github   : http://github.com/SureYeaah
-  twitter  : http://twitter.com/SureYeaah
-  facebook : https://www.facebook.com/SureYeaah
-  linkedin : http://linkedin.com/in/SureYeaah
+  email    : piyushtiwary31@gmail.com
+  url      : http://aquarius31.github.io
+  github   : http://github.com/aquarius31
+  twitter  : https://twitter.com/piyushtiwary31
+  facebook : https://www.facebook.com/phenomenal1.31
+  linkedin : http://linkedin.com/in/aquarius31
 
 # social settings
 og_locale: "en_US"
 twitter_card: "summary_large_image"
-twitter_site: "@shauryab98"
+twitter_site: "@piyushtiwary31"
 
 gems:
   - bourbon
