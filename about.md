@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Hi! I'm **Shaurya Gupta**, a Junior at IIT Patna. I enjoy competitive programmer and participated in the **ACM-ICPC World Finals 2018**. I interned at **D.E.Shaw Hyderabad** in Summer 2018. I love ricing my Arch Linux setup and bragging about it. 
+Hi! I'm **Piyush Tiwary**, a Sophomore at IIT Patna. I enjoy competitive programmer and Machine Learning. Currently I am on track to improve my Coding skills.
 
-When not coding, I'm usually either watching korean television shows or reading One Piece, Webtoons or novels.
+When not coding, I'm usually either watching television shows or reading novels.
 
-You can contact me on my [Email](mailto:shauryab98@outlook.com), [Twitter](https://twitter.com/SureYeaah) or on [Facebook](https://www.facebook.com/SureYeaah).
+You can contact me on my [Email](mailto:piyushtiwary31@gmail.com), [Twitter](https://twitter.com/piyushtiwary31) or on [Facebook](https://www.facebook.com/phenomenal1.31).
