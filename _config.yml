@@ -1,0 +1,61 @@
+# SEO settings
+title: "Shaurya's Blog"
+title2: "" # default: ""
+description: "Shaurya Gupta's Blog"
+keywords: "Shaurya, Blog, Competitive, Programming, Machine, Learning, Development, Haskell, Google, Internship, ICPC, Codeforces, Hackerrank"
+url: http://sureyeaah.github.io # site url
+baseurl: "" # apply repo name if use it under gh-pages branch
+# baseurl: null # apply null if repo name is something like username.github.io
+
+google_analytics: UA-XXXXX-XX
+repo: http://github.com/sureyeaah/sureyeaah.github.io
+disqus_shortname: "shauryab98"
+twitter_username: "sureyeaah"
+comments: true
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source: ./
+destination: ./_site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : "Shaurya Gupta"
+  job      : "Junior at IIT Patna"
+  bio      : ""
+  thumb    : /images/author.jpg
+  email    : shauryab98@outlook.com
+  url      : http://SureYeaah.github.io
+  github   : http://github.com/SureYeaah
+  twitter  : http://twitter.com/SureYeaah
+  facebook : https://www.facebook.com/SureYeaah
+  linkedin : http://linkedin.com/in/SureYeaah
+
+# social settings
+og_locale: "en_US"
+twitter_card: "summary_large_image"
+twitter_site: "@shauryab98"
+
+gems:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+# plugins
+plugins:
+  - jekyll-seo-tag
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
