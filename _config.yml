@@ -8,7 +8,7 @@ baseurl: "" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
 google_analytics: UA-XXXXX-XX
-repo: http://github.com/sureyeaah/sureyeaah.github.io
+repo: https://github.com/aquarius31/aquarius31.github.io
 disqus_shortname: "aquarius31"
 twitter_username: "aquarius31"
 comments: true
