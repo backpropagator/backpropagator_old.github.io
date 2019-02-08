@@ -7,134 +7,86 @@ keywords: "competitive programming, journal"
 use_math: true
 ---
 
+#### May 2018
+* [May 2018 Journal](https://piyushtiwary31.wordpress.com/2018/05/)
+
+#### June 2018
+* [June 2018 Journal](https://piyushtiwary31.wordpress.com/2018/06/)
+
+#### July 2018
+* [July 2018 Journal](https://piyushtiwary31.wordpress.com/2018/07/)
+
+#### August 2018
+* [August 2018 Journal](https://piyushtiwary31.wordpress.com/2018/08/)
+
+#### 11 October
+* Solved [4A - Watermelon](https://codeforces.com/problemset/problem/4/A). [Solution](Codeforces/4A.cpp).
+* Solved [58A - Chat room](http://codeforces.com/problemset/problem/58/A). [Solution](Codeforces/58A.cpp).
+* Solved [71A - Way Too Long Words](http://codeforces.com/problemset/problem/71/A). [Solution](Codeforces/71A.cpp).
 
 
-#### January 13
-* Education codeforces 36 ``1872`` $rightarrow$ ``1745`` 
-
-#### January 30
-* CSAcademy Virtual - Solved 5/5
-
-#### January 31
-* Codeforces 460 Div 2 - Rank 26 ``1745`` $rightarrow$ ``1912`` 
-
-#### February 27
-* Solved [Hackerrank and product](https://www.hackerrank.com/challenges/and-product/problem) - Bit manipulation, easy
-
-#### March 3
-* Team Virtual - NWERC 2015
-
-#### March 10
-* Codeforces 470 Div 1 - Solved 3 (Rank 217) ``1912`` $\rightarrow$ ``1952``
-
-#### March 16
-* CSACademy Round 73 Div2 unofficial participation - Solved 4/5 (Rank 58)
-
-#### March 17
-* Team virtual Pacific Northwest 2011-2012
-
-#### March 18
-* Kickstart 2018 Round A - Solved 1small, 2, 3small. Rank 149. Misread constraints in 1small and screwed up large. Solved 3 large in practice
-* Cook-off 92 - Solved 3/5 Rank 26 ``2130`` $\rightarrow$ ``2263``
-
-#### March 24
-* Codeforces 472 Div. 1 - Solved 3/6 Rank 165 ``1952`` $\rightarrow$ ``2000``
-
-#### March 25
-* Solved [CSAcademy Strange Substring](https://csacademy.com/contest/round-73/task/strange-substring/) - Suffix Array
-
-#### April 7
-* Atcoder Regular 094 - Solved 2 Rank 294 ``1269`` $\rightarrow$ ``1352``
-* Codeforce Divide By Zero 2018 - Solved 5 Rank 205 ``2000`` $\rightarrow$ ``2058``
+#### 12 October
+* Solved [112A - Petya and Strings](http://codeforces.com/problemset/problem/112/A). [Solution](Codeforces/112A.cpp).
+* Solved [118A - String Task](http://codeforces.com/problemset/problem/118/A). [Solution](Codeforces/118A.cpp).
+* Solved [122A - Lucky Division](http://codeforces.com/problemset/problem/122/A). [Solution](Codeforces/122A.cpp).
 
 
-#### April 18
-* ACM ICPC WF 2016 Team Virtual
+#### 13 October
+* Solved [160A - Twins](http://codeforces.com/problemset/problem/160/A). [Solution](Codeforces/160A.cpp).
+* Solved [166A - Ranklist](http://codeforces.com/problemset/problem/166/A). [Solution](Codeforces/166A.cpp).
+* Solved [339A - Helpful Math](http://codeforces.com/problemset/problem/339/A). [Solution](Codeforces/339A.cpp).
+* Solved [1029A - Many Equal Substrings](http://codeforces.com/problemset/problem/1029/A). [Solution](Codeforces/1029A.cpp).
+* Solved [1029A - Creating the Contest](http://codeforces.com/problemset/problem/1029/B). [Solution](Codeforces/1029B.cpp).
+* Solved [1029C - Maximal Intersection](http://codeforces.com/problemset/problem/1029/C). [Solution](Codeforces/1029C.cpp).
+* Solved [1066B - Heaters](http://codeforces.com/problemset/problem/1066/B). [Solution](Codeforces/1066B.cpp).
 
 
-#### April 19
-* ACM ICPC WF 2018 Beijing - Solved 4 Rank 56
-
-#### April 24
-* Solved ICPC WF 2018 H - Sliding Window
-
-#### August 3
-* [Codeforces Educational Round 48](http://codeforces.com/contest/1016) - Solved 4/7, Rank 239, ``2058`` $\rightarrow$ ``2055``
+#### 14 October
+* Solved [1059A - Cashier](https://codeforces.com/contest/1059/problem/A). [Solution](Codeforces/1059A.cpp).
+* Solved [1059B - Forgery](https://codeforces.com/contest/1059/problem/B). [Solution](Codeforces/1059B.cpp).
+* Solved [1064A - Make a Triangle!](https://codeforces.com/contest/1064/problem/A). [Solution](Codeforces/1064A.cpp).
+* Solved [1064B - Equations of Mathematical Magic](https://codeforces.com/contest/1064/problem/B). [Solution](Codeforces/1064B.cpp).
+* Today I participated in [Codeforces Round #516 (Div. 2, by Moscow Team Olympiad)](https://codeforces.com/contest/1064/standings/participant/20390422#p20390422). Was able to solve 2 Problems. Solved the 3rd one after the Contest was over. Rank: 2852, 1432 -> 1365.
 
 
-#### August 18
-* [Codeforces Educational Round 49](http://codeforces.com/contest/1027) - Solved 4/7, Rank 224, ``2055`` $\rightarrow$ ``2074``
-
-#### August 27
-* [AIM Tech Round 5](http://codeforces.com/contest/1028) - Solved 2/8, Rank 1590, ``2074`` $\rightarrow$ ``1965``
-
-#### August 31
-* [Atcoder Regular 101](https://beta.atcoder.jp/contests/arc101/tasks) - Solved C
-* Solved [Atcoder ARC 101 D](https://beta.atcoder.jp/contests/arc101/tasks/arc101_b) - Binary Search, prefix sums, median
+#### 15 October
+* Solved [1064C - Oh Those Palindromes](https://codeforces.com/contest/1064/problem/C). [Solution](Codeforces/1064C.cpp).
+* Solved [JDELAY - Judging Delay](https://www.codechef.com/LTIME64B/problems/JDELAY). [Solution](Codechef/JDELAY.cpp). 
 
 
-
-#### September 01
-* Insomnia Qualifier 2018 Team Contest- Solved 5 (Rank 12)
-
-
-#### September 02
-* [Timus 1346](http://acm.timus.ru/problem.aspx?space=1&num=1346) - Dp, easy
-
-#### September 04
-* [Leetcode lru-cache](https://leetcode.com/problems/lru-cache/description/) - Data structure
+#### 18 October
+* Solved [1065C - Make it Equal](https://codeforces.com/problemset/problem/1065/C). [Solution](Codeforces/1065C.cpp).
+* Solved [550C - Divisibility by Eight](http://codeforces.com/contest/550/problem/C). [Solution](Codeforces/550C.cpp).
 
 
-#### October 23
-* ACM-ICPC Asia Regionals Online Preliminary 2018 - Solved 2. Rank 30.
-
-#### October 29
-* Solved [COdeforces 453B](https://codeforces.com/contest/453/problem/B) - DP, Bitmasks
-
-#### November 03
-* Snackdown 2018 - Solved 3. Rank 576. F
-
-#### November 06
-* Solved [Codeforces 678E](https://codeforces.com/contest/678/problem/E) - DP, Bitmasks
-* Solved [Codeforces 505C](https://codeforces.com/contest/505/problem/C) - DP
-* Solved [Codeforces 505C](https://codeforces.com/contest/559/problem/C) - DP
-
-#### December 05
-* Team Virtual - [2018-2019 ICPC, NEERC, Northern Eurasia Finals](https://codeforces.com/contest/1089) - Solved 6.
-
-#### December 06
-* Team Virtual - [SEERC 2018](https://codeforces.com/gym/101964) - Solved 5
-* SEERC 2018 F - Construction with restraint
-* Upsolved SEERC 2018 K - PIE with 2D BIT
-
-#### December 07
-* Team Virtual - [Asia Nanjing 2018](https://codeforces.com/gym/101981) - Solved 7
-* Upsolved Asia Nanjing 2018 E - Good construction problem. Trick is to reduce both strings to a common string.
-
-#### December 08
-* Learnt [1D/1D optimisation](https://sites.google.com/site/ubcprogrammingteam/news/1d1ddynamicprogrammingoptimization-parti)
-* Solved [Batch Scheduling](http://www.z-trening.com/tasks.php?show_task=5000000624) - DP, 1D/1D optimisation
-
-#### December 09
-* Team contest [XIX Russian Open High School Contest](https://codeforces.com/contest/1090) - Solved 8
-* Upsolved C
-* Upsolved F
-* Upsolved M - One of my favorite problems I've solved so far. DP
-
-#### December 10
-* Team Contest [Syrian SCPC 2018](https://codeforces.com/gym/102006) - Solved 8. Need to work on speed.
-* Upsolved SCPC 2018 - 
-* Upsolved [Codeforces 1073C](https://codeforces.com/contest/1073/problem/C) - Binary Search
-
-#### December 11
-* Team virtual [Codeforces Jiaozuo 2018 Contest](https://codeforces.com/group/i8kuutE2C1/contest/102028) - Solved 6
-
-#### December 12
-* Upsolved H - Suffix tree + seg tree
+#### 20 October
+* Solved [10110 - Light, more light](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=&problem=1051&mosmsg=Submission+received+with+ID+22160097). [Solution](UVa/UVa10110.cpp).
+* Solved [1005D - Polycarp and Div 3](http://codeforces.com/problemset/problem/1005/D). [Solution](Codeforces/1005D.cpp).
+* Solved [NEWS - I SPY](https://www.codechef.com/DODE2018/problems/NEWS). [Solution](Codechef/NEWS.cpp).
+* Solved [ACM ICPC Team](https://www.hackerrank.com/challenges/acm-icpc-team/problem). [Solution](Hackerrank/ACM ICPC Team.cpp).
 
 
-#### December 18
-* Pune Gwalior ICPC Regionals - Stood 2nd. Qualified again for world finals.
+#### 21 October
+* Solved [TYPING - Chef and Typing](https://www.codechef.com/SNCK1A19/problems/TYPING#). [Solution](Codechef/TYPING.cpp).
+* Solved [ADASTAIR - Ada and the Staircase](https://www.codechef.com/COOK99B/problems/ADASTAIR). [Solution](Codechef/ADASTAIR.cpp).
+* Participated in [October Mega Cook-off](https://www.codechef.com/COOK99B). Was able to solve one problem. Rank: 1635, 1520 -> 1522.
 
-#### December 22
-* Kolkata Kanpur ICPC Regionals - Stood 8th.
+
+#### 31 October
+* Solved [1068A - Birthday](https://codeforces.com/problemset/problem/1068/A). [Solution](Codeforces/1068A.cpp).
+* Solved [1068B - LCM](https://codeforces.com/problemset/problem/1068/B). [Solution](Codeforces/1068B.cpp).
+* Solved [263A - Beautiful Matrix](http://codeforces.com/problemset/problem/263/A). [Solution](Codeforces/263A.cpp).
+
+#### 1 December - 10 December
+I don't remember the exact dates on which I solved these problems but I am sure, it was between 1 Dec & 10 Dec. 
+* Solved [1075A - The King's Peace](https://codeforces.com/problemset/problem/1075/A). [Solution](Codeforces/1075A.cpp).
+* Solved [1075B - Taxi Driver and Lyft](http://codeforces.com/problemset/problem/1075/B). [Solution](Codeforces/1075B.cpp).
+* Solved [1073A - Diverse Substring](http://codeforces.com/problemset/problem/1073/A). [Solution](Codeforces/1073A.cpp).
+* Solved [1073B - Vasya and the Books](http://codeforces.com/problemset/problem/1073/B). [Solution](Codeforces/1073B.cpp).
+* Solved [1065B - Vasya and Isolated Vertices](http://codeforces.com/problemset/problem/1065/B). [Solution](Codeforces/1065B.cpp).
+* Solved [1077A - Frog Jumping](http://codeforces.com/problemset/problem/1077/A). [Solution](Codeforces/1077A.cpp).
+* Solved [1077B - Distributed People](http://codeforces.com/problemset/problem/1077/B). [Solution](Codeforces/1073B.cpp).
+* Solved [1077C - Good Array](http://codeforces.com/problemset/problem/1077/C). [Solution](Codeforces/1077C.cpp).
+
+#### 31 December
+* Participated in [Good Bye 2018](https://codeforces.com/contest/1091). Was able to solve 2 problems. The 3rd one was also easy, based on number of divisors but because I didn't see the constraints properly, I messed up, a bit dissapointed. Rank : 5044, 1365->1340.
