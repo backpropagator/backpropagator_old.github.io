@@ -48,3 +48,12 @@ use_math: true
 #### Contests Given in January
 * Participated in [Codeforces Round #534 (Div. 2)](https://codeforces.com/contest/1104/standings/participant/22517205#p22517205). First 2 problems were easy, upsolved 3rd problem. Rank : 3881, 1236->1229.
 * Participated in [Educational Codeforces Round 59 (Rated for Div. 2)](https://codeforces.com/contest/1107/standings/participant/22627700#p22627700). Rank : 2846, 1229->1242.
+
+#### 9 February
+* Solved [1110A - Parity](https://codeforces.com/contest/1110/problem/A).
+* Solved [1110B - Tape](https://codeforces.com/contest/1110/problem/B).
+* Solved [280 - Vertex](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=216).
+* Solved [1055 - Hashmat the Brave Warrior](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=996).
+* Solved [10071 - Back to High School Physics](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1012).
+* Solved [10773 - Back to Intermediate Math](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1714).
+* Solved [11614 - Etruscan Warriors Never Play Chess](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2661).
