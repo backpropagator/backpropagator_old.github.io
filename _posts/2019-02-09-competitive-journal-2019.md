@@ -57,3 +57,15 @@ use_math: true
 * Solved [10071 - Back to High School Physics](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1012).
 * Solved [10773 - Back to Intermediate Math](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1714).
 * Solved [11614 - Etruscan Warriors Never Play Chess](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2661).
+
+#### 10 February
+* Solved [11934 - Magic Formula](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=&problem=3085&mosmsg=Submission+received+with+ID+22770317).
+* Solved [10879 - Code Refactoring])(https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=&problem=1820&mosmsg=Submission+received+with+ID+22770240).
+* Solved [10370 - Above Average](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1311).
+* Solved [10346 - Peter's Smokes](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1287).
+* Solved [1225 - Digit Counting](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3666).
+* Solved [11723 - Numbering Roads](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2823).
+* Solved [11614 - Etruscan Warriors Never Play Chess](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2661).
+* Solved [10773 - Back to Intermediate Math](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1714).
+* Solved [493 - Rational Spiral](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=434).
+* Solved [616 - Coconuts, Revisited](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=557).
