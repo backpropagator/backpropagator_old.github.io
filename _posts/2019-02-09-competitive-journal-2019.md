@@ -60,7 +60,7 @@ use_math: true
 
 #### 10 February
 * Solved [11934 - Magic Formula](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=&problem=3085&mosmsg=Submission+received+with+ID+22770317).
-* Solved [10879 - Code Refactoring])(https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=&problem=1820&mosmsg=Submission+received+with+ID+22770240).
+* Solved [10879 - Code Refactoring](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=&problem=1820&mosmsg=Submission+received+with+ID+22770240).
 * Solved [10370 - Above Average](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1311).
 * Solved [10346 - Peter's Smokes](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1287).
 * Solved [1225 - Digit Counting](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3666).
