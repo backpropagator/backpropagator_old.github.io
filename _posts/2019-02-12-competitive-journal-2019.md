@@ -69,3 +69,9 @@ use_math: true
 * Solved [10773 - Back to Intermediate Math](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1714).
 * Solved [493 - Rational Spiral](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=434).
 * Solved [616 - Coconuts, Revisited](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=557).
+
+#### 11 February
+* Solved [10025 - The ? 1 ? 2 ? ... ? n = k problem](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=966).
+* Solved [846 - Steps](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=787).
+* Solved [10257 - Dick and Jane](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=14&page=show_problem&problem=1198).
+* Solved [10624 - Super Number](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1565).
