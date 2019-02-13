@@ -77,5 +77,5 @@ use_math: true
 * Solved [10624 - Super Number](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1565).
 
 #### 13 February
-* Solved [Got Any Grapes?](https://codeforces.com/contest/1114/problem/A).
-* Solved [Yet Another Array Partitioning Task](https://codeforces.com/contest/1114/problem/B).
+* Solved [1114A - Got Any Grapes?](https://codeforces.com/contest/1114/problem/A).
+* Solved [1114B - Yet Another Array Partitioning Task](https://codeforces.com/contest/1114/problem/B).
