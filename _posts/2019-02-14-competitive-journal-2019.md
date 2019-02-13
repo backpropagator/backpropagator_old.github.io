@@ -75,3 +75,7 @@ use_math: true
 * Solved [846 - Steps](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=787).
 * Solved [10257 - Dick and Jane](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=14&page=show_problem&problem=1198).
 * Solved [10624 - Super Number](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1565).
+
+#### 13 February
+* Solved [Got Any Grapes?](https://codeforces.com/contest/1114/problem/A).
+* Solved [Yet Another Array Partitioning Task](https://codeforces.com/contest/1114/problem/B).
