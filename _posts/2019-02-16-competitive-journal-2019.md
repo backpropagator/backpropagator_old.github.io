@@ -21,10 +21,10 @@ use_math: true
 
 #### 12 January
 * Solving [Educational DP Contest Problems](https://atcoder.jp/contests/dp/tasks). 
-* Solved [Frog 1](https://atcoder.jp/contests/dp/tasks/dp_a). [Solution](AtCoder/Frog1.cpp).
-* Solved [Frog 2](https://atcoder.jp/contests/dp/tasks/dp_b). [Solution](AtCoder/Frog2.cpp).
-* Solved [Vacation](https://atcoder.jp/contests/dp/tasks/dp_c). [Solution](AtCoder/Vacation.cpp).
-* Solved [Knapsack 1](https://atcoder.jp/contests/dp/tasks/dp_d). [Solution](AtCoder/Knapsack1.cpp).
+* Solved [Frog 1](https://atcoder.jp/contests/dp/tasks/dp_a). [Solution](/Competitive Programming/AtCoder/Frog1.cpp).
+* Solved [Frog 2](https://atcoder.jp/contests/dp/tasks/dp_b). [Solution](/Competitive Programming/AtCoder/Frog2.cpp).
+* Solved [Vacation](https://atcoder.jp/contests/dp/tasks/dp_c). [Solution](/Competitive Programming/AtCoder/Vacation.cpp).
+* Solved [Knapsack 1](https://atcoder.jp/contests/dp/tasks/dp_d). [Solution](/Competitive Programming/AtCoder/Knapsack1.cpp).
 
 #### 15 January - 31 January
 * Solved [1102A - Integer Sequence Dividing](https://codeforces.com/problemset/problem/1102/A).
