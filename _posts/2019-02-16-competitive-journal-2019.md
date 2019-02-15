@@ -81,6 +81,6 @@ use_math: true
 
 #### 15 February
 * Solved [TDPRIMES - Printing some primes](https://www.spoj.com/problems/TDPRIMES/). [Solution](/Competitive Programming/SPOJ/TDPRIMES.cpp).
-* Solved [1108E1 - Array and Segments (Easy version)](https://codeforces.com/problemset/problem/1108/E1). [Solution](/Competitive Programming/UVa/1108E1.cpp).
-* Solved [1110C - Meaningless Operations](https://codeforces.com/problemset/problem/1110/C). [Solution](/Competitive Programming/UVa/1110C.cpp).
-* Solved [1103B - Game with modulo](https://codeforces.com/problemset/problem/1103/B). [Solution](/Competitive Programming/UVa/1103B.cpp). First Div1 - B Problem I have solved!
+* Solved [1108E1 - Array and Segments (Easy version)](https://codeforces.com/problemset/problem/1108/E1). [Solution](/Competitive Programming/Codeforces/1108E1.cpp).
+* Solved [1110C - Meaningless Operations](https://codeforces.com/problemset/problem/1110/C). [Solution](/Competitive Programming/Codeforces/1110C.cpp).
+* Solved [1103B - Game with modulo](https://codeforces.com/problemset/problem/1103/B). [Solution](/Competitive Programming/Codeforces/1103B.cpp). First Div1 - B Problem I have solved!
