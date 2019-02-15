@@ -14,10 +14,10 @@ use_math: true
 * Participated in [Codeforces Round #530 (Div. 2)](https://codeforces.com/contest/1099). First 2 problems were easy, upsolved 3rd problem, need to focus on constraints, it caused me many wrong submissions on 1st problem. Rank : 4017, 1292->1236.
 
 #### 8 January
-* Solved [BLOPER2 - Operators(new ver)](https://www.spoj.com/problems/BLOPER2/). Backtracking. [Solution](SPOJ/BLOPER2.cpp).
-* Solved [Odd-Even Subarrays](https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/practice-problems/algorithm/odd-even-subarrays-72ad69db/). Nice problem, learnt a new cocept. [Solution](Hackerearth/Odd-Even Subarrays.cpp).
-* Solved [Beautiful Strings](https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/beautiful-strings-10/description/). Similar problem. [Solution](Hackerearth/Beautiful Strings.cpp).
-* Solved [Number Sum](https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/practice-problems/algorithm/abcd-26-81bc0a09/). [Solution](Hackerearth/Number Sum.cpp).
+* Solved [BLOPER2 - Operators(new ver)](https://www.spoj.com/problems/BLOPER2/). Backtracking. [Solution](/Competitive Programming/SPOJ/BLOPER2.cpp).
+* Solved [Odd-Even Subarrays](https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/practice-problems/algorithm/odd-even-subarrays-72ad69db/). Nice problem, learnt a new cocept. [Solution](/Competitive Programming/Hackerearth/Odd-Even Subarrays.cpp).
+* Solved [Beautiful Strings](https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/beautiful-strings-10/description/). Similar problem. [Solution](/Competitive Programming/Hackerearth/Beautiful Strings.cpp).
+* Solved [Number Sum](https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/practice-problems/algorithm/abcd-26-81bc0a09/). [Solution](/Competitive Programming/Hackerearth/Number Sum.cpp).
 
 #### 12 January
 * Solving [Educational DP Contest Problems](https://atcoder.jp/contests/dp/tasks). 
