@@ -22,7 +22,7 @@ use_math: true
 #### 11 October
 * Solved [4A - Watermelon](https://codeforces.com/problemset/problem/4/A). [Solution](/Competitive Programming/Codeforces/4A.cpp).
 * Solved [58A - Chat room](http://codeforces.com/problemset/problem/58/A). [Solution](/Competitive Programming/Codeforces/58A.cpp).
-* Solved [71A - Way Too Long Words](http://codeforces.com/problemset/problem/71/A). [/Competitive Programming/Solution](Codeforces/71A.cpp).
+* Solved [71A - Way Too Long Words](http://codeforces.com/problemset/problem/71/A). [Solution](/Competitive Programming/Codeforces/71A.cpp).
 
 
 #### 12 October
