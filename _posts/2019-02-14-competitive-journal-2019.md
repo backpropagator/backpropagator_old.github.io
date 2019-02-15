@@ -79,3 +79,9 @@ use_math: true
 #### 13 February
 * Solved [1114A - Got Any Grapes?](https://codeforces.com/contest/1114/problem/A).
 * Solved [1114B - Yet Another Array Partitioning Task](https://codeforces.com/contest/1114/problem/B).
+
+#### 15 February
+* Solved [TDPRIMES - Printing some primes](https://www.spoj.com/problems/TDPRIMES/).
+* Solved [1108E1 - Array and Segments (Easy version)](https://codeforces.com/problemset/problem/1108/E1).
+* Solved [1110C - Meaningless Operations](https://codeforces.com/problemset/problem/1110/C).
+* Solved [1103B - Game with modulo](https://codeforces.com/problemset/problem/1103/B). First Div1 - B Problem I have solved!
