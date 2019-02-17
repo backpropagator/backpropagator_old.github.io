@@ -2,11 +2,13 @@
 <nav class="nav">
   <div class="container">
     <h1 class="logo"><a href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}<span>{{ site.title2 }}</span></a></h1>
-    <ul class="navbar">
-      <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-      <li><a href="{{ '/ml' | prepend: site.baseurl }}">ML</a></li>
-      <li><a href="{{ '/assets/resume.pdf' | prepend: site.baseurl }}">Resume</a></li>
-      <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">RSS</a></li>
-    </ul>
+    <!--ul class="navbar"-->
+  <select>
+      <option value="1"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></option>
+      <option value="2"><a href="{{ '/ml' | prepend: site.baseurl }}">ML</a></option>
+      <option value="3"><a href="{{ '/assets/resume.pdf' | prepend: site.baseurl }}">Resume</a></option>
+      <option value="4"><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">RSS</a></li></option>
+  </select>
+    <!--/ul-->
   </div>
 </nav>
