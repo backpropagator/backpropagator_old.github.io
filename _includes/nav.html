@@ -1,4 +1,9 @@
 <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> -->
+  <script type="text/javascript">
+  	function handleSelect(elm){
+  		window.location = elm.value;
+  	}
+  </script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <nav class="nav">
   <div class="container">
@@ -27,7 +32,5 @@
   	$(document).ready(function(){
   		$('#menu').selectmenu();
   	})
-  	function handleSelect(elm){
-  		window.location = elm.value;
-  	}
+  	
   </script>
