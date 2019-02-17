@@ -7,10 +7,10 @@
     	    <!-- <label for="menu">Menu</label> -->
     <select name="menu" id="menu">
     	<option selected="selected">Menu</option>
-      <option><a href="{{ '/about' | prepend: site.baseurl }}">About</a></option>
-      <option><a href="{{ '/ml' | prepend: site.baseurl }}">Ml</a></option>
-      <option ><a href="{{ '/assets/resume.pdf' | prepend: site.baseurl }}">Resume</a></option>
-      <option><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">RSS</a></option>
+      <option value="{{ '/about' | prepend: site.baseurl }}">About</option>
+      <option value="{{ '/ml' | prepend: site.baseurl }}">Ml</option>
+      <option value="{{ '/assets/resume.pdf' | prepend: site.baseurl }}">Resume</option>
+      <option value="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</option>
       <!-- <option>Faster</option> -->
     </select>
       <!-- <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
