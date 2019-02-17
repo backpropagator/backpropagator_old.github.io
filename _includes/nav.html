@@ -54,8 +54,22 @@
   <script type="text/javascript">
   	$(document).ready(function(){
   		$('#menu').click(function(){
-  			$('#list-navbar').toggle(display);
+  			if($('#list-navbar').is(":visible")){
+  			$('#list-navbar').css({"display":"none"});	
+  			}
+  			else{
+  				$('#list-navbar').css({"display":"block"});
+  			}
+  			
   		})
+
+  	})
+  	$(document).click(function(event){
+  		if(!$(event.target).closest('#menu').length) {
+                if($('#list-navbar').is(":visible")) {
+                $('#list-navbar').hide();
+                }
+            };
   	})
   	
   </script>
