@@ -1,15 +1,19 @@
 <style type="text/css">
 	.navbar-menu{
 		position: relative;;
-
+		float: right;
+		width: 100px;
+		text-align: center;
 	}
 	.menu-name{
 		font-size: 16px;
 		color: #000;
+		cursor: pointer;
 	}
 	.navbar{
+		background-color: #f2f2f2;
 		position: absolute !important;
-		bottom: 0;
+		/*bottom: 0;*/
 		left: 0;
 		right: 0;
 		display: none;
@@ -25,7 +29,7 @@
   <div class="container">
     <h1 class="logo"><a href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}<span>{{ site.title2 }}</span></a></h1>
     <div class="navbar-menu" id="menu">
-    	<div class="menu-name"></div>
+    	<div class="menu-name">Menu</div>
     	<ul class="navbar" id="list-navbar">
     	    <!-- <label for="menu">Menu</label> -->
     <!-- <select name="menu" id="menu" onchange="javascript:handleSelect(this)">
