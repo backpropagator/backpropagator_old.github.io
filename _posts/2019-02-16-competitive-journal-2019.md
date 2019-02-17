@@ -84,3 +84,7 @@ use_math: true
 * Solved [1108E1 - Array and Segments (Easy version)](https://codeforces.com/problemset/problem/1108/E1). [Solution](/Competitive Programming/Codeforces/1108E1.cpp).
 * Solved [1110C - Meaningless Operations](https://codeforces.com/problemset/problem/1110/C). [Solution](/Competitive Programming/Codeforces/1110C.cpp).
 * Solved [1103B - Game with modulo](https://codeforces.com/problemset/problem/1103/B). [Solution](/Competitive Programming/Codeforces/1103B.cpp). First Div1 - B Problem I have solved!
+
+#### 16 February
+* Solved [1101B - Accordion](https://codeforces.com/problemset/problem/1101/B). [Solution](/Competitive Programming/Codeforces/1101B.cpp).
+*Solved [1101C - Division and Union](https://codeforces.com/contest/1101/problem/C). [Solution]/Competitive Programming/Codeforces/1101C.cpp).
