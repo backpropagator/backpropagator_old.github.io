@@ -4,7 +4,7 @@ This is place where I will keep my ML projects and publications.
 * Ankur Pandey, **Piyush Tiwary**, Sudhir Kumar, and Sajal K Das. A hybrid classifier approach to multivariate sensor data for climate smart agriculture cyber-physical systems. In Proceedings of the 20th International Conference on Distributed Computing and Networking, ICDCN ’19. ACM, 2019. "[click here to view](https://dl.acm.org/citation.cfm?id=3288621)".
 
 #### Resources
-## Table of Contents
+##### Table of Contents
 
 * **[Free Online Books](#free-online-books)**  
 
