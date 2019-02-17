@@ -87,4 +87,4 @@ use_math: true
 
 #### 16 February
 * Solved [1101B - Accordion](https://codeforces.com/problemset/problem/1101/B). [Solution](/Competitive Programming/Codeforces/1101B.cpp).
-* Solved [1101C - Division and Union](https://codeforces.com/contest/1101/problem/C). [Solution]/Competitive Programming/Codeforces/1101C.cpp).
+* Solved [1101C - Division and Union](https://codeforces.com/contest/1101/problem/C). [Solution](/Competitive Programming/Codeforces/1101C.cpp).
