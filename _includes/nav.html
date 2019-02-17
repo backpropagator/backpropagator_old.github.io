@@ -31,14 +31,6 @@
     <div class="navbar-menu" id="menu">
     	<div class="menu-name">Menu</div>
     	<ul class="navbar" id="list-navbar">
-    	    <!-- <label for="menu">Menu</label> -->
-    <!-- <select name="menu" id="menu" onchange="javascript:handleSelect(this)">
-		<option selected="selected">Menu</option>
-      <option value="{{ '/about' | prepend: site.baseurl }}">About</option>
-      <option value="{{ '/ml' | prepend: site.baseurl }}">Ml</option>
-      <option value="{{ '/assets/resume.pdf' | prepend: site.baseurl }}">Resume</option>
-      <option value="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</option>
-    </select> -->
       <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
       <li><a href="{{ '/ml' | prepend: site.baseurl }}">ML</a></li>
       <li><a href="{{ '/assets/resume.pdf' | prepend: site.baseurl }}">Resume</a></li>
@@ -64,12 +56,5 @@
   		})
 
   	})
-  	// $(document).click(function(event){
-  	// 	if(!$(event.target).closest('#menu').length) {
-   //              if($('#list-navbar').is(":visible")) {
-   //              $('#list-navbar').css({"display":"none"});
-   //              }
-   //          };
-  	// })
   	
   </script>
