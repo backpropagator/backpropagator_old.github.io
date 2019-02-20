@@ -88,3 +88,7 @@ use_math: true
 #### 16 February
 * Solved [1101B - Accordion](https://codeforces.com/problemset/problem/1101/B). [Solution](/Competitive Programming/Codeforces/1101B.cpp).
 * Solved [1101C - Division and Union](https://codeforces.com/contest/1101/problem/C). [Solution](/Competitive Programming/Codeforces/1101C.cpp).
+
+#### 20 February
+* I will be having my Mid Semester exams from 25th of this month, so I would not be able to do much of CP, but still if I solve some problems, I will update it here.
+* Also I am leading a new project under [Developer Students Club - IIT Patna](https://github.com/dsciitpatna) named [Notes Seperator](https://github.com/dsciitpatna/Notes-Separator), which is basically a Deep Learning project about which I will update in the ML section.
