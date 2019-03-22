@@ -92,3 +92,9 @@ use_math: true
 #### 20 February
 * I will be having my Mid Semester exams from 25th of this month, so I would not be able to do much of CP, but still if I solve some problems, I will update it here.
 * Also I am leading a new project under [Developer Students Club - IIT Patna](https://github.com/dsciitpatna) named [Notes Seperator](https://github.com/dsciitpatna/Notes-Separator), which is basically a Deep Learning project about which I will update in the ML section.
+
+#### 22 March
+* Solved [1133A - Middle of the Contest](https://codeforces.com/problemset/problem/1133/A). [Solution](/Competitive Programming/Codeforces/1133A.cpp).
+* Solved [1133B - Preparation for International Women's Day](https://codeforces.com/problemset/problem/1133/B). [Solution](/Competitive Programming/Codeforces/1133B.cpp).
+* Solved [1133C - Balanced Team](https://codeforces.com/problemset/problem/1133/C). [Solution](/Competitive Programming/Codeforces/1133C.cpp).
+* Solved [1133D - Zero Quantity Maximization](https://codeforces.com/problemset/problem/1133/D). [Solution](/Competitive Programming/Codeforces/1133D.cpp).
