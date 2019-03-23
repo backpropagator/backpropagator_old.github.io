@@ -98,3 +98,7 @@ use_math: true
 * Solved [1133B - Preparation for International Women's Day](https://codeforces.com/problemset/problem/1133/B). [Solution](/Competitive Programming/Codeforces/1133B.cpp).
 * Solved [1133C - Balanced Team](https://codeforces.com/problemset/problem/1133/C). [Solution](/Competitive Programming/Codeforces/1133C.cpp).
 * Solved [1133D - Zero Quantity Maximization](https://codeforces.com/problemset/problem/1133/D). [Solution](/Competitive Programming/Codeforces/1133D.cpp).
+* Solved [1141A - Game 23](https://codeforces.com/problemset/problem/1141/A). [Solution](/Competitive Programming/Codeforces/1141A.cpp).
+
+#### 23 March
+* Solved [1141B - Maximal Continuous Rest](https://codeforces.com/problemset/problem/1141/B). [Solution](/Competitive Programming/Codeforces/1141B.cpp).
