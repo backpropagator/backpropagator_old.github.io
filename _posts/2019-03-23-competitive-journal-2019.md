@@ -104,3 +104,9 @@ use_math: true
 * Solved [1141B - Maximal Continuous Rest](https://codeforces.com/problemset/problem/1141/B). [Solution](/Competitive Programming/Codeforces/1141B.cpp).
 * Solved [1141C - Polycarp Restores Permutation](https://codeforces.com/problemset/problem/1141/C). [Solution](/Competitive Programming/Codeforces/1141C.cpp).
 * Solved [1141D - Colored Boots](https://codeforces.com/problemset/problem/1141/D). [Solution](/Competitive Programming/Codeforces/1141D.cpp).
+
+#### 24 March
+* Solved [Chef and Number Game](https://www.codechef.com/MARCH19B/problems/CHNUM). [Solution](/Competitive Programming/CodeChef/CHNUM.cpp).
+* Solved [XOR N-bonacci Sequence](https://www.codechef.com/COOK104B/problems/NBONACCI). [Solution](/Competitive Programming/CodeChef/NBONACCI.cpp).
+* Solved [UEFA Champions League](https://www.codechef.com/COOK104B/problems/UCL). [Solution](/Competitive Programming/CodeChef/UCL.cpp).
+* Participated in [MARCH COOKOFF](https://www.codechef.com/COOK104B?order=desc&sortBy=successful_submissions). Solved 2 Problems. Rank : 293.
