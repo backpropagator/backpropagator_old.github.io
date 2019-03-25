@@ -109,4 +109,4 @@ use_math: true
 * Solved [Chef and Number Game](https://www.codechef.com/MARCH19B/problems/CHNUM). [Solution](/Competitive Programming/CodeChef/CHNUM.cpp).
 * Solved [XOR N-bonacci Sequence](https://www.codechef.com/COOK104B/problems/NBONACCI). [Solution](/Competitive Programming/CodeChef/NBONACCI.cpp).
 * Solved [UEFA Champions League](https://www.codechef.com/COOK104B/problems/UCL). [Solution](/Competitive Programming/CodeChef/UCL.cpp).
-* Participated in [MARCH COOKOFF](https://www.codechef.com/COOK104B?order=desc&sortBy=successful_submissions). Solved 2 Problems. Rank : 293.
+* Participated in [MARCH COOKOFF](https://www.codechef.com/COOK104B?order=desc&sortBy=successful_submissions). Solved 2 Problems. Rank : 293 1527 -> 1632.
