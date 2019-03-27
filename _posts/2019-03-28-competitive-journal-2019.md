@@ -110,3 +110,6 @@ use_math: true
 * Solved [XOR N-bonacci Sequence](https://www.codechef.com/COOK104B/problems/NBONACCI). [Solution](/Competitive Programming/CodeChef/NBONACCI.cpp).
 * Solved [UEFA Champions League](https://www.codechef.com/COOK104B/problems/UCL). [Solution](/Competitive Programming/CodeChef/UCL.cpp).
 * Participated in [MARCH COOKOFF](https://www.codechef.com/COOK104B?order=desc&sortBy=successful_submissions). Solved 2 Problems. Rank : 293 1527 -> 1632.
+
+#### 28 March
+* Solved [Chef and a Beautiful Digit](https://www.codechef.com/MARCH19B/problems/CHDIGER). [Solution](/Competitive Programming/CodeChef/CHDIGER.cpp).
