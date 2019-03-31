@@ -109,7 +109,12 @@ use_math: true
 * Solved [Chef and Number Game](https://www.codechef.com/MARCH19B/problems/CHNUM). [Solution](/Competitive Programming/CodeChef/CHNUM.cpp).
 * Solved [XOR N-bonacci Sequence](https://www.codechef.com/COOK104B/problems/NBONACCI). [Solution](/Competitive Programming/CodeChef/NBONACCI.cpp).
 * Solved [UEFA Champions League](https://www.codechef.com/COOK104B/problems/UCL). [Solution](/Competitive Programming/CodeChef/UCL.cpp).
-* Participated in [MARCH COOKOFF](https://www.codechef.com/COOK104B?order=desc&sortBy=successful_submissions). Solved 2 Problems. Rank : 293 1527 -> 1632.
+* Participated in [MARCH COOKOFF](https://www.codechef.com/COOK104B?order=desc&sortBy=successful_submissions). Solved 2 Problems. Rank : 293. 1527 -> 1632.
 
 #### 28 March
 * Solved [Chef and a Beautiful Digit](https://www.codechef.com/MARCH19B/problems/CHDIGER). [Solution](/Competitive Programming/CodeChef/CHDIGER.cpp).
+
+#### 30 March
+* Solved [Testing Robot](https://www.codechef.com/LTIME70B/problems/TSTROBOT). [Solution](https://www.codechef.com/viewsolution/23709027).
+* * Solved [Pogo Stick Competition](https://www.codechef.com/LTIME70B/problems/POGOSTCK). [Solution](https://www.codechef.com/viewsolution/23717455).
+* Participated in [March Lunchtime 2019 Division 2](https://www.codechef.com/LTIME70B). Solved 2 Problems. Rank: 613. 1632 -> 1658.
