@@ -118,3 +118,7 @@ use_math: true
 * Solved [Testing Robot](https://www.codechef.com/LTIME70B/problems/TSTROBOT). [Solution](https://www.codechef.com/viewsolution/23709027).
 * * Solved [Pogo Stick Competition](https://www.codechef.com/LTIME70B/problems/POGOSTCK). [Solution](https://www.codechef.com/viewsolution/23717455).
 * Participated in [March Lunchtime 2019 Division 2](https://www.codechef.com/LTIME70B). Solved 2 Problems. Rank: 613. 1632 -> 1658.
+
+#### 2 April
+* Solved [Even Substrings](https://codeforces.com/problemset/problem/1139/A). [Solution](/Competitive Programming/Codeforces/1139A.cpp).
+* Solved [Choclates](https://codeforces.com/problemset/problem/1139/B). [Solution](/Competitive Programming/Codeforces/1139B.cpp).
