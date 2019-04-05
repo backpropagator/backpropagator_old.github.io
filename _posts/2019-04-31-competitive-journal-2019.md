@@ -122,3 +122,8 @@ use_math: true
 #### 2 April
 * Solved [Even Substrings](https://codeforces.com/problemset/problem/1139/A). [Solution](/Competitive Programming/Codeforces/1139A.cpp).
 * Solved [Choclates](https://codeforces.com/problemset/problem/1139/B). [Solution](/Competitive Programming/Codeforces/1139B.cpp).
+
+#### 5 April
+* Solved [Saving The Universe Again](https://codingcompetitions.withgoogle.com/codejam/round/00000000000000cb/0000000000007966). [Solution](/Competitive Programming/Code Jam'18/Saving The Universe Again.cpp).
+* Solved [Maximum Remaining](https://www.codechef.com/APRIL19B/problems/MAXREM). [Solution](/Competitive Programming/CodeChef/MAXREM.cpp).
+* Solved [Friend or Girlfriend](https://www.codechef.com/APRIL19B/problems/STRCH). Solved a PnC problem after long time and a nice one too! [Solution](/Competitive Programming/CodeChef/STRCH.cpp).
