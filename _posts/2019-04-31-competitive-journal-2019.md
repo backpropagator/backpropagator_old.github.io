@@ -129,3 +129,7 @@ use_math: true
 * Solved [Friend or Girlfriend](https://www.codechef.com/APRIL19B/problems/STRCH). Solved a PnC problem after long time and a nice one too! [Solution](/Competitive Programming/CodeChef/STRCH.cpp).
 * Solved [1121A - Technogoblet of Fire](http://codeforces.com/problemset/problem/1121/A). Solved a PnC problem after long time and a nice one too! [Solution](/Competitive Programming/Codeforces/1121A.cpp).
 * Solved [1121B - Mike and Children](http://codeforces.com/problemset/problem/1121/B). [Solution](/Competitive Programming/Codeforces/1121B.cpp).
+
+#### 6 April
+* Solved [Foregone Solution](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051705/0000000000088231). [Solution](/Competitive Programming/Code Jam'18/Foregone Solution.cpp).
+* Solved [You Can Go Your Own Way](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051705/00000000000881da). [Solution](/Competitive Programming/Code Jam'18/You Can Go Your Own Way.cpp).
