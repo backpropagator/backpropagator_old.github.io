@@ -133,3 +133,15 @@ use_math: true
 #### 6 April
 * Solved [Foregone Solution](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051705/0000000000088231). [Solution](/Competitive Programming/Code Jam'18/Foregone Solution.cpp).
 * Solved [You Can Go Your Own Way](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051705/00000000000881da). [Solution](/Competitive Programming/Code Jam'18/You Can Go Your Own Way.cpp).
+* Solved [Cryptopangrams](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051705/000000000008830b). [Solution](/Competitive Programming/Code Jam'18/Cryptopangrams.cpp).
+* Participated in [Google Code Jam'19](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051705). Qualified the first round with a rank of 10517.
+
+#### 8 April
+* Solved [Fencing](https://www.codechef.com/APRIL19B/problems/FENCE). [Solution](/Competitive Programming/CodeChef/FENCE.cpp).
+
+#### 10 April
+* Solved [1145A - Thanos Sort](http://codeforces.com/problemset/problem/1145/A). [Solution](/Competitive Programming/Codeforces/1145A.cpp).
+* Solved [Help Oz](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/a-simple-task/). [Solution](Competitive Programming/Hackerearth/HelpOz.cpp).
+* Solved [Gas Station](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/gas-stations-1/). [Solution](Competitive Programming/Hackerearth/GasStation.cpp).
+* Solved [Panda and Chain Reaction](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/panda-and-chain-reaction/). [Solution](Competitive Programming/Hackerearth/PandaAndChainReaction.cpp).
+* Solved [Tic Tac Toe](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/tic-tac-toe/). [Solution](Competitive Programming/Hackerearth/TicTacToe.cpp).
