@@ -145,3 +145,6 @@ use_math: true
 * Solved [Gas Station](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/gas-stations-1/). [Solution](Competitive Programming/Hackerearth/GasStation.cpp).
 * Solved [Panda and Chain Reaction](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/panda-and-chain-reaction/). [Solution](Competitive Programming/Hackerearth/PandaAndChainReaction.cpp).
 * Solved [Tic Tac Toe](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/tic-tac-toe/). [Solution](Competitive Programming/Hackerearth/TicTacToe.cpp).
+
+#### 17 April
+* Solved [00168 - Theseus and the Minotaur](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=104). [Solution](Competitive Programming/UVa/UVA168.cpp).
