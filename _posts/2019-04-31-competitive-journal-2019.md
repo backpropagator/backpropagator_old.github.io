@@ -148,3 +148,7 @@ use_math: true
 
 #### 17 April
 * Solved [00168 - Theseus and the Minotaur](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=104). [Solution](Competitive Programming/UVa/UVA168.cpp).
+* Solved [00280 - Vertex](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=216). [Solution](Competitive Programming/UVa/UVa00280.cpp)
+* Solved [Bishu and his Girlfriend](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/bishu-and-his-girlfriend/). [Solution](Competitive Programming/Hackerearth/BishuAndHisGirlfriend.cpp).
+* Solved [Words And Trees](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/words-and-trees-f9ef202c/). [Solution](Competitive Programming/Hackerearth/WordsAndTrees.cpp).
+* Solved [Arya's Stunt](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/aryas-stunt-63b3da17/). [Solution](Competitive Programming/Hackerearth/AryasStunt.cpp).
