@@ -152,3 +152,8 @@ use_math: true
 * Solved [Bishu and his Girlfriend](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/bishu-and-his-girlfriend/). [Solution](Competitive Programming/Hackerearth/BishuAndHisGirlfriend.cpp).
 * Solved [Words And Trees](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/words-and-trees-f9ef202c/). [Solution](Competitive Programming/Hackerearth/WordsAndTrees.cpp).
 * Solved [Arya's Stunt](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/aryas-stunt-63b3da17/). [Solution](Competitive Programming/Hackerearth/AryasStunt.cpp).
+
+#### 19 April
+* Solved [1130A - Be Positive](http://codeforces.com/problemset/problem/1130/A). [Solution](Competitive Programming/Codeforces/1130A.cpp).
+* Solved [1130B - Two Cakes](http://codeforces.com/problemset/problem/1130/B). [Solution](Competitive Programming/Codeforces/1130B.cpp).
+* Solved [1130C - Connect](http://codeforces.com/problemset/problem/1130/C). [Solution](Competitive Programming/Codeforces/1130C.cpp).
