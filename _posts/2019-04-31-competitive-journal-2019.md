@@ -157,3 +157,6 @@ use_math: true
 * Solved [1130A - Be Positive](http://codeforces.com/problemset/problem/1130/A). [Solution](Competitive Programming/Codeforces/1130A.cpp).
 * Solved [1130B - Two Cakes](http://codeforces.com/problemset/problem/1130/B). [Solution](Competitive Programming/Codeforces/1130B.cpp).
 * Solved [1130C - Connect](http://codeforces.com/problemset/problem/1130/C). [Solution](Competitive Programming/Codeforces/1130C.cpp).
+
+#### 13 May
+* Participated in [May Long Chanllenge](https://www.codechef.com/MAY19B). Solved 3 problems completely and 1 problem partially. Rank: 223. 1654 -> 1743.
