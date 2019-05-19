@@ -160,3 +160,18 @@ use_math: true
 
 #### 13 May
 * Participated in [May Long Chanllenge](https://www.codechef.com/MAY19B). Solved 3 problems completely and 1 problem partially. Rank: 223. 1654 -> 1743.
+
+#### 17 May
+* Solved [1136A - Nastya Is Reading a Book](http://codeforces.com/problemset/problem/1136/A). [Solution](Competitive Programming/Codeforces/1136A.cpp).
+* Solved [1136B - Nastya Is Playing Computer Games](http://codeforces.com/problemset/problem/1136/B). [Solution](Competitive Programming/Codeforces/1136B.cpp).
+* Solved [1136C - Nastya Is Transposing Matrices](http://codeforces.com/problemset/problem/1136/C). [Solution](Competitive Programming/Codeforces/1136C.cpp).
+
+#### 18 May
+* Solved [1163A - Eating Soup](http://codeforces.com/problemset/problem/1163/A). [Solution](Competitive Programming/Codeforces/1163A.cpp).
+* Solved [1163B - Cat Party](http://codeforces.com/problemset/problem/1163/B). [Solution](Competitive Programming/Codeforces/1163B.cpp).
+* Solved [1163C - Power Transmission](http://codeforces.com/problemset/problem/1163/C). [Solution](Competitive Programming/Codeforces/1163C.cpp).
+
+#### 19 May
+* Solved [1166A - Silent Classroom](http://codeforces.com/problemset/problem/1166/A). [Solution](Competitive Programming/Codeforces/1166A.cpp).
+* Solved [1166B - All the Vowels Please](http://codeforces.com/problemset/problem/1166/B). [Solution](Competitive Programming/Codeforces/1166B.cpp).
+* Solved [1166C - A Tale of Two Lands](http://codeforces.com/problemset/problem/1166/C). [Solution](Competitive Programming/Codeforces/1166C.cpp).
