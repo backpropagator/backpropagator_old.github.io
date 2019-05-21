@@ -175,3 +175,9 @@ use_math: true
 * Solved [1166A - Silent Classroom](http://codeforces.com/problemset/problem/1166/A). [Solution](Competitive Programming/Codeforces/1166A.cpp).
 * Solved [1166B - All the Vowels Please](http://codeforces.com/problemset/problem/1166/B). [Solution](Competitive Programming/Codeforces/1166B.cpp).
 * Solved [1166C - A Tale of Two Lands](http://codeforces.com/problemset/problem/1166/C). [Solution](Competitive Programming/Codeforces/1166C.cpp).
+
+#### 20 May
+* Solved [492B - Vanya and Lanterns](http://codeforces.com/problemset/problem/492/B). [Solution](Competitive Programming/Codeforces/492B.cpp).
+* Solved [10116 - Robot Motion](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1057). [Solution](Competitive Programming/UVa/UVa10116.cpp).
+* Solved [12376 - As Long as I Learn, I Live](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3798). [Solution](Competitive Programming/UVa/UVa12376.cpp).
+* Solved [12442 - Forwarding Emails](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3873). [Solution](Competitive Programming/UVa/UVa12442.cpp).
