@@ -185,3 +185,6 @@ use_math: true
 * Solved [12376 - As Long as I Learn, I Live](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3798). [Solution](Competitive Programming/UVa/UVa12376.cpp).
 * Solved [12442 - Forwarding Emails](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3873). [Solution](Competitive Programming/UVa/UVa12442.cpp).
 * Solved [12582 - Wedding of Sultan](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4027). [Solution](Competitive Programming/UVa/UVa12442.cpp).
+
+#### 22 May
+* Solved [260 - Il Gioco dell'X](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=196). [Solution](Competitive Programming/UVa/UVa260.cpp)
