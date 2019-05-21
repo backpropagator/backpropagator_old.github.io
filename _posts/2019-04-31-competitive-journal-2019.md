@@ -187,4 +187,4 @@ use_math: true
 * Solved [12582 - Wedding of Sultan](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4027). [Solution](Competitive Programming/UVa/UVa12442.cpp).
 
 #### 22 May
-* Solved [260 - Il Gioco dell'X](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=196). [Solution](Competitive Programming/UVa/UVa260.cpp)
+* Solved [260 - Il Gioco dell'X](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=196). [Solution](/Competitive Programming/UVa/UVa260.cpp)
