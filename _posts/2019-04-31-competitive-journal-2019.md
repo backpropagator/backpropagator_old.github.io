@@ -141,50 +141,50 @@ use_math: true
 
 #### 10 April
 * Solved [1145A - Thanos Sort](http://codeforces.com/problemset/problem/1145/A). [Solution](/Competitive Programming/Codeforces/1145A.cpp).
-* Solved [Help Oz](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/a-simple-task/). [Solution](Competitive Programming/Hackerearth/HelpOz.cpp).
-* Solved [Gas Station](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/gas-stations-1/). [Solution](Competitive Programming/Hackerearth/GasStation.cpp).
-* Solved [Panda and Chain Reaction](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/panda-and-chain-reaction/). [Solution](Competitive Programming/Hackerearth/PandaAndChainReaction.cpp).
-* Solved [Tic Tac Toe](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/tic-tac-toe/). [Solution](Competitive Programming/Hackerearth/TicTacToe.cpp).
+* Solved [Help Oz](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/a-simple-task/). [Solution](/Competitive Programming/Hackerearth/HelpOz.cpp).
+* Solved [Gas Station](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/gas-stations-1/). [Solution](/Competitive Programming/Hackerearth/GasStation.cpp).
+* Solved [Panda and Chain Reaction](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/panda-and-chain-reaction/). [Solution](/Competitive Programming/Hackerearth/PandaAndChainReaction.cpp).
+* Solved [Tic Tac Toe](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/tic-tac-toe/). [Solution](/Competitive Programming/Hackerearth/TicTacToe.cpp).
 
 #### 17 April
-* Solved [00168 - Theseus and the Minotaur](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=104). [Solution](Competitive Programming/UVa/UVA168.cpp).
-* Solved [00280 - Vertex](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=216). [Solution](Competitive Programming/UVa/UVa00280.cpp)
-* Solved [Bishu and his Girlfriend](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/bishu-and-his-girlfriend/). [Solution](Competitive Programming/Hackerearth/BishuAndHisGirlfriend.cpp).
-* Solved [Words And Trees](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/words-and-trees-f9ef202c/). [Solution](Competitive Programming/Hackerearth/WordsAndTrees.cpp).
-* Solved [Arya's Stunt](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/aryas-stunt-63b3da17/). [Solution](Competitive Programming/Hackerearth/AryasStunt.cpp).
+* Solved [00168 - Theseus and the Minotaur](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=104). [Solution](/Competitive Programming/UVa/UVA168.cpp).
+* Solved [00280 - Vertex](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=216). [Solution](/Competitive Programming/UVa/UVa00280.cpp)
+* Solved [Bishu and his Girlfriend](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/bishu-and-his-girlfriend/). [Solution](/Competitive Programming/Hackerearth/BishuAndHisGirlfriend.cpp).
+* Solved [Words And Trees](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/words-and-trees-f9ef202c/). [Solution](/Competitive Programming/Hackerearth/WordsAndTrees.cpp).
+* Solved [Arya's Stunt](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/aryas-stunt-63b3da17/). [Solution](/Competitive Programming/Hackerearth/AryasStunt.cpp).
 
 #### 19 April
-* Solved [1130A - Be Positive](http://codeforces.com/problemset/problem/1130/A). [Solution](Competitive Programming/Codeforces/1130A.cpp).
-* Solved [1130B - Two Cakes](http://codeforces.com/problemset/problem/1130/B). [Solution](Competitive Programming/Codeforces/1130B.cpp).
-* Solved [1130C - Connect](http://codeforces.com/problemset/problem/1130/C). [Solution](Competitive Programming/Codeforces/1130C.cpp).
+* Solved [1130A - Be Positive](http://codeforces.com/problemset/problem/1130/A). [Solution](/Competitive Programming/Codeforces/1130A.cpp).
+* Solved [1130B - Two Cakes](http://codeforces.com/problemset/problem/1130/B). [Solution](/Competitive Programming/Codeforces/1130B.cpp).
+* Solved [1130C - Connect](http://codeforces.com/problemset/problem/1130/C). [Solution](/Competitive Programming/Codeforces/1130C.cpp).
 
 #### 13 May
 * Participated in [May Long Chanllenge](https://www.codechef.com/MAY19B). Solved 3 problems completely and 1 problem partially. Rank: 223. 1654 -> 1743.
 
 #### 17 May
-* Solved [1136A - Nastya Is Reading a Book](http://codeforces.com/problemset/problem/1136/A). [Solution](Competitive Programming/Codeforces/1136A.cpp).
-* Solved [1136B - Nastya Is Playing Computer Games](http://codeforces.com/problemset/problem/1136/B). [Solution](Competitive Programming/Codeforces/1136B.cpp).
-* Solved [1136C - Nastya Is Transposing Matrices](http://codeforces.com/problemset/problem/1136/C). [Solution](Competitive Programming/Codeforces/1136C.cpp).
+* Solved [1136A - Nastya Is Reading a Book](http://codeforces.com/problemset/problem/1136/A). [Solution](/Competitive Programming/Codeforces/1136A.cpp).
+* Solved [1136B - Nastya Is Playing Computer Games](http://codeforces.com/problemset/problem/1136/B). [Solution](/Competitive Programming/Codeforces/1136B.cpp).
+* Solved [1136C - Nastya Is Transposing Matrices](http://codeforces.com/problemset/problem/1136/C). [Solution](/Competitive Programming/Codeforces/1136C.cpp).
 
 #### 18 May
-* Solved [1163A - Eating Soup](http://codeforces.com/problemset/problem/1163/A). [Solution](Competitive Programming/Codeforces/1163A.cpp).
-* Solved [1163B - Cat Party](http://codeforces.com/problemset/problem/1163/B). [Solution](Competitive Programming/Codeforces/1163B.cpp).
-* Solved [1163C - Power Transmission](http://codeforces.com/problemset/problem/1163/C). [Solution](Competitive Programming/Codeforces/1163C.cpp).
+* Solved [1163A - Eating Soup](http://codeforces.com/problemset/problem/1163/A). [Solution](/Competitive Programming/Codeforces/1163A.cpp).
+* Solved [1163B - Cat Party](http://codeforces.com/problemset/problem/1163/B). [Solution](/Competitive Programming/Codeforces/1163B.cpp).
+* Solved [1163C - Power Transmission](http://codeforces.com/problemset/problem/1163/C). [Solution](/Competitive Programming/Codeforces/1163C.cpp).
 
 #### 19 May
-* Solved [1166A - Silent Classroom](http://codeforces.com/problemset/problem/1166/A). [Solution](Competitive Programming/Codeforces/1166A.cpp).
-* Solved [1166B - All the Vowels Please](http://codeforces.com/problemset/problem/1166/B). [Solution](Competitive Programming/Codeforces/1166B.cpp).
-* Solved [1166C - A Tale of Two Lands](http://codeforces.com/problemset/problem/1166/C). [Solution](Competitive Programming/Codeforces/1166C.cpp).
+* Solved [1166A - Silent Classroom](http://codeforces.com/problemset/problem/1166/A). [Solution](/Competitive Programming/Codeforces/1166A.cpp).
+* Solved [1166B - All the Vowels Please](http://codeforces.com/problemset/problem/1166/B). [Solution](/Competitive Programming/Codeforces/1166B.cpp).
+* Solved [1166C - A Tale of Two Lands](http://codeforces.com/problemset/problem/1166/C). [Solution](/Competitive Programming/Codeforces/1166C.cpp).
 
 #### 20 May
-* Solved [701C - They Are Everywhere](http://codeforces.com/problemset/problem/701/C). [Solution](Competitive Programming/Codeforces/701C.cpp).
-* Solved [492B - Vanya and Lanterns](http://codeforces.com/problemset/problem/492/B). [Solution](Competitive Programming/Codeforces/492B.cpp).
-* Solved [10116 - Robot Motion](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1057). [Solution](Competitive Programming/UVa/UVa10116.cpp).
+* Solved [701C - They Are Everywhere](http://codeforces.com/problemset/problem/701/C). [Solution](/Competitive Programming/Codeforces/701C.cpp).
+* Solved [492B - Vanya and Lanterns](http://codeforces.com/problemset/problem/492/B). [Solution](/Competitive Programming/Codeforces/492B.cpp).
+* Solved [10116 - Robot Motion](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1057). [Solution](/Competitive Programming/UVa/UVa10116.cpp).
 
 #### 21 May
-* Solved [12376 - As Long as I Learn, I Live](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3798). [Solution](Competitive Programming/UVa/UVa12376.cpp).
-* Solved [12442 - Forwarding Emails](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3873). [Solution](Competitive Programming/UVa/UVa12442.cpp).
-* Solved [12582 - Wedding of Sultan](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4027). [Solution](Competitive Programming/UVa/UVa12442.cpp).
+* Solved [12376 - As Long as I Learn, I Live](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3798). [Solution](/Competitive Programming/UVa/UVa12376.cpp).
+* Solved [12442 - Forwarding Emails](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3873). [Solution](/Competitive Programming/UVa/UVa12442.cpp).
+* Solved [12582 - Wedding of Sultan](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4027). [Solution](/Competitive Programming/UVa/UVa12442.cpp).
 
 #### 22 May
 * Solved [260 - Il Gioco dell'X](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=196). [Solution](/Competitive Programming/UVa/UVa260.cpp)
