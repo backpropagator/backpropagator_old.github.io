@@ -187,4 +187,7 @@ use_math: true
 * Solved [12582 - Wedding of Sultan](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4027). [Solution](/Competitive Programming/UVa/UVa12442.cpp).
 
 #### 22 May
-* Solved [260 - Il Gioco dell'X](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=196). [Solution](/Competitive Programming/UVa/UVa260.cpp)
+* Solved [260 - Il Gioco dell'X](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=196). [Solution](/Competitive Programming/UVa/UVa260.cpp).
+* Solved [352 - The Seasonal War](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=288). [Solution](/Competitive Programming/UVa/UVa352.cpp).
+* Solved [459 - Graph Connectivity](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=400). [Solution](/Competitive Programming/UVa/UVa459.cpp).
+* Solved [657 - The die is cast](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=598). [Solution](/Competitive Programming/UVa/UVa657.cpp).
