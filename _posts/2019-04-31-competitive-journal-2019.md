@@ -191,3 +191,4 @@ use_math: true
 * Solved [352 - The Seasonal War](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=288). [Solution](/Competitive Programming/UVa/UVa352.cpp).
 * Solved [459 - Graph Connectivity](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=400). [Solution](/Competitive Programming/UVa/UVa459.cpp).
 * Solved [657 - The die is cast](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=598). [Solution](/Competitive Programming/UVa/UVa657.cpp).
+* Solved [722 - Lakes](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=663). [Solution](/Competitive Programming/UVa/UVa722.cpp).
