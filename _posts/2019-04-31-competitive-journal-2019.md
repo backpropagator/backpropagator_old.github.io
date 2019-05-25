@@ -192,3 +192,9 @@ use_math: true
 * Solved [459 - Graph Connectivity](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=400). [Solution](/Competitive Programming/UVa/UVa459.cpp).
 * Solved [657 - The die is cast](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=598). [Solution](/Competitive Programming/UVa/UVa657.cpp).
 * Solved [722 - Lakes](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=663). [Solution](/Competitive Programming/UVa/UVa722.cpp).
+
+#### 24 May
+* Solved [982A - Row](https://codeforces.com/problemset/problem/982/A). [Solution](/Competitive Programming/Codeforces/982A.cpp).
+* Solved [982B - Bus of Characters](https://codeforces.com/problemset/problem/982/B). [Solution](/Competitive Programming/Codeforces/982B.cpp).
+* Solved [982C - Cut 'em all!](https://codeforces.com/problemset/problem/982/C). [Solution](/Competitive Programming/Codeforces/982C.cpp).
+* Solved [10946 - You want what filled?](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1887). [Solution](/Competitive Programming/UVa/UVa10946.cpp).
