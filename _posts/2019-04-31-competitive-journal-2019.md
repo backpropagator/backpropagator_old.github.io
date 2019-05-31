@@ -203,4 +203,5 @@ use_math: true
 * Solved [10336 - Rank the Languages](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1277). [Solution](/Competitive Programming/UVa/UVa10336.cpp).
 * Solved [11110 - Equidivisions](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2051). [Solution](/Competitive Programming/UVa/UVa11110.cpp).
 * Solved [11244 - Counting Stars](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2201). [Solution](/Competitive Programming/UVa/UVa11244.cpp).
-* Solved [11470 - Square Sums](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2465). [Solution](/Competitive Programming/UVa/UVa11470.cpp)
+* Solved [11470 - Square Sums](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2465). [Solution](/Competitive Programming/UVa/UVa11470.cpp).
+* Solved [11749 - Poor Trade Advisor](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2849). [Solution](/Competitive Programming/UVa/UVa11749.cpp)
