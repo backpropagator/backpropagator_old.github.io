@@ -198,3 +198,9 @@ use_math: true
 * Solved [982B - Bus of Characters](https://codeforces.com/problemset/problem/982/B). [Solution](/Competitive Programming/Codeforces/982B.cpp).
 * Solved [982C - Cut 'em all!](https://codeforces.com/problemset/problem/982/C). [Solution](/Competitive Programming/Codeforces/982C.cpp).
 * Solved [10946 - You want what filled?](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1887). [Solution](/Competitive Programming/UVa/UVa10946.cpp).
+
+#### 1 June
+* Solved [10336 - Rank the Languages](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1277). [Solution](/Competitive Programming/UVa/UVa10336.cpp).
+* Solved [11110 - Equidivisions](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2051). [Solution](/Competitive Programming/UVa/UVa11110.cpp).
+* Solved [11244 - Counting Stars](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2201). [Solution](/Competitive Programming/UVa/UVa11244.cpp).
+* Solved [11470 - Square Sums](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2465). [Solution](/Competitive Programming/UVa/UVa11470.cpp)
