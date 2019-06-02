@@ -210,4 +210,5 @@ use_math: true
 #### 2 June
 * Solved [10505 - Montesco vs Capuleto](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1446). [Solution](/Competitive Programming/UVa/UVa10505.cpp).
 * Solved [10004 - Bicoloring](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=945). [Solution](/Competitive Programming/UVa/UVa10004.cpp).
-* Solved[11396 - Claw Decomposition](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2391). [Solution](/Competitive Programming/UVa/UVa11396.cpp).
+* Solved [11396 - Claw Decomposition](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2391). [Solution](/Competitive Programming/UVa/UVa11396.cpp).
+* Solved [11080 - Place the Guards](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2021). [Solution](/Competitive Programming/UVa/UVa11080.cpp).
