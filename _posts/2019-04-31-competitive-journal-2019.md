@@ -206,3 +206,8 @@ use_math: true
 * Solved [11470 - Square Sums](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2465). [Solution](/Competitive Programming/UVa/UVa11470.cpp).
 * Solved [11749 - Poor Trade Advisor](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2849). [Solution](/Competitive Programming/UVa/UVa11749.cpp).
 * Solved [11953 - Battleships](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3104). [Solution](/Competitive Programming/UVa/UVa11953.cpp).
+
+#### 2 June
+* Solved [10505 - Montesco vs Capuleto](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1446). [Solution](/Competitive Programming/UVa/UVa10505.cpp).
+* Solved [10004 - Bicoloring](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=945). [Solution](/Competitive Programming/UVa/UVa10004.cpp).
+* Solved[11396 - Claw Decomposition](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2391). [Solution](/Competitive Programming/UVa/UVa11396.cpp).
