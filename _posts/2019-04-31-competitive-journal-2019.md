@@ -212,3 +212,6 @@ use_math: true
 * Solved [10004 - Bicoloring](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=945). [Solution](/Competitive Programming/UVa/UVa10004.cpp).
 * Solved [11396 - Claw Decomposition](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2391). [Solution](/Competitive Programming/UVa/UVa11396.cpp).
 * Solved [11080 - Place the Guards](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2021). [Solution](/Competitive Programming/UVa/UVa11080.cpp).
+
+#### 3 June
+* Solved [1165A - Remainder](https://codeforces.com/problemset/problem/1165/A). [Solution](/Competitive Programming/Codeforces/1165A.cpp).
