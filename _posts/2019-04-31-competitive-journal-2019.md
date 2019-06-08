@@ -199,6 +199,9 @@ use_math: true
 * Solved [982C - Cut 'em all!](https://codeforces.com/problemset/problem/982/C). [Solution](/Competitive Programming/Codeforces/982C.cpp).
 * Solved [10946 - You want what filled?](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1887). [Solution](/Competitive Programming/UVa/UVa10946.cpp).
 
+#### 26 May
+* Participated in [Codeforces Round #562(Div.2)](https://codeforces.com/contest/1169). Was able to solve 1 Problem. Rank: 1810. 1242 -> 1299.
+
 #### 1 June
 * Solved [10336 - Rank the Languages](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1277). [Solution](/Competitive Programming/UVa/UVa10336.cpp).
 * Solved [11110 - Equidivisions](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2051). [Solution](/Competitive Programming/UVa/UVa11110.cpp).
@@ -215,3 +218,13 @@ use_math: true
 
 #### 3 June
 * Solved [1165A - Remainder](https://codeforces.com/problemset/problem/1165/A). [Solution](/Competitive Programming/Codeforces/1165A.cpp).
+* Participated in [Codeforces Round #563(Div.2)](https://codeforces.com/contest/1174). Was able to solve 3 Problem. Rank: 2280. 1299 -> 1339.
+
+
+#### 7 June
+* Solved [1175A - From Hero to Zero](https://codeforces.com/problemset/problem/1175/A). [Solution](/Competitive Programming/Codeforces/1175A.cpp).
+* Solved [1167A - Telephone Number](https://codeforces.com/problemset/problem/1167/A). [Solution](/Competitive Programming/Codeforces/1167A.cpp).
+* Solved [1167B - News Distribution](https://codeforces.com/problemset/problem/1167/B). [Solution](/Competitive Programming/Codeforces/1167B.cpp).
+
+#### 8 June
+* Participated in [June Long Challenge Div. 2](https://www.codechef.com/JUNE19B). 
