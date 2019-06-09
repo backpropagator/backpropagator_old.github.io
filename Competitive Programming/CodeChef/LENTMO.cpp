@@ -92,23 +92,33 @@ int main(){
         cin>>k>>x;
         vpll vp;
         //mb m;
+        vll d(n);
         loop(i,n){
-            if(v[i]^x > v[i]){
-                cnt++;
+            
                 sum += v[i];
+                d[i] = ((v[i]^x) - v[i]);
+                //cout<<d[i]<<" ";
                 //mb[i] = true;
-                vp.pb(mp(v[i],v[i]^x));
-            }
+                //vp.pb(mp(v[i],v[i]^x));
+            
         }
-        if(cnt < k){
-            cout<<cnt<<"\n";
-        }else{
-            sort(all(vp),comp);
-            loop(i,(cnt/k)*k){
-                sum = sum - vp[i].fr + vp[i].sc;
+        sort(all(d),greater<int>());
+        ll i=0;
+        ll cur=0;
+        ll s=sum;
+        //loop(i,n) cout<<d[i]<<" ";
+        loop(i,n){
+            cur += d[i];
+            if((i+1)%k == 0){
+                if(cur > 0){
+                    sum += cur;
+                    //cur = 0;
+                }
+                cur=0;
             }
-            cout<<sum<<"\n";
+            //i++;
         }
+        cout<<sum<<"\n";
 
     }
     
