@@ -9,7 +9,7 @@ baseurl: "" # apply repo name if use it under gh-pages branch
 
 google_analytics: UA-XXXXX-XX
 repo: https://github.com/aquarius31/aquarius31.github.io
-disqus_shortname: "aquarius31"
+disqus_shortname: "aquarius31-github-io"
 twitter_username: "aquarius31"
 comments: true
 
