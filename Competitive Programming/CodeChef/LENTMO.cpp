@@ -106,19 +106,52 @@ int main(){
         ll i=0;
         ll cur=0;
         ll s=sum;
+        ll neg=n;
+        for (int i = 0; i < n; ++i)
+        {
+            if(d[i] < 0){
+                neg=i;
+                break;
+            }
+        }
         //loop(i,n) cout<<d[i]<<" ";
+        ll flag=-1;
         loop(i,n){
             cur += d[i];
             if((i+1)%k == 0){
                 if(cur > 0){
                     sum += cur;
                     //cur = 0;
+                    flag = i;
                 }
                 cur=0;
             }
+            
             //i++;
         }
-        cout<<sum<<"\n";
+        if(neg <= flag){
+            //ll i=neg;
+            ll ncur=0;
+            for (int i = neg; i <=flag ; ++i)
+            {
+                d[i] = d[i]*-1;
+            }
+            ll ptr = 0;
+            for (int i = neg; i < n; ++i)
+            {
+                ncur += d[i];
+                if((ptr+1)%k == 0){
+                    if(ncur > 0){
+                        sum += ncur;
+                    }
+                    ncur=0;
+                }
+                ptr++;
+            }
+            cout<<sum<<"\n";
+        }else{
+            cout<<sum<<"\n";
+        }
 
     }
     
