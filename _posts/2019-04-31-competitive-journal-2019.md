@@ -227,4 +227,7 @@ use_math: true
 * Solved [1167B - News Distribution](https://codeforces.com/problemset/problem/1167/B). [Solution](/Competitive Programming/Codeforces/1167B.cpp).
 
 #### 8 June
-* Participated in [June Long Challenge Div. 2](https://www.codechef.com/JUNE19B). 
+* Participated in [June Long Challenge Div. 2](https://www.codechef.com/JUNE19B).
+
+#### 11 June
+* Solved [616C - Labyrinth](https://codeforces.com/problemset/problem/616/C). [Solution](/Competitive Programming/Codeforces/616C.cpp).

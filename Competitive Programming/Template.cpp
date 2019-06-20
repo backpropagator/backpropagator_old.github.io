@@ -63,13 +63,43 @@ using namespace std;
 
 template<typename T> T power(T x, T y, ll m = MOD){T ans = 1; x %= m; while(y > 0){ if(y & 1LL) ans = (ans * x)%m; y >>= 1LL; x = (x*x)%m; } return ans%m; }
 
+void Sieve(int n) 
+{ 
+    bool prime[n+1]; 
+    memset(prime, true, sizeof(prime)); 
+  
+    for (int p=2; p*p<=n; p++) 
+    { 
+        if (prime[p] == true) 
+        {  
+            for (int i=p*p; i<=n; i += p) 
+                prime[i] = false; 
+        } 
+    } 
+  
+      for (int p=2; p<=n; p++) 
+       if (prime[p]) 
+          cout << p << " "; 
+}
+
+void dfs(ll s)
+{
+    vis[s]=true;
+    for(ll i=0;i<adj[s].size();i++)
+    {
+        ll v=adj[s][i];
+        if(!visited[v])
+            dfs(v);
+    }
+}
+
 int main(){
 
-    #ifndef ONLINE_JUDGE
+    /*#ifndef ONLINE_JUDGE
     freopen("input.txt","r",stdin);
     freopen("output.txt","w",stdout);
     freopen("error.txt","w",stderr);
-    #endif
+    #endif*/
 
     high_functioning_sociopath;    
 

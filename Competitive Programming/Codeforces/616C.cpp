@@ -20,9 +20,6 @@ using namespace std;
     typedef vector < vll >  vvll;
     typedef vector < vpii > vvpii;
     typedef set <int>       si;
-    typedef map<ll,ll>      mll;
-    typedef map<pll,ll>     mpll; 
-    typedef map<ll,bool>    mb;
 /* Macros */
     /* Loops */
     #define fl(i, a, b)     for(int i(a); i <= (b); i ++)
@@ -65,16 +62,29 @@ using namespace std;
 /* Templates */
 
 template<typename T> T power(T x, T y, ll m = MOD){T ans = 1; x %= m; while(y > 0){ if(y & 1LL) ans = (ans * x)%m; y >>= 1LL; x = (x*x)%m; } return ans%m; }
+ll n, m;
+char mat[1005][1005];
+bool vis[1005][1005];
+ll dx[] = {1,-1,0,0};
+ll dy[] = {0,0,1,-1};
+ll cnt;
 
-bool comp(pll p1, pll p2){
-    return p1.sc > p2.sc;
+bool isval(ll x, ll y){
+	if(x >= 0 && x < n && y >= 0 && y < m && !vis[x][y]) return true;
+	else return false;
 }
 
-bool cmp(ll a, ll b){
-    if(a>=0 && b>=0) return a>=b;
-    if(a>=0 && b<=0) return a>=b;
-    if((a<=0 && b<=0)) return abs(a) >= abs(b);
-    return false;
+void dfs(ll x, ll y){
+	vis[x][y] = true;
+	for (int i = 0; i < 4; ++i)
+	{
+		ll r = x+dx[i];
+		ll c = y+dy[i];
+		if(isval(r,c) && mat[r][c] == '.'){
+			dfs(r,c);
+			cnt++;
+		}
+	}
 }
 
 int main(){
@@ -86,87 +96,40 @@ int main(){
     #endif*/
 
     high_functioning_sociopath;    
-    ll t, n, x, k;
-    cin>>t;
-    while(t--){
-        cin>>n;
-        ll cnt=0;
-        ll sum=0;
-        vll v(n);
-        loop(i,n){
-            cin>>v[i];
-        }
-        cin>>k>>x;
-        vpll vp;
-        //mb m;
-        vll d(n);
-        loop(i,n){
-            
-                sum += v[i];
-                d[i] = ((v[i]^x) - v[i]);
-                cout<<d[i]<<" ";
-                //cout<<d[i]<<" ";
-                //mb[i] = true;
-                //vp.pb(mp(v[i],v[i]^x));
-            
-        }
-        cout<<"\n";
-        sort(all(d),cmp);
-        ll i=0;
-        ll cur=0;
-        ll s=sum;
-        ll neg=n;
-        loop(i,n) cout<<d[i]<<" ";
-        for (int i = 0; i < n; ++i)
-        {
-            if(d[i] < 0){
-                neg=i;
-                break;
-            }
-        }
-        cout<<neg<<"\n";
-        //loop(i,n) cout<<d[i]<<" ";
-        ll flag=-1;
-        loop(i,n){
-            cur += d[i];
-            if((i+1)%k == 0){
-                if(cur > 0){
-                    sum += cur;
-                    //cur = 0;
-                    flag = i;
-                }
-                cur=0;
-            }
-            
-            //i++;
-        }
-        //ll st[6] = {5,4,-1,-7,0,2};
-        //sort(st,st+6,cmp);
-        //loop(i,6) cout<<st[i]<<" ";
-        if(neg <= flag){
-            //ll i=neg;
-            ll ncur=0;
-            for (int i = neg; i <=flag ; ++i)
-            {
-                d[i] = d[i]*-1;
-            }
-            ll ptr = 0;
-            for (int i = neg; i < n; ++i)
-            {
-                ncur += d[i];
-                if((ptr+1)%k == 0){
-                    if(ncur > 0){
-                        sum += ncur;
-                    }
-                    ncur=0;
-                }
-                ptr++;
-            }
-            cout<<sum<<"\n";
-        }else{
-            cout<<sum<<"\n";
-        }
+    fill(mat,'*');
+    fill(vis,false);
+    cin>>n>>m;
+    for (int i = 0; i < n; ++i)
+    {
+    	for (int j = 0; j < m; ++j)
+    	{
+    		cin>>mat[i][j];
+    	}
+    }
+    ll ans[n][m];
+    fill(ans,0ll);
+    for (int i = 0; i < n; ++i)
+    {
+    	for (int j = 0; j < m; ++j)
+    	{
+    		fill(vis, false);
 
+    		if(!vis[i][j] && mat[i][j] == '*'){
+    			cnt=1;
+    			dfs(i,j);
+    			//char c = cnt+'0';
+    			ans[i][j] = cnt;
+    		}
+    	}
+    }
+    for (int i = 0; i < n; ++i)
+    {
+    	for (int j = 0; j < m; ++j)
+    	{
+    		if(ans[i][j] == 0) cout<<'.';
+    		else cout<<ans[i][j]%10;
+    	}
+    	cout<<"\n";
     }
     
 

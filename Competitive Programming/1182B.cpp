@@ -20,9 +20,6 @@ using namespace std;
     typedef vector < vll >  vvll;
     typedef vector < vpii > vvpii;
     typedef set <int>       si;
-    typedef map<ll,ll>      mll;
-    typedef map<pll,ll>     mpll; 
-    typedef map<ll,bool>    mb;
 /* Macros */
     /* Loops */
     #define fl(i, a, b)     for(int i(a); i <= (b); i ++)
@@ -65,17 +62,29 @@ using namespace std;
 /* Templates */
 
 template<typename T> T power(T x, T y, ll m = MOD){T ans = 1; x %= m; while(y > 0){ if(y & 1LL) ans = (ans * x)%m; y >>= 1LL; x = (x*x)%m; } return ans%m; }
+ll n, m;
+char s[505][505];
+bool vis[505];
+ll c;
+/*ll dx[] = {0,0,1,-1};
+ll dy[] = {1,-1,0,0};
 
-bool comp(pll p1, pll p2){
-    return p1.sc > p2.sc;
+bool isval(ll x, ll y){
+    if(x>=0 && y>=0 && x<n && y<m) return true;
+    else return false;
 }
 
-bool cmp(ll a, ll b){
-    if(a>=0 && b>=0) return a>=b;
-    if(a>=0 && b<=0) return a>=b;
-    if((a<=0 && b<=0)) return abs(a) >= abs(b);
-    return false;
+void dfs(ll x, ll y){
+    vis[x][y] = true;
+    for (int i = 0; i < 4; ++i)
+    {
+        if(isval(x+dx[i],y+dy[i]) && s[x+dx[i]][y+dy[i]] == '*' && !vis[x+dx[i]][y+dy[i]]){
+            dfs(x+dx[i],y+dy[i]);
+            c++;
+        }
+    }
 }
+*/
 
 int main(){
 
@@ -86,88 +95,100 @@ int main(){
     #endif*/
 
     high_functioning_sociopath;    
-    ll t, n, x, k;
-    cin>>t;
-    while(t--){
-        cin>>n;
-        ll cnt=0;
-        ll sum=0;
-        vll v(n);
-        loop(i,n){
-            cin>>v[i];
-        }
-        cin>>k>>x;
-        vpll vp;
-        //mb m;
-        vll d(n);
-        loop(i,n){
-            
-                sum += v[i];
-                d[i] = ((v[i]^x) - v[i]);
-                cout<<d[i]<<" ";
-                //cout<<d[i]<<" ";
-                //mb[i] = true;
-                //vp.pb(mp(v[i],v[i]^x));
-            
-        }
-        cout<<"\n";
-        sort(all(d),cmp);
-        ll i=0;
-        ll cur=0;
-        ll s=sum;
-        ll neg=n;
-        loop(i,n) cout<<d[i]<<" ";
-        for (int i = 0; i < n; ++i)
+    ll n, m;
+    cin>>n>>m;
+    memset(vis,false, sizeof vis);
+    c=0;
+    for (int i = 0; i < n; ++i)
+    {
+        for (int j = 0; j < m; ++j)
         {
-            if(d[i] < 0){
-                neg=i;
-                break;
-            }
+            cin>>s[i][j];
+            if(s[i][j] == '*') c++;
         }
-        cout<<neg<<"\n";
-        //loop(i,n) cout<<d[i]<<" ";
-        ll flag=-1;
-        loop(i,n){
-            cur += d[i];
-            if((i+1)%k == 0){
-                if(cur > 0){
-                    sum += cur;
-                    //cur = 0;
-                    flag = i;
-                }
-                cur=0;
-            }
-            
-            //i++;
-        }
-        //ll st[6] = {5,4,-1,-7,0,2};
-        //sort(st,st+6,cmp);
-        //loop(i,6) cout<<st[i]<<" ";
-        if(neg <= flag){
-            //ll i=neg;
-            ll ncur=0;
-            for (int i = neg; i <=flag ; ++i)
-            {
-                d[i] = d[i]*-1;
-            }
-            ll ptr = 0;
-            for (int i = neg; i < n; ++i)
-            {
-                ncur += d[i];
-                if((ptr+1)%k == 0){
-                    if(ncur > 0){
-                        sum += ncur;
-                    }
-                    ncur=0;
-                }
-                ptr++;
-            }
-            cout<<sum<<"\n";
-        }else{
-            cout<<sum<<"\n";
-        }
-
     }
+    bool pos = false;
+    ll cnt=0;
+    ll x, y;
+    for (int i = 0; i < n; ++i)
+    {
+        for (int j = 0; j < m; ++j)
+        {
+            if(i > 0 && i < n-1 && j > 0 && j < m-1){
+                if(s[i-1][j] == '*' && s[i+1][j] == '*' && s[i][j-1] == '*' && s[i][j+1] == '*' && s[i][j] == '*' ){
+                    x=i;
+                    y=j;
+                    pos = true;
+                    break;
+                }
+            }
+        }
+        if(pos) break;
+    }
+    if(!pos){
+        cout<<"NO\n";
+        return 0;
+    }
+
+    ll i=x;
+    ll j=y;
+    while(s[i-1][j] == '*' && i-1 >= 0){
+        cnt++;
+        i--;
+        if(s[i][j-1] == '*' || s[i][j+1] == '*'){
+            pos = false;
+            break;
+        }
+    }
+    if(!pos){
+        cout<<"NO\n";
+        return 0;
+    }
+    i=x;
+    j=y;
+    while(s[i+1][j] == '*' && i+1 < n){
+        cnt++;
+        i++;
+        if(s[i][j-1] == '*' || s[i][j+1] == '*'){
+            pos = false;
+            break;
+        }
+    }
+    if(!pos){
+        cout<<"NO\n";
+        return 0;
+    }
+    i=x;
+    j=y;
+    while(s[i][j-1] == '*' && j-1 >= 0){
+        cnt++;
+        j--;
+        if(s[i-1][j] == '*' || s[i+1][j] == '*'){
+            pos = false;
+            break;
+        }
+    }
+    if(!pos){
+        cout<<"NO\n";
+        return 0;
+    }
+    i=x;
+    j=y;
+    while(s[i][j+1] == '*' && j+1 < m){
+        cnt++;
+        j++;
+        if(s[i-1][j] == '*' || s[i+1][j] == '*'){
+            pos = false;
+            break;
+        }
+    }
+    if(!pos){
+        cout<<"NO\n";
+        return 0;
+    }
+
+    if(pos && cnt+1==c) cout<<"YES\n";
+    else cout<<"NO\n";
     
 
     return 0;

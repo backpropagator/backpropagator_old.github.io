@@ -20,9 +20,6 @@ using namespace std;
     typedef vector < vll >  vvll;
     typedef vector < vpii > vvpii;
     typedef set <int>       si;
-    typedef map<ll,ll>      mll;
-    typedef map<pll,ll>     mpll; 
-    typedef map<ll,bool>    mb;
 /* Macros */
     /* Loops */
     #define fl(i, a, b)     for(int i(a); i <= (b); i ++)
@@ -66,17 +63,6 @@ using namespace std;
 
 template<typename T> T power(T x, T y, ll m = MOD){T ans = 1; x %= m; while(y > 0){ if(y & 1LL) ans = (ans * x)%m; y >>= 1LL; x = (x*x)%m; } return ans%m; }
 
-bool comp(pll p1, pll p2){
-    return p1.sc > p2.sc;
-}
-
-bool cmp(ll a, ll b){
-    if(a>=0 && b>=0) return a>=b;
-    if(a>=0 && b<=0) return a>=b;
-    if((a<=0 && b<=0)) return abs(a) >= abs(b);
-    return false;
-}
-
 int main(){
 
     /*#ifndef ONLINE_JUDGE
@@ -84,90 +70,36 @@ int main(){
     freopen("output.txt","w",stdout);
     freopen("error.txt","w",stderr);
     #endif*/
+    #ifndef ONLINE_JUDGE
+	freopen("input1.txt", "r" , stdin);
+	freopen("output.txt", "w", stdout);
+	#endif
 
     high_functioning_sociopath;    
-    ll t, n, x, k;
-    cin>>t;
-    while(t--){
-        cin>>n;
-        ll cnt=0;
-        ll sum=0;
-        vll v(n);
-        loop(i,n){
-            cin>>v[i];
-        }
-        cin>>k>>x;
-        vpll vp;
-        //mb m;
-        vll d(n);
-        loop(i,n){
-            
-                sum += v[i];
-                d[i] = ((v[i]^x) - v[i]);
-                cout<<d[i]<<" ";
-                //cout<<d[i]<<" ";
-                //mb[i] = true;
-                //vp.pb(mp(v[i],v[i]^x));
-            
-        }
-        cout<<"\n";
-        sort(all(d),cmp);
-        ll i=0;
-        ll cur=0;
-        ll s=sum;
-        ll neg=n;
-        loop(i,n) cout<<d[i]<<" ";
-        for (int i = 0; i < n; ++i)
+    ll n;
+    cin>>n;
+    for (int j = 1; j <= n; ++j)
+    {
+        string s;
+        cin>>s;
+        ll l = s.length();
+        ll c=0;
+        for (int i = 0; i < l; ++i)
         {
-            if(d[i] < 0){
-                neg=i;
-                break;
-            }
+            if(s[i] == 'B') c++;
         }
-        cout<<neg<<"\n";
-        //loop(i,n) cout<<d[i]<<" ";
-        ll flag=-1;
-        loop(i,n){
-            cur += d[i];
-            if((i+1)%k == 0){
-                if(cur > 0){
-                    sum += cur;
-                    //cur = 0;
-                    flag = i;
-                }
-                cur=0;
-            }
-            
-            //i++;
+        ll mn = (l-2)/2 + 1;
+        cout<<"Case #"<<j<<": ";
+        if(s == "AB."){
+            cout<<"Y\n";
         }
-        //ll st[6] = {5,4,-1,-7,0,2};
-        //sort(st,st+6,cmp);
-        //loop(i,6) cout<<st[i]<<" ";
-        if(neg <= flag){
-            //ll i=neg;
-            ll ncur=0;
-            for (int i = neg; i <=flag ; ++i)
-            {
-                d[i] = d[i]*-1;
-            }
-            ll ptr = 0;
-            for (int i = neg; i < n; ++i)
-            {
-                ncur += d[i];
-                if((ptr+1)%k == 0){
-                    if(ncur > 0){
-                        sum += ncur;
-                    }
-                    ncur=0;
-                }
-                ptr++;
-            }
-            cout<<sum<<"\n";
+        if(c >= 2 && c <= (l-2)){
+            cout<<"Y\n";
         }else{
-            cout<<sum<<"\n";
+            cout<<"N\n";
         }
-
     }
+
     
 
     return 0;
