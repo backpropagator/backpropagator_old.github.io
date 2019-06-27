@@ -240,6 +240,8 @@ use_math: true
 #### 25 June
 * Solved [1180A - Alex and a Rhombus](https://codeforces.com/contest/1180/problem/A). [Solution](/Competitive Programming/Codeforces/1180A.cpp).
 * Solved [1180B - Nick and Array](https://codeforces.com/contest/1180/problem/B). [Solution](/Competitive Programming/Codeforces/1180B.cpp).
+
+#### 27 June
 * Solved [1180A - Valerity and Deque](https://codeforces.com/contest/1180/problem/C). [Solution](/Competitive Programming/Codeforces/1180C.cpp).
 * Solved [1183A - Nearest Interesting Number](https://codeforces.com/contest/1183/problem/A). [Solution](/Competitive Programming/Codeforces/1183A.cpp).
 * Solved [1183B - Equalize Prices](https://codeforces.com/contest/1183/problem/B). [Solution](/Competitive Programming/Codeforces/1183B.cpp).
