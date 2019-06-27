@@ -72,7 +72,30 @@ int main(){
     #endif*/
 
     high_functioning_sociopath;    
-    ll n;
+    ll q, n, k, a, b;
+    cin>>q;
+    while(q--){
+        cin >> k >> n >> a >> b;
+        if(k<=n*b)
+            cout << "-1\n";
+        else
+        {
+            ll st=0, dr=n, sol=0;
+            while(st<=dr)
+            {
+                ll mij=(st+dr)/2;
+                if(k-a*mij>(n-mij)*b)
+                {
+                    sol=max(sol, mij);
+                    st=mij+1;
+                }
+                else
+                    dr=mij-1;
+            }
+            cout << sol << "\n";
+        }
+    }
+
 
     
 

@@ -72,9 +72,17 @@ int main(){
     #endif*/
 
     high_functioning_sociopath;    
-    ll n;
-
     
+    ll ans[102];
+    ans[1] = 1;
+    for (int i = 2; i < 102; ++i)
+    {
+        ans[i] = ans[i-1] + 4*(i-1);
+    }
+
+    ll n;
+    cin>>n;
+    cout<<ans[n]<<"\n";
 
     return 0;
 }

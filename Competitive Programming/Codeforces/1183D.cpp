@@ -62,6 +62,12 @@ using namespace std;
 /* Templates */
 
 template<typename T> T power(T x, T y, ll m = MOD){T ans = 1; x %= m; while(y > 0){ if(y & 1LL) ans = (ans * x)%m; y >>= 1LL; x = (x*x)%m; } return ans%m; }
+map<ll,ll> m;
+
+bool cmp(ll a, ll b){
+    if(m[a] <= m[b]) return true;
+    else return false;
+}
 
 int main(){
 
@@ -72,9 +78,68 @@ int main(){
     #endif*/
 
     high_functioning_sociopath;    
-    ll n;
+    ll n, q;
+    cin>>q;
+    while (q--)
+    {
+        cin>>n;
+        m.clear();
+        vll v(n);
+        //map<ll,ll> m;
+        ll mx = 1;
+        ll mn = INT_MAX;
+        vll a;
+        loop(i,n){
+            cin>>v[i];
+            if(m[v[i]] == 0){
+                a.pb(v[i]);
+            }
+            m[v[i]]++;
+            mx = max(m[v[i]],mx);
+            mn = min(mn,m[v[i]]);
+        }
+        sort(all(a),cmp);
+        ll cnt = 0;
+        // ll prev = -1;
+        map<ll,bool> prs;
+        ll i = a.size()-1;
+        ll prev = m[a[i]]+1;
+        while(i >= 0){
+            ll c = m[a[i]];
+            //cout<<a[i]<<" "<<c<<" ";
+            if(c != prev && c < prev){
+                cnt += c;
+                prev = c;
+            }else{
+                if(prev-1 > 0){
+                    cnt += (prev-1);
+                    prev = prev-1;
+                }
+            }
+            i--;
+        } 
+        // for (ll i = a.size()-1; i >= 0; i--)
+        // {
+        //     ll c = m[a[i]];
+        //     //cout<<a[i]<<" ";
+        //     //cout<<c<<" ";
+        //     if(prev != c && !prs[c]){
+        //         cnt += c;
+        //         prev = c;
+        //         prs[c] = true;
+        //     }else{
+        //         if(c-1 > 0){
+        //             cnt += (prev-1);
+        //             prev = prev-1;
+        //             prs[prev] = true;
+        //         }
+        //     }
+        // }
+        cout<<cnt;
+        cout<<"\n";
 
-    
+
+    }    
 
     return 0;
 }

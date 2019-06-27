@@ -72,8 +72,26 @@ int main(){
     #endif*/
 
     high_functioning_sociopath;    
-    ll n;
+    ll t;
+    ll n, k;
+    cin>>t;
+    while(t--){
+        cin>>n>>k;
+        vll v(n);
+        ll mx = 0, mn = INT_MAX;
+        for (ll i = 0; i < n; i++)
+        {
+            cin>>v[i];
+            mx = max(mx,v[i]);
+            mn = min(mn,v[i]);
+        }
+        if((abs(mx-mn-k)) > k) cout<<-1<<"\n";
+        else{
+            cout<<mn+k<<"\n";
+        }
 
+           
+    }
     
 
     return 0;

@@ -225,9 +225,23 @@ use_math: true
 * Solved [1175A - From Hero to Zero](https://codeforces.com/problemset/problem/1175/A). [Solution](/Competitive Programming/Codeforces/1175A.cpp).
 * Solved [1167A - Telephone Number](https://codeforces.com/problemset/problem/1167/A). [Solution](/Competitive Programming/Codeforces/1167A.cpp).
 * Solved [1167B - News Distribution](https://codeforces.com/problemset/problem/1167/B). [Solution](/Competitive Programming/Codeforces/1167B.cpp).
+* Participated in [Codeforces Round #564(Div.2)](https://codeforces.com/contest/1173). Was able to solve 2 Problem. Rank: 1826. 1339 -> 1377.
 
 #### 8 June
 * Participated in [June Long Challenge Div. 2](https://www.codechef.com/JUNE19B).
 
 #### 11 June
 * Solved [616C - Labyrinth](https://codeforces.com/problemset/problem/616/C). [Solution](/Competitive Programming/Codeforces/616C.cpp).
+* Participated in [Codeforces Round #566(Div.2)](https://codeforces.com/contest/1182). Was able to solve 2 Problem. Rank: 2003. 1377 -> 1411.
+
+#### 20 June
+* [Explanation on Tarzan's Algorithm](https://www.youtube.com/watch?v=aZXi1unBdJA&t=23s), to find Articulation Points and Bridges.
+
+#### 25 June
+* Solved [1180A - Alex and a Rhombus](https://codeforces.com/contest/1180/problem/A). [Solution](/Competitive Programming/Codeforces/1180A.cpp).
+* Solved [1180B - Nick and Array](https://codeforces.com/contest/1180/problem/B). [Solution](/Competitive Programming/Codeforces/1180B.cpp).
+* Solved [1180A - Valerity and Deque](https://codeforces.com/contest/1180/problem/C). [Solution](/Competitive Programming/Codeforces/1180C.cpp).
+* Solved [1183A - Nearest Interesting Number](https://codeforces.com/contest/1183/problem/A). [Solution](/Competitive Programming/Codeforces/1183A.cpp).
+* Solved [1183B - Equalize Prices](https://codeforces.com/contest/1183/problem/B). [Solution](/Competitive Programming/Codeforces/1183B.cpp).
+* Solved [1183C - Computer Game](https://codeforces.com/contest/1183/problem/C). [Solution](/Competitive Programming/Codeforces/1183C.cpp).
+* Solved [1183D - Candy Box (easy version)](https://codeforces.com/contest/1183/problem/D). [Solution](/Competitive Programming/Codeforces/1183D.cpp).

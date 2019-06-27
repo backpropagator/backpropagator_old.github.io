@@ -63,6 +63,15 @@ using namespace std;
 
 template<typename T> T power(T x, T y, ll m = MOD){T ans = 1; x %= m; while(y > 0){ if(y & 1LL) ans = (ans * x)%m; y >>= 1LL; x = (x*x)%m; } return ans%m; }
 
+ll sum(ll n){
+    ll s = 0;
+    while(n > 0){
+        s += (n%10);
+        n /= 10;
+    }
+    return s;
+}
+
 int main(){
 
     /*#ifndef ONLINE_JUDGE
@@ -73,6 +82,9 @@ int main(){
 
     high_functioning_sociopath;    
     ll n;
+    cin>>n;
+    while(sum(n)%4 != 0) n++;
+    cout<<n<<"\n";
 
     
 

@@ -62,6 +62,49 @@ using namespace std;
 /* Templates */
 
 template<typename T> T power(T x, T y, ll m = MOD){T ans = 1; x %= m; while(y > 0){ if(y & 1LL) ans = (ans * x)%m; y >>= 1LL; x = (x*x)%m; } return ans%m; }
+ll n, m;
+vvll adj(1005);
+bool vis[1005];
+ll hi[1005];
+ll lo[1005];
+vpll ans;
+map<pair<ll,ll>,bool> pre;
+
+void dfs(ll c){
+    vis[c] = true;
+    lo[c] = c;
+    hi[c] = c;
+
+    /*if(prev != -1){
+
+    }*/
+
+    for (int i = 0; i < adj[c].size(); ++i)
+    {
+        if(!vis[adj[c][i]]){
+            dfs(adj[c][i]);
+            if(lo[adj[c][i]] > hi[adj[c][i]]){
+                ans.pb(make_pair(c,adj[c][i]));
+                ans.pb(make_pair(adj[c][i],c));
+                pre[make_pair(c,adj[c][i])] = true;
+                pre[make_pair(adj[c][i],c)] = true;
+            }else{
+                ans.pb(make_pair(c,adj[c][i]));
+                pre[make_pair(c,adj[c][i])] = true;
+                pre[make_pair(adj[c][i],c)] = true;
+            }
+            lo[c] = min(lo[c],hi[adj[c][i]]);
+        }else{
+            lo[c] = min(lo[c],hi[adj[c][i]]);
+            if(!pre[make_pair(c,adj[c][i])]){
+                ans.pb(make_pair(c,adj[c][i]));
+                pre[make_pair(c,adj[c][i])] = true;
+                pre[make_pair(adj[c][i],c)] = true;
+            }
+        }
+    }
+}
+
 
 int main(){
 
@@ -72,8 +115,36 @@ int main(){
     #endif*/
 
     high_functioning_sociopath;    
-    ll n;
+    //ll n;
+    ll k = 1;
+    while(cin>>n>>m && n+m){
+        for (int i = 0; i < 1005; ++i) adj[i].clear();
+        fill(vis,false);
+        fill(hi,0);
+        fill(lo,0);
+        ans.clear();
 
+        ll x, y;
+        for (int i = 0; i < m; ++i)
+        {
+            cin>>x>>y;
+            adj[x].pb(y);
+            adj[y].pb(x);
+        }
+
+        for (int i = 1; i <= n; ++i)
+        {
+            if(!vis[i]){
+                dfs(i);
+            }
+        }
+        cout<<k++<<"\n\n";
+        for (int i = 0; i < ans.size(); ++i)
+        {
+            cout<<ans[i].first<<" "<<ans[i].second<<"\n";
+        }
+        cout<<"#\n";
+    }
     
 
     return 0;
