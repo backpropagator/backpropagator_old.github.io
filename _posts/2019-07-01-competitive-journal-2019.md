@@ -247,3 +247,6 @@ use_math: true
 * Solved [1183B - Equalize Prices](https://codeforces.com/contest/1183/problem/B). [Solution](/Competitive Programming/Codeforces/1183B.cpp).
 * Solved [1183C - Computer Game](https://codeforces.com/contest/1183/problem/C). [Solution](/Competitive Programming/Codeforces/1183C.cpp).
 * Solved [1183D - Candy Box (easy version)](https://codeforces.com/contest/1183/problem/D). [Solution](/Competitive Programming/Codeforces/1183D.cpp).
+
+#### 28 June
+* Solved [1183E - Subsequences (easy version)](https://codeforces.com/contest/1183/problem/E). [Solution](/Competitive Programming/Codeforces/1183E.cpp).
