@@ -250,3 +250,8 @@ use_math: true
 
 #### 28 June
 * Solved [1183E - Subsequences (easy version)](https://codeforces.com/contest/1183/problem/E). [Solution](/Competitive Programming/Codeforces/1183E.cpp).
+* Solved [1167C - News Distribution](https://codeforces.com/problemset/problem/1167/C). [Solution](/Competitive Programming/Codeforces/1167C.cpp).
+
+#### 29 June
+* Solved [Xsquare And Coin Collection](https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/practice-problems/algorithm/xsquare-and-coin-collection-2/). [Solution](/Competitive Programming/Hackerearth/Xsquare And Coin Collection.cpp).
+* Solved [MI vs CSK and Pearls](https://www.hackerearth.com/practice/data-structures/arrays/1-d/practice-problems/algorithm/the-philosophers-pearl/). [Solution](/Competitive Programming/Hackerearth/MI vs CSK and Pearls.cpp).

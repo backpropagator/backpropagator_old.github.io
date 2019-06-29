@@ -27,8 +27,13 @@ int main(){
 			}else{
 				dp[i] = 0;
 			}	
+			//ans = max(ans,dp[i]);
+		}
+		for (ll i = 0; i < n; i++)
+		{
 			ans = max(ans,dp[i]);
 		}
+		
 		cout<<ans<<"\n";
 	}
 }
