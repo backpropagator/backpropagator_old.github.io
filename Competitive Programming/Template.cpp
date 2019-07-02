@@ -22,13 +22,15 @@ using namespace std;
     typedef set <int>       si;
 /* Macros */
     /* Loops */
-    #define fl(i, a, b)     for(int i(a); i <= (b); i ++)
+    #define fl(i, a, b)     for(ll i = (a); i < (b); i ++)
+    #define fll(i,n)        fl(i,0,n)
     #define rep(i, n)       fl(i, 1, (n))
     #define loop(i, n)      fl(i, 0, (n) - 1)
     #define rfl(i, a, b)    for(int i(a); i >= (b); i --)
     #define rrep(i, n)      rfl(i, (n), 1)
     /* Algorithmic functions */
     #define srt(v)          sort((v).begin(), (v).end())
+    #define rem_duplicate(v) (v).erase(unique((v).begin(), (v).end()), (v).end()) 
     /* STL container methods */
     #define pb              push_back
     #define mp              make_pair
@@ -62,6 +64,25 @@ using namespace std;
 /* Templates */
 
 template<typename T> T power(T x, T y, ll m = MOD){T ans = 1; x %= m; while(y > 0){ if(y & 1LL) ans = (ans * x)%m; y >>= 1LL; x = (x*x)%m; } return ans%m; }
+
+void Sieve(int n) 
+{ 
+    bool prime[n+1]; 
+    memset(prime, true, sizeof(prime)); 
+  
+    for (int p=2; p*p<=n; p++) 
+    { 
+        if (prime[p] == true) 
+        { 
+            for (int i=p*p; i<=n; i += p) 
+                prime[i] = false; 
+        } 
+    } 
+  
+    for (int p=2; p<=n; p++) 
+       if (prime[p]) 
+          cout << p << " "; 
+} 
 
 int main(){
 

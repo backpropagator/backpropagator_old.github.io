@@ -22,13 +22,14 @@ using namespace std;
     typedef set <int>       si;
 /* Macros */
     /* Loops */
-    #define fl(i, a, b)     for(int i(a); i <= (b); i ++)
+    #define fl(i, a, b)     for(long long i = (a); i < (b); i ++)
     #define rep(i, n)       fl(i, 1, (n))
     #define loop(i, n)      fl(i, 0, (n) - 1)
-    #define rfl(i, a, b)    for(int i(a); i >= (b); i --)
+    #define rfl(i, a, b)    for(long long i(a); i >= (b); i --)
     #define rrep(i, n)      rfl(i, (n), 1)
     /* Algorithmic functions */
     #define srt(v)          sort((v).begin(), (v).end())
+    #define rem_duplicate(v) (v).erase(unique((v).begin(), (v).end()), (v).end()) 
     /* STL container methods */
     #define pb              push_back
     #define mp              make_pair
@@ -71,35 +72,56 @@ int main(){
     freopen("error.txt","w",stderr);
     #endif*/
 
-    high_functioning_sociopath;    
-    ll n;
-    cin>>n;
-    ll a[n];
-    loop(i,n) cin>>a[i];
-    bool prime[n+1]; 
-    memset(prime, true, sizeof(prime)); 
-  
-    for (int p=2; p*p<=n; p++) 
-    { 
-        if (prime[p] == true) 
-        { 
-            //cout<<p<<" ";
-            for (int i=p*p; i<=n; i += p) 
-                prime[i] = false; 
-        } 
-    } 
-    ll lst = 0;
-    for (int p=2; p<=n; p++) 
-       if (prime[p]){
-          lst = p;
-          //cout<<lst<<" ";
-       }
-    ll ans = 0;
+    //high_functioning_sociopath;    
+    //cout<<"hi"<<"\n";
+    ll q, n;
+    cin>>q;
+    //cout<<q<<"\n";
+    while(q--){
+        //cout<<q<<"\n";
+        cin>>n;
+        vector<ll> v;
+        for (ll i = 0; i < n; i++)
+        {
+            ll x;
+            cin>>x;
+            //cout<<x<<" ";
+            v.push_back(x);
+            //cout<<v[i]<<" ";
+        }
+        //cout<<"\n";
+        //rep(i,n) cout<<v[i]<<" ";
+        sort(all(v),greater<int>());
+        //cout<<"hi"<<"\n";
+        //rep(i,n) cout<<v[i]<<" ";
+        v.erase(unique(v.begin(),v.end()),v.end());
+        //rem_duplicate(v);
+        //ll mx = 0;
+        n = v.size();
+        //cout<<n<<"\n";
+        //rep(i,n) cout<<v[i]<<" ";
+        ll ans = 0;
+        fl(i,0,n){
+            //cout<<ans<<"\n";
+            ans = max(ans,v[i]);
+            fl(j,i+1,n){
+                if(v[i]%v[j]){
+                    ans = max(ans,v[i]+v[j]);
+                    if(ans > v[i]+v[j]+v[j-1]) break;
+                    fl(k,j+1,n){
+                        if(ans > v[i]+v[j]+v[k]) break;
+                        if(v[i]%v[k] && v[j]%v[k]){
+                            ans = max(ans,v[i]+v[j]+v[k]);
+                        }
+                    }
+                }
+            }
+        }
+        cout<<ans<<"\n";
 
-    for (ll i = 0; i < lst; i++)
-    {
-        ans += a[i];
     }
-    cout<<ans<<"\n";
+
+    
+
     return 0;
 }

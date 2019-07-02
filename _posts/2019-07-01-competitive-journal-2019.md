@@ -255,3 +255,6 @@ use_math: true
 #### 29 June
 * Solved [Xsquare And Coin Collection](https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/practice-problems/algorithm/xsquare-and-coin-collection-2/). [Solution](/Competitive Programming/Hackerearth/Xsquare And Coin Collection.cpp).
 * Solved [MI vs CSK and Pearls](https://www.hackerearth.com/practice/data-structures/arrays/1-d/practice-problems/algorithm/the-philosophers-pearl/). [Solution](/Competitive Programming/Hackerearth/MI vs CSK and Pearls.cpp).
+
+#### 2 July
+* Solved [1183F - Topforces Strikes Back](https://codeforces.com/contest/1183/problem/F). [Solution](/Competitive Programming/Codeforces/1183F.cpp).
