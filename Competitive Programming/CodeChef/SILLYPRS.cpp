@@ -101,11 +101,37 @@ int main(){
         vll a(n), b(n);
         fll(i,n) cin>>a[i];
         fll(i,n) cin>>b[i];
-        srt(a);
+        rsrt(a);
         srt(b);
+        stack<ll> even, odd;
+        fll(i,n){
+            if(b[i]%2 == 0) even.push(b[i]);
+            else odd.push(b[i]);
+        }
         ll ans = 0;
         fll(i,n){
-            ans += (a[i]+b[i])/2;
+            ll x = a[i];
+            if(x%2 == 0){
+                if(!even.empty()){
+                    ll tmp = even.top();
+                    even.pop();
+                    ans += (x+tmp)/2;
+                }else{
+                    ll tmp = odd.top();
+                    odd.pop();
+                    ans += (x+tmp)/2;
+                }
+            }else{
+                if(!odd.empty()){
+                    ll tmp = odd.top();
+                    odd.pop();
+                    ans += (x+tmp)/2;
+                }else{
+                    ll tmp = even.top();
+                    even.pop();
+                    ans += (x+tmp)/2;
+                }
+            }
         }
         cout<<ans<<"\n";
     }

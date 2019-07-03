@@ -30,7 +30,6 @@ using namespace std;
     #define rrep(i, n)      rfl(i, (n), 1)
     /* Algorithmic functions */
     #define srt(v)          sort((v).begin(), (v).end())
-    #define rsrt(v)         sort((v).begin(), (v).end(),greater<int>())
     #define rem_duplicate(v) (v).erase(unique((v).begin(), (v).end()), (v).end()) 
     /* STL container methods */
     #define pb              push_back
@@ -94,21 +93,28 @@ int main(){
     #endif*/
 
     high_functioning_sociopath;    
-    ll q, n;
+    ll q, x, y, k;
     cin>>q;
     while(q--){
-        cin>>n;
-        vll a(n), b(n);
-        fll(i,n) cin>>a[i];
-        fll(i,n) cin>>b[i];
-        srt(a);
-        srt(b);
-        ll ans = 0;
-        fll(i,n){
-            ans += (a[i]+b[i])/2;
+        cin>>x>>y>>k;
+        ll t = x+y;
+        if((x+y)%k == 0){
+            t /= k;
+            if(t%2){
+                cout<<"Paja\n";
+            }else{
+                cout<<"Chef\n";
+            }
+        }else{
+            t /= k;
+            if(t%2){
+                cout<<"Paja\n";
+            }else{
+                cout<<"Chef\n";
+            }
         }
-        cout<<ans<<"\n";
     }
+
 
     
 

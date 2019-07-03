@@ -258,3 +258,12 @@ use_math: true
 
 #### 2 July
 * Solved [1183F - Topforces Strikes Back](https://codeforces.com/contest/1183/problem/F). [Solution](/Competitive Programming/Codeforces/1183F.cpp).
+
+#### 2 July
+* Solved [1183F - Topforces Strikes Back](https://codeforces.com/contest/1183/problem/F). [Solution](/Competitive Programming/Codeforces/1183F.cpp).
+
+#### 3 July
+* Solved [1181A - Chunga-Changa](https://codeforces.com/contest/1181/problem/A). [Solution](/Competitive Programming/Codeforces/1181A.cpp).
+* Solved [1181B - Split a Number](https://codeforces.com/contest/1181/problem/B). [Solution](/Competitive Programming/Codeforces/1181B.cpp).
+* Solved [Ping Paja Pong](https://www.codechef.com/LTIME73B/problems/PAJAPONG). [Solution](/Competitive Programming/CodeChef/PAJAPONG.cpp).
+* Solved [Ping Paja Pong](https://www.codechef.com/LTIME73B/problems/SILLYPRS). [Solution](/Competitive Programming/CodeChef/SILLYPRS.cpp).

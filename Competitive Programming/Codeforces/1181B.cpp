@@ -5,7 +5,7 @@ using namespace std;
 /* Template file for Online Algorithmic Competitions */
 /* Typedefs */
     /* Basic types */
-    typedef long long           ll;
+    typedef unsigned long long           ll;
     typedef long double         ld;
     typedef unsigned long long ull;
     /* STL containers */
@@ -30,7 +30,6 @@ using namespace std;
     #define rrep(i, n)      rfl(i, (n), 1)
     /* Algorithmic functions */
     #define srt(v)          sort((v).begin(), (v).end())
-    #define rsrt(v)         sort((v).begin(), (v).end(),greater<int>())
     #define rem_duplicate(v) (v).erase(unique((v).begin(), (v).end()), (v).end()) 
     /* STL container methods */
     #define pb              push_back
@@ -85,32 +84,139 @@ void Sieve(int n)
           cout << p << " "; 
 } 
 
-int main(){
-
-    /*#ifndef ONLINE_JUDGE
-    freopen("input.txt","r",stdin);
-    freopen("output.txt","w",stdout);
-    freopen("error.txt","w",stderr);
-    #endif*/
-
-    high_functioning_sociopath;    
-    ll q, n;
-    cin>>q;
-    while(q--){
-        cin>>n;
-        vll a(n), b(n);
-        fll(i,n) cin>>a[i];
-        fll(i,n) cin>>b[i];
-        srt(a);
-        srt(b);
-        ll ans = 0;
-        fll(i,n){
-            ans += (a[i]+b[i])/2;
+int32_t main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    string s,a,b;
+    vector <int> dp[2];
+    int n;
+    cin >> n;
+    cin >> s;
+    int x=(n+1)/2;
+    while(s[x]=='0')
+    {
+        x++;
+        if(x==n)
+        {
+            x=-1;
+            break;
         }
-        cout<<ans<<"\n";
     }
-
-    
-
-    return 0;
+    int y=n/2;
+    while(s[y]=='0')
+    {
+        y--;
+        if(y==0)
+        {
+            y=-1;
+            break;
+        }
+    }
+    if(x!=-1)
+    {
+        a=s.substr(0,x);
+        b=s.substr(x,n-1);
+        int z=0;
+        for(int i=a.size()-1,j=b.size()-1;i>-1||j>-1;i--,j--)
+        {
+            if(i>-1&&j>-1)
+            {
+                dp[0].push_back((a[i]-'0'+b[j]-'0'+z)%10);
+                z=(a[i]-'0'+b[j]-'0'+z)/10;
+            }
+            else if(i>-1)
+            {
+                dp[0].push_back((a[i]-'0'+z)%10);
+                z=(a[i]-'0'+z)/10;
+            }
+            else
+            {
+                dp[0].push_back((b[j]-'0'+z)%10);
+                z=(b[j]-'0'+z)/10;
+            }
+        }
+        if(z>0)
+            dp[0].push_back(z);
+    }
+    if(y!=-1)
+    {
+        a=s.substr(0,y);
+        b=s.substr(y,n-1);
+        int z=0;
+        for(int i=a.size()-1,j=b.size()-1;i>-1||j>-1;i--,j--)
+        {
+            if(i>-1&&j>-1)
+            {
+                dp[1].push_back((a[i]-'0'+b[j]-'0'+z)%10);
+                z=(a[i]-'0'+b[j]-'0'+z)/10;
+            }
+            else if(i>-1)
+            {
+                dp[1].push_back((a[i]-'0'+z)%10);
+                z=(a[i]-'0'+z)/10;
+            }
+            else
+            {
+                dp[1].push_back((b[j]-'0'+z)%10);
+                z=(b[j]-'0'+z)/10;
+            }
+        }
+        if(z>0)
+            dp[1].push_back(z);
+    }
+    reverse(dp[0].begin(),dp[0].end());
+    reverse(dp[1].begin(),dp[1].end());
+    if(x==-1)
+    {
+        for(int i=0;i<dp[1].size();i++)
+            cout << dp[1][i];
+        return 0;
+    }
+    if(y==-1)
+    {
+        for(int i=0;i<dp[0].size();i++)
+            cout << dp[0][i];
+        return 0;
+    }
+    if(dp[0].size()!=dp[1].size())
+    {
+        if(dp[0].size()<dp[1].size())
+        {
+            for(int i=0;i<dp[0].size();i++)
+                cout << dp[0][i];
+        }
+        else
+        {
+            for(int i=0;i<dp[1].size();i++)
+                cout << dp[1][i];
+        }
+    }
+    else
+    {
+        int i=0;
+        while(dp[0][i]==dp[1][i])
+        {
+            i++;
+            if(i==dp[0].size())
+                break;
+        }
+        if(i==dp[0].size())
+        {
+            for(int i=0;i<dp[0].size();i++)
+                cout << dp[0][i];
+        }
+        else if(dp[0][i]<dp[1][i])
+        {
+            for(int i=0;i<dp[0].size();i++)
+                cout << dp[0][i];
+        }
+        else
+        {
+            for(int i=0;i<dp[0].size();i++)
+                cout << dp[1][i];
+        }
+    }
+	return 0;
 }
