@@ -79,12 +79,10 @@ void Sieve(int n)
                 prime[i] = false; 
         } 
     } 
-    int c = 0;
+  
     for (int p=2; p<=n; p++) 
-       if (prime[p]) {
-           c++;
-          cout<<c<<" "<< p << " ";
-       }
+       if (prime[p]) 
+          cout << p << " "; 
 } 
 
 int main(){
@@ -96,11 +94,51 @@ int main(){
     #endif*/
 
     high_functioning_sociopath;    
-    ll q, n;
+    ll q, n, x;
     cin>>q;
-    Sieve(n);
-
-    
+    while(q--){
+        cin>>n;
+        map<ll,bool> prs;
+        set<ll> st;
+        bool fst = true;
+        set<ll> e, o;
+        //ll e=0, o=0;
+        while(n--){
+            cin>>x;
+            //st.insert(x);
+            //set<ll> e, o;
+            ll y;
+            if(fst){
+                st.insert(x);
+                y = __builtin_popcount(x);
+                fst = false;
+                if(y%2) o.insert(x);
+                else e.insert(x);
+            }else{
+                if(!prs[x]){
+                    set<ll>::iterator it = st.end();
+                    for(set<ll>::iterator itr = st.begin(); itr != it; itr++){
+                        ll tmp = *itr;
+                        ll cur = tmp^x;
+                        //cout<<tmp<<" ";
+                        if(tmp != x && !prs[cur]){
+                            st.insert(cur);
+                            prs[cur] = true;
+                            y = __builtin_popcount(cur);
+                            if(y%2) o.insert(cur);
+                            else e.insert(cur);
+                        }
+                    }
+                    st.insert(x);
+                    prs[x] = true;
+                    y = __builtin_popcount(x);
+                    if(y%2) o.insert(x);
+                    else e.insert(x);
+                }
+            }
+            cout<<e.size()<<" "<<o.size()<<"\n";
+        }
+    }
 
     return 0;
 }

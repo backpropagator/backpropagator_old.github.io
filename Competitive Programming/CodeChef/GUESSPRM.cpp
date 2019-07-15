@@ -66,26 +66,44 @@ using namespace std;
 
 template<typename T> T power(T x, T y, ll m = MOD){T ans = 1; x %= m; while(y > 0){ if(y & 1LL) ans = (ans * x)%m; y >>= 1LL; x = (x*x)%m; } return ans%m; }
 
-void Sieve(int n) 
-{ 
-    bool prime[n+1]; 
-    memset(prime, true, sizeof(prime)); 
+map<ll,bool> primeFactors(ull n)  
+{  
+    // Print the number of 2s that divide n  
+    //vector<ll> v;
+    map<ll,bool> v;
+    bool two = false;
+    while (n % 2 == 0)  
+    {  
+        two = true;
+        //cout << 2 << " ";  
+        n = n/2;  
+    }  
+    if(two) v[2] = true;;
   
-    for (int p=2; p*p<=n; p++) 
-    { 
-        if (prime[p] == true) 
-        { 
-            for (int i=p*p; i<=n; i += p) 
-                prime[i] = false; 
-        } 
-    } 
-    int c = 0;
-    for (int p=2; p<=n; p++) 
-       if (prime[p]) {
-           c++;
-          cout<<c<<" "<< p << " ";
-       }
-} 
+    // n must be odd at this point. So we can skip  
+    // one element (Note i = i +2)  
+    for (ll i = 3; i <= sqrt(n); i = i + 2)  
+    {  
+        // While i divides n, print i and divide n  
+        ll cnt = 0;
+        while (n % i == 0)  
+        {  
+
+            cnt++;
+      //      cout << i << " ";  
+            n = n/i;  
+        }  
+        if(cnt != 0) v[i] = true;
+    }  
+    //cout<<"\n";
+    // This condition is to handle the case when n  
+    // is a prime number greater than 2  
+    if (n > 2)  
+        v[n] = true;;
+        //cout << n << " ";  
+    
+    return v;
+}  
 
 int main(){
 
@@ -95,11 +113,65 @@ int main(){
     freopen("error.txt","w",stderr);
     #endif*/
 
-    high_functioning_sociopath;    
+    //high_functioning_sociopath;    
     ll q, n;
+    //cin>>q;
+    //segmentedSieve(1000000000);
     cin>>q;
-    Sieve(n);
+    ll a = 200000, b = 55458;
+    while(q--){
+        ull a1, a2;
+        ull p = a*a, q = b*b;
+        ll mod ;
+        cout<<1<<" "<<a<<"\n";
+        cin>>a1;
+        cout<<1<<" "<<b<<"\n";
+        cin>>a2;
+        p -= a1;
+        q -= a2;
+        mod = max(a1,a2);
+        //cout<<p<<" "<<q<<"\n";
+        //cout<<p<<"\n";
+        map<ll,bool> v1 = primeFactors(p);
+        //cout<<q<<"\n";
+        map<ll,bool> v2 = primeFactors(q);
+        vll v;
+        for (map<ll,bool>::iterator itr = v1.begin(); itr != v1.end(); itr++)
+        {
+            ll tmp = itr->first;
+            //cout<<tmp<<" ";
+            if(v2[tmp] && tmp>mod) v.pb(tmp);
+        }
 
+        cout<<2<<" "<<v[0]<<"\n";
+
+        ll x;
+        string r;
+        cin>>r;
+        if(r == "Yes") continue;
+        else return 0;
+        
+        // fll(i,v.size()){
+        //     if(v[i] <= mod) continue;
+
+        //     cout<<1<<" "<<v[i]<<"\n";
+        //     cin>>x;
+        //     if(x == -1) return 0;
+
+        //     if(x == 0){
+        //         cout<<2<<" "<<v[i]<<"\n";
+        //         cin>>r;
+        //         if(r == "Yes"){
+        //             break;
+        //         }else{
+        //             return 0;
+        //         }
+        //     }else{
+        //         mod = max(mod,x);
+        //     }
+        // }
+        
+    }
     
 
     return 0;

@@ -96,9 +96,45 @@ int main(){
     #endif*/
 
     high_functioning_sociopath;    
-    ll q, n;
+    ll q, n, z;
     cin>>q;
-    Sieve(n);
+    while(q--){
+        cin>>n>>z;
+        vll v(n);
+        map<ll,ll> frq;
+        fll(i,n) {
+            cin>>v[i];
+            frq[v[i]]++;
+        }
+        srt(v);
+        ll ans = n*v[0];
+        ll c = v[0];
+        if(v.size() == 1){
+            cout<<ans<<"\n";
+        }else{
+            // ll cnt=frq[v[0]];
+            // for (ll i = 1; i < n; i++)
+            // {
+            //     if(v[i] == c) cnt++;
+            // }
+            // if(frq[v[0]] == 1){
+            //     ans = min(n*c,v[n-1]);
+            //     cout<<ans<<"\n";
+            // }else{
+            //     ll tmp = n - cnt + 1;
+            //     ans = min(tmp*c,v[n-1]);
+            //     cout<<ans<<"\n";
+            // }   
+            ll prev = 0;
+            for (ll i = 0; i < n; i++)
+            {
+                while(v[i+1] == v[i]) i++;
+                ll tmp = n-1-i+1;
+                ans = min(ans,tmp*v[i]);
+            }
+            cout<<ans<<"\n";
+        }
+    }
 
     
 

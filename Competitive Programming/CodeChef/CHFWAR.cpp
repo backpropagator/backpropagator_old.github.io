@@ -50,8 +50,8 @@ using namespace std;
     #define clr(a)          fill(a, 0)
     #define endl            '\n'
     /* Mathematical */
-    #define IINF            0x3f3f3f3f
-    #define LLINF           1000111000111000111LL
+    #define iinf            0x3f3f3f3f
+    #define inf           1000111000111000111LL
     #define PI              3.14159265358979323
     /* Debugging purpose */
     #define trace1(x)                cerr << #x << ": " << x << endl
@@ -89,18 +89,105 @@ void Sieve(int n)
 
 int main(){
 
-    /*#ifndef ONLINE_JUDGE
-    freopen("input.txt","r",stdin);
-    freopen("output.txt","w",stdout);
-    freopen("error.txt","w",stderr);
-    #endif*/
-
     high_functioning_sociopath;    
-    ll q, n;
+    ll q, n, f;
     cin>>q;
-    Sieve(n);
+    while(q--){
+        cin>>n;
+        n--;
+        vll v(n);
+        ll mn = inf;
+        fll(i,n){
+            cin>>v[i];
+            mn = min(mn,v[i]);
+        } 
+        cin>>f;
+        if(mn > f){
+            cout<<"impossible\n";
+            continue;
+        }
+        ll cnt=0;
+        vll pos;
+        fll(i,n){
+            if(v[i] <= f){
+                cnt++;
+                pos.pb(i);
+            }
+        }
+        
+        ll d = inf;
+        ll p;
 
-    
+        for (ll k = 0; k < pos.size(); k++)
+        {
+            ll dam = 0;
+            ll id = pos[k];
+            vll aux;
+
+            if(id%2) dam += v[id-1];
+
+            //fl(i,id,n) aux.pb(v[i]);
+
+            // for (ll i = 0; i < id; i+=2)
+            //     aux.pb(v[i]);
+
+            //ll x = aux.size();
+            //cout<<id<<"\n";
+            //cout<<v.size()<<"\n";
+            ll m = v.size()-id + ceil((double)id/2.00);
+            ll cur = 0;
+            ll l = m-1;
+            ll ad = v.size()-id;
+            //ll ad = m-id+1;
+            ll bd = ceil((double)id/2.00);
+            //cout<<ad<<" "<<bd<<"\n";
+            //cout<<m<<"\n";
+            while(m != 1){
+                
+                // if(ad%2 && bd%2){
+
+                // }else{
+
+                // }
+                // cur++;
+                //ll ad;
+                if(m%2 == 0){
+                    l = l-pow(2,cur);
+                    m /= 2;
+                }
+                else{
+                    m = m/2+1;
+                    //dam += aux[l];
+                    if(l < ad){
+                        dam += v[l+id];
+                    }else{
+                        dam += v[2*(l-ad)];
+                        //cout<<v[2*(l-bd)]<<"\n";
+                        //cout<<l<<" "<<bd<<"\n";
+                        //cout<<v[2*(l-bd)]<<" ";
+                    }
+                    //cout<<dam<<" ";
+                }
+                //ad = ceil((double)ad/2.00);
+                //bd = m - ad;
+                cur++;
+                //cout<<dam<<" ";
+
+                // cur++;
+                // if(m%2 == 1){
+                //     dam += aux[aux.size()-(ll)pow(2,cur)];
+                // }
+                // m = ceil((double)m/2.00);
+                
+            }
+            if(dam+f < d){
+                d = dam+f;
+                p = id+1;
+            }
+        }
+        cout<<"possible\n";
+        cout<<p<<" "<<d<<"\n";
+    }
 
     return 0;
 }

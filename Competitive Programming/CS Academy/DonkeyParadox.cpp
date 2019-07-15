@@ -96,10 +96,26 @@ int main(){
     #endif*/
 
     high_functioning_sociopath;    
-    ll q, n;
-    cin>>q;
-    Sieve(n);
-
+    ll q, n, m;
+    cin>>n>>m;
+    ll r1, c1, r2, c2;
+    cin>>r1>>c1;
+    cin>>r2>>c2;
+    ll ans = 0;
+    r1--;
+    c1--;
+    r2--;
+    c2--;
+    
+    fll(i,n){
+        fll(j,m){
+            ll d1 = abs(i-r1)+abs(j-c1);
+            ll d2 = abs(i-r2)+abs(j-c2);
+            if(d1 == d2) ans++;
+        }
+    }
+    cout<<ans<<"\n";
+    
     
 
     return 0;

@@ -79,13 +79,46 @@ void Sieve(int n)
                 prime[i] = false; 
         } 
     } 
-    int c = 0;
+  
     for (int p=2; p<=n; p++) 
-       if (prime[p]) {
-           c++;
-          cout<<c<<" "<< p << " ";
-       }
+       if (prime[p]) 
+          cout << p << " "; 
 } 
+
+ll n, m;
+vll v(131075);
+vll t(4*131075);
+
+void build(ll node, ll tl, ll tr){
+    if(tl == tr){
+        t[node] = v[tl];
+    }else{
+        ll tm = (tl+tr)/2;
+        build(node*2,tl,tm);
+        build(node*2+1,tm+1,tr);
+        ll ht = n - (ll)log2(node);
+        if(ht%2) t[node] = t[node*2] | t[node*2+1];
+        else t[node] = t[node*2] ^ t[node*2+1];
+    }
+}
+
+void update(ll node, ll tl, ll tr, ll pos, ll val){
+    if(tl == tr){
+        t[node] = val;
+    }else{
+        ll tm = (tl+tr)/2;
+        if(pos <= tm){
+            update(node*2,tl,tm,pos,val);
+        }else{
+            update(node*2+1,tm+1,tr,pos,val);
+        }
+        ll ht = n - (ll)log2(node);
+        if(ht%2) t[node] = t[node*2] | t[node*2+1];
+        else t[node] = t[node*2] ^ t[node*2+1];
+    }
+}
+
+
 
 int main(){
 
@@ -96,9 +129,20 @@ int main(){
     #endif*/
 
     high_functioning_sociopath;    
-    ll q, n;
-    cin>>q;
-    Sieve(n);
+    cin>>n>>m;
+    fl(i,0,(ll)(pow(2,n))) cin>>v[i];
+    //fl(i,0,(ll)(pow(2,n))) cout<<v[i]<<" ";
+    //cout<<"\n";
+    //cout<<(ll)(pow(2,n))-1<<"\n";
+    build(1,0,(ll)(pow(2,n))-1);
+    fll(i,m){
+        ll x, y;
+        cin>>x>>y;
+        //fll(i,(ll)(pow(2,n+1))+1) cout<<t[i]<<" ";
+        //cout<<"\n";
+        update(1,0,(ll)(pow(2,n))-1,x-1,y);
+        cout<<t[1]<<"\n";
+    }
 
     
 

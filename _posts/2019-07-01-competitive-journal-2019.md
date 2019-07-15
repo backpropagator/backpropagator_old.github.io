@@ -266,4 +266,10 @@ use_math: true
 * Solved [1181A - Chunga-Changa](https://codeforces.com/contest/1181/problem/A). [Solution](/Competitive Programming/Codeforces/1181A.cpp).
 * Solved [1181B - Split a Number](https://codeforces.com/contest/1181/problem/B). [Solution](/Competitive Programming/Codeforces/1181B.cpp).
 * Solved [Ping Paja Pong](https://www.codechef.com/LTIME73B/problems/PAJAPONG). [Solution](/Competitive Programming/CodeChef/PAJAPONG.cpp).
-* Solved [Ping Paja Pong](https://www.codechef.com/LTIME73B/problems/SILLYPRS). [Solution](/Competitive Programming/CodeChef/SILLYPRS.cpp).
+* Solved [Magda and Silly Pairs](https://www.codechef.com/LTIME73B/problems/SILLYPRS). [Solution](/Competitive Programming/CodeChef/SILLYPRS.cpp).
+
+#### 4 July
+* Solved [339D - Xenia and Bit Opertions](https://codeforces.com/contest/339/problem/D). [Solution](/Competitive Programming/Codeforces/339D.cpp).
+
+#### 15 July
+* Participated in [July Long Challenge - Div2](https://www.codechef.com/rankings/JULY19B?filterBy=Institution%3DIndian%20Institute%20of%20Technology%20Patna&order=asc&sortBy=rank). Solved 6 problems completely and 1 problem partially. Score: 610. Rank: 60. 1738 -> 1907.

@@ -79,12 +79,10 @@ void Sieve(int n)
                 prime[i] = false; 
         } 
     } 
-    int c = 0;
+  
     for (int p=2; p<=n; p++) 
-       if (prime[p]) {
-           c++;
-          cout<<c<<" "<< p << " ";
-       }
+       if (prime[p]) 
+          cout << p << " "; 
 } 
 
 int main(){
@@ -94,11 +92,39 @@ int main(){
     freopen("output.txt","w",stdout);
     freopen("error.txt","w",stderr);
     #endif*/
-
+    cout.precision(20);
     high_functioning_sociopath;    
     ll q, n;
     cin>>q;
-    Sieve(n);
+    while(q--){
+        cin>>n;
+        vector<double> a(n);
+        bool flg = false;
+        double sm = 0.00;
+        map<double,ll> m;
+        fll(i,n){
+            cin>>a[i];
+            sm += (double)(a[i]);
+        }
+        //srt(a);
+        double avg = sm/(double)n;
+        ll ans = INT_MAX;
+        fll(i,n){
+            double p = sm - (double)a[i];
+            double tmp = p/(double)(n-1);
+            if(tmp == avg){
+                flg = true;
+                ans = i;
+                break;
+            }
+        }
+        if(flg){
+            cout<<ans+1<<"\n";
+        }else{
+            cout<<"Impossible\n";
+        }
+
+    }
 
     
 
