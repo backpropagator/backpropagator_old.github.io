@@ -273,3 +273,10 @@ use_math: true
 
 #### 15 July
 * Participated in [July Long Challenge - Div2](https://www.codechef.com/rankings/JULY19B?filterBy=Institution%3DIndian%20Institute%20of%20Technology%20Patna&order=asc&sortBy=rank). Solved 6 problems completely and 1 problem partially. Score: 610. Rank: 60. 1738 -> 1907.
+
+#### 16 July
+* Solved [LCS](https://atcoder.jp/contests/dp/tasks/dp_f). [Solution](/Competitive Programming/AtCoder/LCS.cpp).
+* Solved [LongestPath](https://atcoder.jp/contests/dp/tasks/dp_g). [Solution](/Competitive Programming/AtCoder/LongestPath.cpp).
+
+#### 17 July
+* Solved [1185A - Ropewalkers](https://codeforces.com/problemset/problem/1185/A). [Solution](/Competitive Programming/Codeforces/1185A.cpp).
