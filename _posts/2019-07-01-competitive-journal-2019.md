@@ -276,5 +276,9 @@ use_math: true
 * Solved [LongestPath](https://atcoder.jp/contests/dp/tasks/dp_g). [Solution](/Competitive Programming/AtCoder/LongestPath.cpp).
 
 #### 17 July
+<<<<<<< HEAD
 * Solved [1185A - Ropewalkers](https://codeforces.com/problemset/problem/1185/A). [Solution](/Competitive Programming/Codeforces/1185A.cpp).
 * Solved [Grid 1](https://atcoder.jp/contests/dp/tasks/dp_h). [Solution](/Competitive Programming/AtCoder/Grid1.cpp).
+=======
+* Solved [1185A - Ropewalkers](https://codeforces.com/problemset/problem/1185/A). [Solution](/Competitive Programming/Codeforces/1185A.cpp).
+>>>>>>> f203d627c21d39881489bcf06a1ce1278c12f856
