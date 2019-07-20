@@ -119,10 +119,16 @@ int main(){
         }
         ll ptr  = 0;
         bool pos = true;
+
+        // fll(j,v.size()){
+        //     cout<<v[j].fr<<" "<<v[j].sc<<"\n";
+        // }
+        // cout<<"q\n";
+
         while(i < q.length()){
             char c = q[i];
             if(c != v[ptr].first){
-                cout<<"NO\n";
+                //cout<<"NO\n";
                 pos = false;
                 break;
             }
@@ -131,16 +137,24 @@ int main(){
                 i++;
                 cnt++;
             }
+
+            //cout<<c<<" "<<cnt<<"\n";
+
             if(cnt < v[ptr].second){
                 pos = false;
-                cout<<"NO\n";
+                //cout<<"NO\n";
                 break;
             }
             ptr++;
         }
+
+        if(ptr < v.size()-1) pos = false;
+
+
         if(pos) cout<<"YES\n";
+        else cout<<"NO\n";
     }
-//
+///
     
 
     return 0;
