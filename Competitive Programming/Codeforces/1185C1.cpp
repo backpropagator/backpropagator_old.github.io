@@ -95,51 +95,32 @@ int main(){
     freopen("error.txt","w",stderr);
     #endif*/
 
-    string s,h;
-    int t;
-    cin >> t;
-    while(t--)
-    {
-        cin >> s >> h;
-        int n=s.length();
-        int m=h.length();
-        int i=0,j=0,d=0,p=0;
-        while(i<n&&j<m)
-        {
-            d=1;
-            p=1;
-            if(s[i]!=h[j])
-            {
-                cout << "NO" << endl;
-                goto y;
-            }
-            while(i<n-1&&s[i]==s[i+1])
-            {
-                d++;
-                i++;
-            }
-            while(j<m-1&&h[j]==h[j+1])
-            {
-                j++;
-                p++;
-            }
-            if(d>p)
-            {
-                cout << "NO" << endl;
-                goto y;
-            }
-            i++;
-            j++;
+    high_functioning_sociopath;    
+    ll n, m;
+    cin>>n>>m;
+    vll v(n);
+    fll(i,v.size()) cin>>v[i];
+    priority_queue<ll> q;
+    //q.push(v[0]);
+    ll sm = 0;
+    fl(i,0,v.size()){
+        //q.push(v[i]);
+        //sm += v[i];
+        ll t = sm;
+        priority_queue<ll> tmp = q;
+        ll cnt = 0;
+        while(t + v[i] > m){
+            t -= tmp.top();
+            tmp.pop();
+            cnt++;
         }
-        if(i==n&&j==m)
-        {
-            cout << "YES" << endl;
-        }
-        else
-        {
-            cout << "NO" << endl;
-        }
-        y:;
+        sm += v[i];
+        q.push(v[i]);
+        cout<<cnt<<" ";
     }
-	return 0;
+
+
+    
+
+    return 0;
 }
