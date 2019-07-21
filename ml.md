@@ -1,4 +1,5 @@
 ## Projects
+
 #### __[History Scrapper](https://github.com/aquarius31/History-Scrapper)__
 * A Chrome extension which provides user with their Browsing history and summary.
 * The aim is to deploy Deep Learning techniques to predict most likely site the user is going to visit.
