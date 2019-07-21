@@ -1,3 +1,5 @@
+Hi there! This is the place where I will be maintaining track of my projects and publications.
+
 ## Projects
 
 #### __[History Scrapper](https://github.com/aquarius31/History-Scrapper)__
