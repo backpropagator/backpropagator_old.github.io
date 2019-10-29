@@ -1,0 +1,60 @@
+<style type="text/css">
+	.navbar-menu{
+		position: relative;;
+		float: right;
+		width: 100px;
+		text-align: center;
+	}
+	.menu-name{
+		font-size: 16px;
+		color: #000;
+		cursor: pointer;
+	}
+	.navbar{
+		background-color: #f2f2f2;
+		position: absolute !important;
+		/*bottom: 0;*/
+		left: 0;
+		right: 0;
+		display: none;
+		float: unset;
+		padding-inline-start:0px;
+	}
+	.navbar li{
+		width: 100%;
+		text-align: center;
+	}
+</style>
+<nav class="nav">
+  <div class="container">
+    <h1 class="logo"><a href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}<span>{{ site.title2 }}</span></a></h1>
+    <div class="navbar-menu" id="menu">
+    	<div class="menu-name">Menu</div>
+    	<ul class="navbar" id="list-navbar">
+      <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+      <li><a href="{{ '/ml' | prepend: site.baseurl }}">ML</a></li>
+      <li><a href="{{ '/assets/resume.pdf' | prepend: site.baseurl }}">Resume</a></li>
+      <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}" target="_blank">RSS</a></li>
+    </div>
+    
+    </ul>
+  </div>
+</nav>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('#menu').click(function(){
+  			if($('#list-navbar').is(":visible")){
+  			$('#list-navbar').css({"display":"none"});	
+  			}
+  			else{
+  				$('#list-navbar').css({"display":"block"});
+  			}
+  			
+  		})
+
+  	})
+  	
+  </script>
