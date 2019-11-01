@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-You can see my complete resume [here](https://github.com/thebackpropogator/thebackpropogator.github.io/files/cv.pdf)
+You can see my complete resume [here](/files/cv.pdf)
 
 Education
 ======
