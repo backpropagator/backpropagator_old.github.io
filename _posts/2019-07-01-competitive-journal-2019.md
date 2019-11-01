@@ -1,10 +1,9 @@
 ---
-layout: post
-title: "Competitive programming journal 2019"
-description: "Journal tracking my competitive programming related activities in 2019"
-comments: true
-keywords: "competitive programming, journal"
-use_math: true
+title: 'Competitive programming journal 2019'
+date: 2019-07-01
+permalink: /posts/2019-07-01-competitive-journal-2019.md/
+tags:
+  - Competitive Programming
 ---
 
 #### 4 January
