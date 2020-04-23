@@ -8,13 +8,17 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am currently a third-year B.Tech undergraduate @ Indian Institute of Technology (IIT) Patna. My research interests are mainly in the areas of Deep Learning and Indoor Localisation (Wireless Ad-hoc netork). I am interested in designing efficient and effective neural models for Signal Processing.
+A Junior Year Student at IIT Patna, pursuing B.Tech in Electrical Engineering and an inspired Machine Learning Researcher jaunting through different Research topics. I want to understand things clearly. I believe there is a mathematical mystery behind the interpretation of what Deep Neural Networks learn and why they learn so. I mostly work with sensor data in doing so, I mostly face difficulty in applying a particular architecture on a test data which has a relatively different distribution than the training data (this problem is addressed called as Cold Start problem in literature).
+I like learning and implementing new deep learning architectures. Many times, new architectures just come to my mind, some of them work while many fail disastrously. However, I am still not capable to answer why a particular network architecture works on certain data, while it fails on others mathematically.
+I am actively looking for research-based projects.  I am working under Dr. Sudhir Kumar (IIT Patna) for 3 years now. I have also worked in collaboration with Prof. Sajal Das (Missouri University).
+In my first year, I developed a Hybrid Classifier for Sensor localization and this work got selected in ICDCN-2019 IISC Bangalore.
+I also have experience with Competitive Programming. One can find my performance on various Competitive Programming sites like Codeforces, Codechef, and UVa (member handle - aquarius31). However, I have focused my attention on Research (that doesn’t mean I don’t care about Algo & DS, after all, it lies at the heart of ML).
+In my sophomore year, I devoted time to hone my programming skills and learn few new tools/concepts including REST-APIs, Spring Framework, MongoDB - I learned these tools while completing Crio Summer of Doing - 2019, where I built the backend of "QEats App - a food ordering and delivery app ". 
 
-I mainly work on applications involving real time Indoor Localisation in wireless Ad-hoc sensor network.
+
 
 News
 ======
 
-* 23.10.2019 - Submitted a paper in [5th ACM/IEEE International Conference of Internet of Things Design and Implementation](https://conferences.computer.org/iotDI/2020/).
 * 18.09.2018 - Paper Accepted in [20th International Conference of Discrete Computing and Networking](https://events.csa.iisc.ac.in/icdcn2019/index.htm).
 
