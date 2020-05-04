@@ -20,5 +20,9 @@ In my sophomore year, I devoted time to hone my programming skills and learn few
 News
 ======
 
+* 04.05.2020 - The work in collaboration with [Prof. Sajal K. Das](https://sites.google.com/a/mst.edu/sdas/): Invited Paper accepted at The 29th International Conference on Computer Communications and Networks (ICCCN 2020), Honolulu, Hawaii, USA [h5 index: 23]
+
+* [May 2020] Made a RoadMap for Beginners to get started with Machine Learning. Thanks [Nischal](https://github.com/Nish-19) & [Joshika](https://github.com/joshika1087) for their Contribution in this.
+
 * 18.09.2018 - Paper Accepted in [20th International Conference of Discrete Computing and Networking](https://events.csa.iisc.ac.in/icdcn2019/index.htm).
 
