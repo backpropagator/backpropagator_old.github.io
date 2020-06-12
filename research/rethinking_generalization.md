@@ -1,12 +1,10 @@
 ---
-title: 'Understanding Deep Learning Requires Rethinking Generalization'
-date: 2020-06-12
-permalink: /posts/rps.md/
-tags:
-  - Machine Learning
-  - Research Papers
-  - Summaries
-  - Resources
+layout: archive
+title: "Research"
+permalink: /generalization/
+author_profile: true
+redirect_from:
+  - /research
 ---
 
 ###  [Understanding Deep Learning Requires Rethinking Generalization](https://bengio.abracadoudou.com/cv/publications/pdf/zhang_2017_iclr.pdf) **ICLR 2017**
