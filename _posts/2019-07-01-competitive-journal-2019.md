@@ -4,7 +4,7 @@ date: 2019-07-01
 permalink: /posts/2019-07-01-competitive-journal-2019.md/
 tags:
   - Competitive Programming
- comments: true
+comments: true
 ---
 
 #### 4 January
