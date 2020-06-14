@@ -4,6 +4,7 @@ date: 2018-12-31
 permalink: /posts/2018-12-31-competitive-journal-2018.md/
 tags:
   - Competitive Programming
+ comments: true
 ---
 
 #### May 2018
