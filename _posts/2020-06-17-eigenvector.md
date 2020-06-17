@@ -24,8 +24,8 @@ $$ \alpha = \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) 
 
 But here is where it gets interesting, we can look at this multiplication in 2 ways. One way is
 
-$$A\alpha = \begin{pmatrix} 1 & 0 \end{pmatrix} \begin{pmatrix} \alpha_1 \\\ \alpha_2 \end{pmatrix} + 
-\begin{pmatrix} 0 & 1 \end{pmatrix} \begin{pmatrix} \alpha_1 \\\ \alpha_2 \end{pmatrix}$$
+$$$A\alpha = \begin{pmatrix} 1 & 0 \end{pmatrix} \begin{pmatrix} \alpha_1 \\\ \alpha_2 \end{pmatrix} + 
+\begin{pmatrix} 0 & 1 \end{pmatrix} \begin{pmatrix} \alpha_1 \\\ \alpha_2 \end{pmatrix}$$$
 
 or,
 
