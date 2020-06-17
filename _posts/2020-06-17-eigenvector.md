@@ -25,9 +25,7 @@ $$ \alpha = \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) 
 But here is where it gets interesting, we can look at this multiplication in 2 ways. One way is
 
 $$
-A\alpha = \left( \begin{array}{cc} 1 & 0 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) + 
-\left( \begin{array}{cc} 0 & 1 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) \\
-= \left( \begin{array}{cc} (1*\alpha_1) + (0*\alpha_2) \\ (0*\alpha_1) + (1*\alpha_2) \\ \end{array} \right)
+A\alpha = \left( \begin{array}{cc} (1*\alpha_1) + (0*\alpha_2) \\ (0*\alpha_1) + (1*\alpha_2) \\ \end{array} \right)
 $$
 
 which is the traditional way to multiply 2 matrices. But there's another way to look at it, instead of multiplying rows of by columns, we can multiply columns by rows, here's what I mean -
@@ -38,7 +36,7 @@ $$
 
 from this way of multiplication, we can see that this multiplication is essentially addition of two seperate column vectors, where each column vector is obtained by taking the columns of $$A$$ and **scaling** them by elements of $$\alpha$$! In other words, if we want to find the product of a matrix with a vector, just take the columns of the matrix, scale them by corresponding amount in the vector and sum them up. So, we scale the first column by $$\alpha_1$$ and second column by $$\alpha_2$$ and add them up.
 
-Does this seem familiar? If you were thinking of Vectors, you are right! This is indeed the essence of a Matrix that **the columns of a Matrix represent the vectors which span the range of the Matrix**, these vectors are also called **Basis Vectors**. \\
+Does this seem familiar? If you were thinking of Vectors, you are right! This is indeed the essence of a Matrix that **the columns of a Matrix represent the vectors which span the range of the Matrix**, these vectors are also called **Basis Vectors**.
 
 Going back to our example, the columns of $$A$$ :
 $$
