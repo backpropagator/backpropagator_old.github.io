@@ -26,7 +26,7 @@ But here is where it gets interesting, we can look at this multiplication in 2 w
 
 $$
 A\alpha = \left( \begin{array}{cc} 1 & 0 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) + 
-\left( \begin{array}{cc} 0 & 1 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) \\
+\left( \begin{array}{cc} 0 & 1 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right)
 $$
 
 or,
