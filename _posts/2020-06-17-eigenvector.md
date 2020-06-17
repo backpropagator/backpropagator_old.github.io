@@ -14,9 +14,9 @@ The Eigenvectors & Eigenvalues pop up in many places of mathematical analysis an
 
 Well to understand this, we need to understand what a **"Matrix"** is? Generally, matrices are seen as a bunch of numbers inside a box used to perform collective operations. It's one way to look at it. But a higher level insight is to look at matrices as a **Transformation**!
 
-Let's take an example, let $$A =
+Let's take an example, say $$A =
 \begin{pmatrix}
-1 & 0\\ 
+1 & 0 \\ 
 0 & 1
 \end{pmatrix}$$.
 If we multiply any vector
@@ -24,8 +24,7 @@ $$ \alpha = \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) 
 
 But here is where it gets interesting, we can look at this multiplication in 2 ways. One way is
 
-$$
-A\alpha = \left( \begin{array}{cc} 1 & 0 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) + 
+$$A\alpha = \left( \begin{array}{cc} 1 & 0 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) + 
 \left( \begin{array}{cc} 0 & 1 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right)
 $$
 
