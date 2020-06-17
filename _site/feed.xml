@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://thebackpropogator.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://thebackpropogator.github.io/" rel="alternate" type="text/html" /><updated>2020-06-17T10:55:55-07:00</updated><id>https://thebackpropogator.github.io/feed.xml</id><title type="html">Piyush Tiwary</title><subtitle>Personal Blog</subtitle><author><name>Piyush Tiwary</name></author><entry><title type="html">Pondering upon Eigenvectors</title><link href="https://thebackpropogator.github.io/posts/eigenvector.md/" rel="alternate" type="text/html" title="Pondering upon Eigenvectors" /><published>2020-06-17T00:00:00-07:00</published><updated>2020-06-17T00:00:00-07:00</updated><id>https://thebackpropogator.github.io/posts/eigenvector</id><content type="html" xml:base="https://thebackpropogator.github.io/posts/eigenvector.md/">&lt;p&gt;The Eigenvectors &amp;amp; Eigenvalues pop up in many places of mathematical analysis and application. For example: Machine Learning, Control Theory, Signal Processing, Quantum Physics, Markov Process just to name a few! Despite it’s wide applications, it isn’t entirely clear as to what do these Eigenvectors represent and what is their significance in all these applications. Also, many students see Eigenvectors as a bunch of steps to find a vector which is going to help them, and hence they have very little intuition about them. In this post, I plan to give an intuition of the same and also provide some insights of how it is calculated algorithmically.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://thebackpropogator.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://thebackpropogator.github.io/" rel="alternate" type="text/html" /><updated>2020-06-17T11:04:07-07:00</updated><id>https://thebackpropogator.github.io/feed.xml</id><title type="html">Piyush Tiwary</title><subtitle>Personal Blog</subtitle><author><name>Piyush Tiwary</name></author><entry><title type="html">Pondering upon Eigenvectors</title><link href="https://thebackpropogator.github.io/posts/eigenvector.md/" rel="alternate" type="text/html" title="Pondering upon Eigenvectors" /><published>2020-06-17T00:00:00-07:00</published><updated>2020-06-17T00:00:00-07:00</updated><id>https://thebackpropogator.github.io/posts/eigenvector</id><content type="html" xml:base="https://thebackpropogator.github.io/posts/eigenvector.md/">&lt;p&gt;The Eigenvectors &amp;amp; Eigenvalues pop up in many places of mathematical analysis and application. For example: Machine Learning, Control Theory, Signal Processing, Quantum Physics, Markov Process just to name a few! Despite it’s wide applications, it isn’t entirely clear as to what do these Eigenvectors represent and what is their significance in all these applications. Also, many students see Eigenvectors as a bunch of steps to find a vector which is going to help them, and hence they have very little intuition about them. In this post, I plan to give an intuition of the same and also provide some insights of how it is calculated algorithmically.&lt;/p&gt;
 
 &lt;h2 id=&quot;matrix-as-transformations&quot;&gt;Matrix as Transformations!&lt;/h2&gt;
 
@@ -14,9 +14,8 @@ If we multiply any vector
 
 &lt;p&gt;But here is where it gets interesting, we can look at this multiplication in 2 ways. One way is&lt;/p&gt;
 
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-$A\alpha = \begin{pmatrix} 1 &amp; 0 \end{pmatrix} \begin{pmatrix} \alpha_1 \\\ \alpha_2 \end{pmatrix} + 
-\begin{pmatrix} 0 &amp; 1 \end{pmatrix} \begin{pmatrix} \alpha_1 \\\ \alpha_2 \end{pmatrix} %]]&gt;&lt;/script&gt;$&lt;/p&gt;
+&lt;p&gt;$A\alpha = \begin{pmatrix} 1 &amp;amp; 0 \end{pmatrix} \begin{pmatrix} \alpha_1 \\ \alpha_2 \end{pmatrix} + 
+\begin{pmatrix} 0 &amp;amp; 1 \end{pmatrix} \begin{pmatrix} \alpha_1 \\ \alpha_2 \end{pmatrix}$&lt;/p&gt;
 
 &lt;p&gt;or,&lt;/p&gt;
 
@@ -42,8 +41,10 @@ to get the product &lt;script type=&quot;math/tex&quot;&gt;A\alpha&lt;/script&gt
 In terms of vectors, one can interpret the columns of matrix as vector directions of &lt;script type=&quot;math/tex&quot;&gt;\hat i&lt;/script&gt; &amp;amp; &lt;script type=&quot;math/tex&quot;&gt;\hat j&lt;/script&gt; and the multiplication &lt;script type=&quot;math/tex&quot;&gt;A\alpha&lt;/script&gt; is nothing but the vector &lt;script type=&quot;math/tex&quot;&gt;\alpha_1 \hat i + \alpha_2 \hat j&lt;/script&gt;.&lt;/p&gt;
 
 &lt;p&gt;Cool! but what if the matrix isn’t trivial like this one? say 
-&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-A = \left( \begin{array}{cc} x_1 &amp; x_2 \\ y_1 &amp; y_2 \\ \end{array} \right) %]]&gt;&lt;/script&gt;
+$A = \begin{pmatrix}
+x_1 &amp;amp; x_2 \\
+y_1 &amp;amp; y_2
+\end{pmatrix}$
 this makes a very little difference. Instead of the component directions being &lt;script type=&quot;math/tex&quot;&gt;\hat i&lt;/script&gt; &amp;amp; &lt;script type=&quot;math/tex&quot;&gt;\hat j&lt;/script&gt;, the direction of each column will be &lt;script type=&quot;math/tex&quot;&gt;(x_1 \hat i + y_1 \hat j)&lt;/script&gt; &amp;amp; &lt;script type=&quot;math/tex&quot;&gt;(x_2 \hat i + y_2 \hat j)&lt;/script&gt; respectively.
 And the product &lt;script type=&quot;math/tex&quot;&gt;A \alpha&lt;/script&gt; is nothing but  &lt;script type=&quot;math/tex&quot;&gt;\alpha_1 (x_1 \hat i + y_1 \hat j)  + \alpha_2 (x_2 \hat i + y_2 \hat j)&lt;/script&gt;! This is really a nice way to look at matrix multiplications which relate Matrices to Vectors in such an intuitive way!&lt;/p&gt;
 
@@ -91,8 +92,11 @@ means that we have to find basis of all the vectors for which &lt;script type=&q
 
 &lt;p&gt;&lt;strong&gt;Rank&lt;/strong&gt;: Rank of a matrix is defined as the maximum number of linearly independent columns in a matrix. This is the textbook defiition of Rank. It’s physical significance is that, Rank of a matrix denotes the dimension of the transformed coordinate system. To understand this, let’s take an example&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-A = \left( \begin{array}{ccc} 1 &amp; 2 &amp; 5 \\ 3 &amp; 5 &amp; 13 \\ 7 &amp; 6 &amp; 19 \\ \end{array} \right) %]]&gt;&lt;/script&gt;
+&lt;p&gt;$A = \begin{pmatrix}
+1 &amp;amp; 2 &amp;amp; 5 \\
+3 &amp;amp; 5 &amp;amp; 13 \\
+7 &amp;amp; 6 &amp;amp; 19 \\
+\end{pmatrix}$&lt;/p&gt;
 
 &lt;p&gt;So, if a vector of dimension &lt;script type=&quot;math/tex&quot;&gt;(3 \times 1)&lt;/script&gt; is multiplied by A, we’ll get a &lt;script type=&quot;math/tex&quot;&gt;(3 \times 1)&lt;/script&gt; vector. Seems nice! It looks like &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; produces a vector in 3D. But, it’s not the case! if we look carefully, then we can see that, there are only 2 independent column in &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;!&lt;/p&gt;
 
