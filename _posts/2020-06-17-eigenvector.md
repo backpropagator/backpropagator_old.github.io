@@ -29,6 +29,8 @@ A\alpha = \left( \begin{array}{cc} 1 & 0 \\ \end{array} \right) \left( \begin{ar
 \left( \begin{array}{cc} 0 & 1 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) \\
 $$
 
+or,
+
 $$
 A\alpha = \left( \begin{array}{cc} (1*\alpha_1) + (0*\alpha_2) \\ (0*\alpha_1) + (1*\alpha_2) \\ \end{array} \right)
 $$
