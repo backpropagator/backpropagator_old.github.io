@@ -8,10 +8,6 @@ tags:
 comments: true
 ---
 
-<script type="text/javascript" async
-  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 The Eigenvectors & Eigenvalues pop up in many places of mathematical analysis and application. For example: Machine Learning, Control Theory, Signal Processing, Quantum Physics, Markov Process just to name a few! Despite it's wide applications, it isn't entirely clear as to what do these Eigenvectors represent and what is their significance in all these applications. Also, many students see Eigenvectors as a bunch of steps to find a vector which is going to help them, and hence they have very little intuition about them. In this post, I plan to give an intuition of the same and also provide some insights of how it is calculated algorithmically.
 
 ## Matrix as Transformations!
