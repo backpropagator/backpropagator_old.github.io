@@ -37,7 +37,7 @@
 
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="The Eigenvectors &amp; Eigenvalues pop up in many places of mathematical analysis and application. For example: Machine Learning, Control Theory, Signal Processing, Quantum Physics, Markov Process just to name a few! Despite it’s wide applications, it isn’t entirely clear as to what do these Eigenvectors represent and what is their significance in all these applications. Also, many students see Eigenvectors as a bunch of steps to find a vector which is going to help them, and hence they have very little intuition about them. In this post, I plan to give an intuition of the same and also provide some insights of how it is calculated algorithmically.">
 
 
 
@@ -260,7 +260,7 @@
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Pondering upon Eigenvectors">
-    <meta itemprop="description" content="">
+    <meta itemprop="description" content="The Eigenvectors &amp; Eigenvalues pop up in many places of mathematical analysis and application. For example: Machine Learning, Control Theory, Signal Processing, Quantum Physics, Markov Process just to name a few! Despite it’s wide applications, it isn’t entirely clear as to what do these Eigenvectors represent and what is their significance in all these applications. Also, many students see Eigenvectors as a bunch of steps to find a vector which is going to help them, and hence they have very little intuition about them. In this post, I plan to give an intuition of the same and also provide some insights of how it is calculated algorithmically.">
     <meta itemprop="datePublished" content="June 17, 2020">
     
 
@@ -291,17 +291,18 @@
       
 
       <section class="page__content" itemprop="text">
-        <script type="text/javascript" async="" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<p>The Eigenvectors &amp; Eigenvalues pop up in many places of mathematical analysis and application. For example: Machine Learning, Control Theory, Signal Processing, Quantum Physics, Markov Process just to name a few! Despite it’s wide applications, it isn’t entirely clear as to what do these Eigenvectors represent and what is their significance in all these applications. Also, many students see Eigenvectors as a bunch of steps to find a vector which is going to help them, and hence they have very little intuition about them. In this post, I plan to give an intuition of the same and also provide some insights of how it is calculated algorithmically.</p>
+        <p>The Eigenvectors &amp; Eigenvalues pop up in many places of mathematical analysis and application. For example: Machine Learning, Control Theory, Signal Processing, Quantum Physics, Markov Process just to name a few! Despite it’s wide applications, it isn’t entirely clear as to what do these Eigenvectors represent and what is their significance in all these applications. Also, many students see Eigenvectors as a bunch of steps to find a vector which is going to help them, and hence they have very little intuition about them. In this post, I plan to give an intuition of the same and also provide some insights of how it is calculated algorithmically.</p>
 
 <h2 id="matrix-as-transformations">Matrix as Transformations!</h2>
 
 <p>Well to understand this, we need to understand what a <strong>“Matrix”</strong> is? Generally, matrices are seen as a bunch of numbers inside a box used to perform collective operations. It’s one way to look at it. But a higher level insight is to look at matrices as a <strong>Transformation</strong>!</p>
 
-<p>Let’s take an example, say <script type="math/tex">% <![CDATA[
-A = \left( \begin{array}{cc} 1 & 0 \\ 0 & 1 \\ \end{array} \right) %]]></script>.
+<p>Let’s take an example, let <script type="math/tex">% <![CDATA[
+A =
+\begin{pmatrix}
+1 & 0\\ 
+0 & 1
+\end{pmatrix} %]]></script>.
 If we multiply any vector
 <script type="math/tex">\alpha = \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right)</script> with <script type="math/tex">A</script>, we’ll get the same vector. Not interesting right?</p>
 
@@ -311,7 +312,9 @@ If we multiply any vector
 A\alpha = \left( \begin{array}{cc} 1 & 0 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) + 
 \left( \begin{array}{cc} 0 & 1 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) %]]></script>
 
-<script type="math/tex; mode=display">= \left( \begin{array}{cc} (1*\alpha_1) + (0*\alpha_2) \\ (0*\alpha_1) + (1*\alpha_2) \\ \end{array} \right)</script>
+<p>or,</p>
+
+<script type="math/tex; mode=display">A\alpha = \left( \begin{array}{cc} (1*\alpha_1) + (0*\alpha_2) \\ (0*\alpha_1) + (1*\alpha_2) \\ \end{array} \right)</script>
 
 <p>which is the traditional way to multiply 2 matrices. But there’s another way to look at it, instead of multiplying rows of by columns, we can multiply columns by rows, here’s what I mean -</p>
 
@@ -319,7 +322,7 @@ A\alpha = \left( \begin{array}{cc} 1 & 0 \\ \end{array} \right) \left( \begin{ar
 
 <p>from this way of multiplication, we can see that this multiplication is essentially addition of two seperate column vectors, where each column vector is obtained by taking the columns of <script type="math/tex">A</script> and <strong>scaling</strong> them by elements of <script type="math/tex">\alpha</script>! In other words, if we want to find the product of a matrix with a vector, just take the columns of the matrix, scale them by corresponding amount in the vector and sum them up. So, we scale the first column by <script type="math/tex">\alpha_1</script> and second column by <script type="math/tex">\alpha_2</script> and add them up.</p>
 
-<p>Does this seem familiar? If you were thinking of Vectors, you are right! This is indeed the essence of a Matrix that <strong>the columns of a Matrix represent the vectors which span the range of the Matrix</strong>, these vectors are also called <strong>Basis Vectors</strong>. \</p>
+<p>Does this seem familiar? If you were thinking of Vectors, you are right! This is indeed the essence of a Matrix that <strong>the columns of a Matrix represent the vectors which span the range of the Matrix</strong>, these vectors are also called <strong>Basis Vectors</strong>.</p>
 
 <p>Going back to our example, the columns of <script type="math/tex">A</script> :
 <script type="math/tex">\left( \begin{array}{c} 1 \\ 0 \\ \end{array} \right)</script> 
