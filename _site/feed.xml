@@ -1,7 +1,171 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-01T02:31:17-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Piyush Tiwary</title><subtitle>Personal Blog</subtitle><author><name>Piyush Tiwary</name></author><entry><title type="html">Machine Learning Resources</title><link href="http://localhost:4000/posts/ml.md/" rel="alternate" type="text/html" title="Machine Learning Resources" /><published>2019-07-13T00:00:00-07:00</published><updated>2019-07-13T00:00:00-07:00</updated><id>http://localhost:4000/posts/ml</id><content type="html" xml:base="http://localhost:4000/posts/ml.md/">&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
-&lt;h5 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h5&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://thebackpropogator.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://thebackpropogator.github.io/" rel="alternate" type="text/html" /><updated>2020-06-17T07:01:38-07:00</updated><id>https://thebackpropogator.github.io/feed.xml</id><title type="html">Piyush Tiwary</title><subtitle>Personal Blog</subtitle><author><name>Piyush Tiwary</name></author><entry><title type="html">Pondering upon Eigenvectors</title><link href="https://thebackpropogator.github.io/posts/eigenvector.md/" rel="alternate" type="text/html" title="Pondering upon Eigenvectors" /><published>2020-06-17T00:00:00-07:00</published><updated>2020-06-17T00:00:00-07:00</updated><id>https://thebackpropogator.github.io/posts/eigenvector</id><content type="html" xml:base="https://thebackpropogator.github.io/posts/eigenvector.md/">&lt;script type=&quot;text/javascript&quot; async=&quot;&quot; src=&quot;//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&quot;&gt;
+&lt;/script&gt;
+
+&lt;p&gt;The Eigenvectors &amp;amp; Eigenvalues pop up in many places of mathematical analysis and application. For example: Machine Learning, Control Theory, Signal Processing, Quantum Physics, Markov Process just to name a few! Despite it’s wide applications, it isn’t entirely clear as to what do these Eigenvectors represent and what is their significance in all these applications. Also, many students see Eigenvectors as a bunch of steps to find a vector which is going to help them, and hence they have very little intuition about them. In this post, I plan to give an intuition of the same and also provide some insights of how it is calculated algorithmically.&lt;/p&gt;
+
+&lt;h2 id=&quot;matrix-as-transformations&quot;&gt;Matrix as Transformations!&lt;/h2&gt;
+
+&lt;p&gt;Well to understand this, we need to understand what a &lt;strong&gt;“Matrix”&lt;/strong&gt; is? Generally, matrices are seen as a bunch of numbers inside a box used to perform collective operations. It’s one way to look at it. But a higher level insight is to look at matrices as a &lt;strong&gt;Transformation&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;Let’s take an example, say &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+A = \left( \begin{array}{cc} 1 &amp; 0 \\ 0 &amp; 1 \\ \end{array} \right) %]]&gt;&lt;/script&gt;.
+If we multiply any vector
+&lt;script type=&quot;math/tex&quot;&gt;\alpha = \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right)&lt;/script&gt; with &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;, we’ll get the same vector. Not interesting right?&lt;/p&gt;
+
+&lt;p&gt;But here is where it gets interesting, we can look at this multiplication in 2 ways. One way is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+A\alpha = \left( \begin{array}{cc} 1 &amp; 0 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) + 
+\left( \begin{array}{cc} 0 &amp; 1 \\ \end{array} \right) \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right) %]]&gt;&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;= \left( \begin{array}{cc} (1*\alpha_1) + (0*\alpha_2) \\ (0*\alpha_1) + (1*\alpha_2) \\ \end{array} \right)&lt;/script&gt;
+
+&lt;p&gt;which is the traditional way to multiply 2 matrices. But there’s another way to look at it, instead of multiplying rows of by columns, we can multiply columns by rows, here’s what I mean -&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A\alpha = \left( \begin{array}{c} 1 \\ 0 \\ \end{array} \right)\alpha_1 + \left( \begin{array}{c} 0 \\ 1 \\ \end{array} \right)\alpha_2&lt;/script&gt;
+
+&lt;p&gt;from this way of multiplication, we can see that this multiplication is essentially addition of two seperate column vectors, where each column vector is obtained by taking the columns of &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; and &lt;strong&gt;scaling&lt;/strong&gt; them by elements of &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt;! In other words, if we want to find the product of a matrix with a vector, just take the columns of the matrix, scale them by corresponding amount in the vector and sum them up. So, we scale the first column by &lt;script type=&quot;math/tex&quot;&gt;\alpha_1&lt;/script&gt; and second column by &lt;script type=&quot;math/tex&quot;&gt;\alpha_2&lt;/script&gt; and add them up.&lt;/p&gt;
+
+&lt;p&gt;Does this seem familiar? If you were thinking of Vectors, you are right! This is indeed the essence of a Matrix that &lt;strong&gt;the columns of a Matrix represent the vectors which span the range of the Matrix&lt;/strong&gt;, these vectors are also called &lt;strong&gt;Basis Vectors&lt;/strong&gt;. \&lt;/p&gt;
+
+&lt;p&gt;Going back to our example, the columns of &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; :
+&lt;script type=&quot;math/tex&quot;&gt;\left( \begin{array}{c} 1 \\ 0 \\ \end{array} \right)&lt;/script&gt; 
+&amp;amp;
+&lt;script type=&quot;math/tex&quot;&gt;\left( \begin{array}{c} 0 \\ 1 \\ \end{array} \right)&lt;/script&gt;
+in a way, represent the directions in which we need to travel to get our answer (the product), so you need to go &lt;script type=&quot;math/tex&quot;&gt;\alpha_1&lt;/script&gt; amount in the direction of
+&lt;script type=&quot;math/tex&quot;&gt;\left( \begin{array}{c} 1 \\ 0 \\ \end{array} \right)&lt;/script&gt; 
+and &lt;script type=&quot;math/tex&quot;&gt;\alpha_2&lt;/script&gt; amount in the direction of
+&lt;script type=&quot;math/tex&quot;&gt;\left( \begin{array}{c} 0 \\ 1 \\ \end{array} \right)&lt;/script&gt; 
+to get the product &lt;script type=&quot;math/tex&quot;&gt;A\alpha&lt;/script&gt;.&lt;br /&gt;
+In terms of vectors, one can interpret the columns of matrix as vector directions of &lt;script type=&quot;math/tex&quot;&gt;\hat i&lt;/script&gt; &amp;amp; &lt;script type=&quot;math/tex&quot;&gt;\hat j&lt;/script&gt; and the multiplication &lt;script type=&quot;math/tex&quot;&gt;A\alpha&lt;/script&gt; is nothing but the vector &lt;script type=&quot;math/tex&quot;&gt;\alpha_1 \hat i + \alpha_2 \hat j&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cool! but what if the matrix isn’t trivial like this one? say 
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+A = \left( \begin{array}{cc} x_1 &amp; x_2 \\ y_1 &amp; y_2 \\ \end{array} \right) %]]&gt;&lt;/script&gt;
+this makes a very little difference. Instead of the component directions being &lt;script type=&quot;math/tex&quot;&gt;\hat i&lt;/script&gt; &amp;amp; &lt;script type=&quot;math/tex&quot;&gt;\hat j&lt;/script&gt;, the direction of each column will be &lt;script type=&quot;math/tex&quot;&gt;(x_1 \hat i + y_1 \hat j)&lt;/script&gt; &amp;amp; &lt;script type=&quot;math/tex&quot;&gt;(x_2 \hat i + y_2 \hat j)&lt;/script&gt; respectively.
+And the product &lt;script type=&quot;math/tex&quot;&gt;A \alpha&lt;/script&gt; is nothing but  &lt;script type=&quot;math/tex&quot;&gt;\alpha_1 (x_1 \hat i + y_1 \hat j)  + \alpha_2 (x_2 \hat i + y_2 \hat j)&lt;/script&gt;! This is really a nice way to look at matrix multiplications which relate Matrices to Vectors in such an intuitive way!&lt;/p&gt;
+
+&lt;p&gt;Now, where is transformation in all this? For this we need to look at &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt;. &lt;br /&gt;
+Any &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt; with dimension &lt;script type=&quot;math/tex&quot;&gt;(2 \times 1)&lt;/script&gt; can represent a point in 2-dimension.  So, &lt;script type=&quot;math/tex&quot;&gt;\alpha \in \mathcal{R}^2&lt;/script&gt; and after multiplying by &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;, the product &lt;script type=&quot;math/tex&quot;&gt;A\alpha \in \mathcal{R}^2&lt;/script&gt; too. So, we can say that &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; maps a vector from &lt;script type=&quot;math/tex&quot;&gt;\mathcal{R}^2&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;\mathcal{R}^2&lt;/script&gt;, &lt;strong&gt;but is it the same Coordinate System?&lt;/strong&gt; The answer is &lt;strong&gt;No!&lt;/strong&gt; the coordinate system has changed indeed but how? Think of it this way - originally, &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt; was in original &lt;script type=&quot;math/tex&quot;&gt;2D&lt;/script&gt; plane whose axis were 
+&lt;script type=&quot;math/tex&quot;&gt;\left( \begin{array}{c} 1 \\ 0 \\ \end{array} \right)&lt;/script&gt; 
+&amp;amp;
+&lt;script type=&quot;math/tex&quot;&gt;\left( \begin{array}{c} 0 \\ 1 \\ \end{array} \right)&lt;/script&gt; 
+(or &lt;script type=&quot;math/tex&quot;&gt;\hat i&lt;/script&gt; &amp;amp; &lt;script type=&quot;math/tex&quot;&gt;\hat j&lt;/script&gt;), so to go to any point we need to go some distance along &lt;script type=&quot;math/tex&quot;&gt;\hat i&lt;/script&gt; and some distance along &lt;script type=&quot;math/tex&quot;&gt;\hat j&lt;/script&gt;, but after multiplying it by &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;, the axis are changed to 
+&lt;script type=&quot;math/tex&quot;&gt;\left( \begin{array}{c} x_1 \\ y_1 \\ \end{array} \right)&lt;/script&gt; 
+&amp;amp;
+&lt;script type=&quot;math/tex&quot;&gt;\left( \begin{array}{c} x_2 \\ y_2 \\ \end{array} \right)&lt;/script&gt; 
+(or &lt;script type=&quot;math/tex&quot;&gt;(x_1 \hat i + y_1 \hat j)&lt;/script&gt; &amp;amp; &lt;script type=&quot;math/tex&quot;&gt;(x_2 \hat i + y_2 \hat j)&lt;/script&gt;). So, can you see the transformation? The axis of the coordinate system is changed after multiplying with a matrix. More clearly-&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\left( \begin{array}{c} 1 \\ 0 \\ \end{array} \right) \rightarrow \left( \begin{array}{c} x_1 \\ y_1 \\ \end{array} \right)&lt;/script&gt;
+   &amp;amp;   
+&lt;script type=&quot;math/tex&quot;&gt;\left( \begin{array}{c} 0 \\ 1 \\ \end{array} \right) \rightarrow \left( \begin{array}{c} x_2 \\ y_2 \\ \end{array} \right)&lt;/script&gt; &lt;br /&gt;
+In literature this axis is also called &lt;strong&gt;Basis Vector&lt;/strong&gt;. Basis of a Matrix is a set of vector through which we can get any point (in that dimension) by taking some linear combination of these vectors. There’s more to this, but I leave it to the reader to explore for themselves.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-these-eigen-things&quot;&gt;What are these “Eigen” things?&lt;/h2&gt;
+
+&lt;p&gt;Having an intuition of how matrix can be seen as a Transformation, we are in a position to understand the Eigenvectors &amp;amp; Eigenvalues.&lt;/p&gt;
+
+&lt;p&gt;So, while transforming a point from one basis to another by multiplication of a matrix, we map a point original 2D plane to some other point in the transformed plane. If we look at the vectors representing these points, they are also being transformed from one coordinate system to another. However, &lt;strong&gt;there are some vectors that don’t change their direction, instead they only get scaled up or scaled down!&lt;/strong&gt; These vectors are nothing but the Eigenvectors! and the amount by which they get scaled up or down is the corresponding Eigenvalue!&lt;/p&gt;
+
+&lt;p&gt;Mathematically, these are the vectors that after multiplying by &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; get scaled up or down but the direction remains the same. For equation form we need, &lt;script type=&quot;math/tex&quot;&gt;Ax&lt;/script&gt; which is in the same direction as &lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt; but scaled up or down (let’s say by &lt;script type=&quot;math/tex&quot;&gt;\lambda&lt;/script&gt;). So,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Ax = \lambda x&lt;/script&gt;
+
+&lt;p&gt;Which is the equation we have been taught since childhood to calculate the eigenvectors &amp;amp; eigenvalues. From this equation, we can find the Eigenvalues of A by solving&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;|A - \lambda\mathbb{I}| = 0&lt;/script&gt;
+
+&lt;p&gt;, to find the eigenvectors, we will have to find the Basis of Null-Space of
+&lt;script type=&quot;math/tex&quot;&gt;A - \lambda\mathbb{I}&lt;/script&gt;
+. Null Space of a matrix &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; (also written as &lt;script type=&quot;math/tex&quot;&gt;N(A)&lt;/script&gt;) contains all the vectors &lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt; such that, &lt;script type=&quot;math/tex&quot;&gt;Ax=0&lt;/script&gt;, so finding basis of 
+&lt;script type=&quot;math/tex&quot;&gt;N(A-\lambda\mathbb{I})&lt;/script&gt; 
+means that we have to find basis of all the vectors for which &lt;script type=&quot;math/tex&quot;&gt;(A - \lambda\mathbb{I})x = 0&lt;/script&gt; which is the definition of Eigenvectors.&lt;/p&gt;
+
+&lt;h2 id=&quot;some-things-to-look-for&quot;&gt;Some things to look for&lt;/h2&gt;
+
+&lt;p&gt;Okay! so upto this point we have understood what is the physical significance of Eigenvectors. Now there are somethings, we should be aware of. Let’s first define some terms.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Span&lt;/strong&gt;: The &lt;strong&gt;span&lt;/strong&gt; of a set of vectors is the set of all Linear Combinations of the vectors. Implicitly, Span indicates the dimension that can be covered by using a set of vectors.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rank&lt;/strong&gt;: Rank of a matrix is defined as the maximum number of linearly independent columns in a matrix. This is the textbook defiition of Rank. It’s physical significance is that, Rank of a matrix denotes the dimension of the transformed coordinate system. To understand this, let’s take an example&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+A = \left( \begin{array}{ccc} 1 &amp; 2 &amp; 5 \\ 3 &amp; 5 &amp; 13 \\ 7 &amp; 6 &amp; 19 \\ \end{array} \right) %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;So, if a vector of dimension &lt;script type=&quot;math/tex&quot;&gt;(3 \times 1)&lt;/script&gt; is multiplied by A, we’ll get a &lt;script type=&quot;math/tex&quot;&gt;(3 \times 1)&lt;/script&gt; vector. Seems nice! It looks like &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; produces a vector in 3D. But, it’s not the case! if we look carefully, then we can see that, there are only 2 independent column in &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;!&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;C_3 = C_1 + 2C_2&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;C_1, C_2&lt;/script&gt; &amp;amp; &lt;script type=&quot;math/tex&quot;&gt;C_3&lt;/script&gt; are the columns of &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; &lt;br /&gt;
+So, what this means is, these 3 columns/vectors are &lt;strong&gt;Coplanar&lt;/strong&gt;, so taking any linear combination of these vectors would give us a point in this plane itself! So, the Span of the matrix is &lt;script type=&quot;math/tex&quot;&gt;\mathcal{R}^2&lt;/script&gt; and not &lt;script type=&quot;math/tex&quot;&gt;\mathcal{R}^3&lt;/script&gt;! We can also see this by a simple calculation, take any linear combination of columns of &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;-&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;C = \alpha_1 C_1 + \alpha_2 C_2 + \alpha_3 C_3&lt;/script&gt;
+
+&lt;p&gt;Using &lt;script type=&quot;math/tex&quot;&gt;(7)&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;C = \alpha_1 C_1 + \alpha_2 C_2 + \alpha3 (C_1 + 2C_2) \\
+= (\alpha_1 + \alpha_3) C_1 + (\alpha_2 + 2 \alpha_3) C_2 \\
+C = \beta_1 C_1 + \beta_2 C_2&lt;/script&gt;
+
+&lt;p&gt;So, though it looks like &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; maps a vector to &lt;script type=&quot;math/tex&quot;&gt;\mathcal{R}^3&lt;/script&gt; but, it actually maps it to &lt;script type=&quot;math/tex&quot;&gt;\mathcal{R}^2&lt;/script&gt;. Hence, rank of the matrix is 2!&lt;/p&gt;
+
+&lt;p&gt;That being said, let’s try to visualize the transformation this matrix is performing. So, we know that the input space is &lt;script type=&quot;math/tex&quot;&gt;\mathcal{R}^3&lt;/script&gt; and the output space is &lt;script type=&quot;math/tex&quot;&gt;\mathcal{R}^2&lt;/script&gt;, this means that, the transformation in some way, squashes the entire 3D system into 2D system!&lt;br /&gt;
+So, what does it have to do with eigenvectors &amp;amp; eigenvalues?  Well the number of non-zero Eigenvectors will be equal to Rank of the matrix. This is quite intuitive, because a 2D plane can only have a maximum of 2 Eigenvectors (any 3rd vector can be represented as sum of these 2), and the 3rd Eigenvector would come from the sqashing of the 3D space for which the Eigenvalue will be 0! &lt;br /&gt;
+So, thing to take away is the number of non-zero Eigenvectors will be equal to the Rank of the Matrix.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: This discussion is valid for any &lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;-dimensional matrix.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-why-do-they-pop-up-everywhere&quot;&gt;So why do they pop up everywhere?&lt;/h2&gt;
+
+&lt;p&gt;Well simply put, Eigenvectors make understanding/visualizing Linear transforms easier! We can analyse any Linear transform as stretching or compressing of a vector. Which makes things much easier, we can always decompose a matrix in terms of it’s eigenvectors &amp;amp; eigenvalues.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A = V^{-1} \Lambda V&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;V&lt;/script&gt; is the matrix containing Eigenvectors &amp;amp; &lt;script type=&quot;math/tex&quot;&gt;\Lambda&lt;/script&gt; is a Diagonal matrix with Eigenvalues as the diagonal values. This Factorisation is also called &lt;strong&gt;Eigenvalue decomposition&lt;/strong&gt;, which is heavily used in Control Theory &amp;amp; Signal Processing.&lt;/p&gt;
+
+&lt;p&gt;Well that’s it! Hope I have explained the concepts clearly. Any feedback will be highly valued.&lt;/p&gt;
+
+&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=PFDu9oVAE-g&quot;&gt;3Blue 1Brown’s video on Eigenvectors &amp;amp; Eigenvalues&lt;/a&gt; is a really nice video! The animations were really helpful for me while understanding these concepts.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://setosa.io/ev/eigenvectors-and-eigenvalues/&quot;&gt;Setosa.io’s blog on Eigenvectors &amp;amp; Eigenvalues&lt;/a&gt; are also nice tool to visualize the same.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=DzqE7tj7eIM&quot;&gt;Gilbert Strang’s lecture on Eigenvectors &amp;amp; Eigenvalues&lt;/a&gt; give a very theorotical insight into Eigenvectors.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Piyush Tiwary</name></author><category term="Eigenvectors" /><category term="Linear Algebra" /><summary type="html"></summary></entry><entry><title type="html">Useful links for research</title><link href="https://thebackpropogator.github.io/posts/2019/08/blog-post-4/" rel="alternate" type="text/html" title="Useful links for research" /><published>2019-08-01T00:00:00-07:00</published><updated>2019-08-01T00:00:00-07:00</updated><id>https://thebackpropogator.github.io/posts/2019/08/research</id><content type="html" xml:base="https://thebackpropogator.github.io/posts/2019/08/blog-post-4/">&lt;h2 id=&quot;books&quot;&gt;Books&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pgm.stanford.edu/&quot;&gt;Probabilistic Graphical Models&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.deeplearningbook.org/&quot;&gt;Deep learning&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.microsoft.com/en-us/research/publication/deep-learning-methods-and-applications/&quot;&gt;Deep Learning: Methods and Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2710146&quot;&gt;A Tutorial for Using Twitter Data in the Social Sciences: Data Collection, Preparation, and Analysis&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.cs.columbia.edu/~jebara/4771/tutorials/regression.pdf&quot;&gt;what is bias function?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/&quot;&gt;IMPLEMENTING A NEURAL NETWORK FROM SCRATCH IN PYTHON – AN INTRODUCTION&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.wildml.com/2015/09/speeding-up-your-neural-network-with-theano-and-the-gpu/&quot;&gt;SPEEDING UP YOUR NEURAL NETWORK WITH THEANO AND THE GPU&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://colah.github.io/posts/2015-08-Backprop/&quot;&gt;Calculus on Computational Graphs: Backpropagation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cs231n.github.io/optimization-2/&quot;&gt;CS231n Convolutional Neural Networks for Visual Recognition&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.quuxlabs.com/blog/2010/09/matrix-factorization-a-simple-tutorial-and-implementation-in-python/&quot;&gt;Matrix Factorization: A Simple Tutorial and Implementation in Python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://activisiongamescience.github.io/2016/01/11/Implicit-Recommender-Systems-Biased-Matrix-Factorization/&quot;&gt;implicit Recommender Systems: Biased Matrix Factorization&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sifter.org/~simon/journal/20061211.html&quot;&gt;Simon Funk’s Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://adventuresinmachinelearning.com/&quot;&gt;ADVENTURES IN MACHINE LEARNING&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Piyush Tiwary</name></author><category term="research" /><summary type="html">Books Probabilistic Graphical Models Deep learning Deep Learning: Methods and Applications</summary></entry><entry><title type="html">Machine Learning Resources</title><link href="https://thebackpropogator.github.io/posts/ml.md/" rel="alternate" type="text/html" title="Machine Learning Resources" /><published>2019-07-13T00:00:00-07:00</published><updated>2019-07-13T00:00:00-07:00</updated><id>https://thebackpropogator.github.io/posts/ml</id><content type="html" xml:base="https://thebackpropogator.github.io/posts/ml.md/">&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+&lt;h3 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h3&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;#personal-favourites&quot;&gt;Personal Favourites&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;#blogs&quot;&gt;Some Nice Blogs&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;#free-online-books&quot;&gt;Free Online Books&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
   &lt;/li&gt;
@@ -40,10 +204,41 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5 id=&quot;free-online-books&quot;&gt;Free Online Books&lt;/h5&gt;
+&lt;h3 id=&quot;personal-favourites&quot;&gt;Personal Favourites&lt;/h3&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.deeplearningbook.org/&quot;&gt;Deep Learning&lt;/a&gt; by Yoshua Bengio, Ian Goodfellow and Aaron Courville  (05/07/2015)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.deeplearningbook.org/&quot;&gt;Deep Learning&lt;/a&gt; by Yoshua Bengio, Ian Goodfellow and Aaron Courville&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://doc.lagout.org/science/Artificial%20Intelligence/Machine%20learning/Machine%20Learning_%20A%20Probabilistic%20Perspective%20%5BMurphy%202012-08-24%5D.pdf&quot;&gt;Machine Learning - A Probabilistic Perspective&lt;/a&gt; by Kevin Murphy (takes you from very basics of Probability to Modern State of Art methods in ML)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf&quot;&gt;Pattern Recognition And Machine Learning&lt;/a&gt; by Christopher M. Bishop.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://books.ranvier.ir/download.php?file=Cognitive_Model%20Thad%20A.%20Polk%20Colleen%20M.Seifert.pdf&quot;&gt;Cognitive Modeling&lt;/a&gt; by Thad A. Polk and Colleen M. Seifert.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BCiZc0n6COY&amp;amp;list=PLruBu5BI5n4aFpG32iMbdWoRVAA-Vcso6&quot;&gt;The Information Theory, Pattern Recognition, and Neural Networks Lecture Series&lt;/a&gt; by David MackKay (gives essence of Bayesian Inference and how it connects with Neural Networks).&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.inference.org.uk/itprnn/book.pdf&quot;&gt;Information Theory, Inference, and Learning Algorithms&lt;/a&gt; by David J.C. MacKay (this is the course book for above mentioned lecture series, Do Read!).&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://colah.github.io/&quot;&gt;Christopher Olah’s Blog&lt;/a&gt; - Nicely explained concepts and many exciting things!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;some-nice-blogs&quot;&gt;Some Nice Blogs&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://karpathy.github.io/&quot;&gt;Andrej Karpathy blog&lt;/a&gt; some really nice blogs by Andrej Karpathy&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://colah.github.io/&quot;&gt;Christopher Olah’s Blog&lt;/a&gt; - Nicely explained concepts One should have a look if interested in some Insights to Neural Networks.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://obsessionwithregression.blogspot.com/&quot;&gt;Obsession with Regression&lt;/a&gt; by Emma Pierson.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://juliagalef.com/&quot;&gt;Julia Galef’s Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://yoshuabengio.org/&quot;&gt;Yoshua Bengio’s Blogs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://aiweirdness.com/&quot;&gt;AIWierdness&lt;/a&gt; some “Wierd” things here.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://otoro.net/&quot;&gt;Otoro.net&lt;/a&gt; some really simple things which use DL and seems very cool.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://francisbach.com/&quot;&gt;Machine Learning Research Blog&lt;/a&gt; by Francis Bach (useful for Researchers to get insight).&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ai.googleblog.com/&quot;&gt;Google AI Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://openai.com/blog/&quot;&gt;OpenAI Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://deepmind.com/blog&quot;&gt;DeepMind Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bair.berkeley.edu/blog/&quot;&gt;Berkeley Artificial Intelligence Research (BAIR)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://news.mit.edu/topic/machine-learning&quot;&gt;MIT News&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.deeplearning.ai/thebatch/&quot;&gt;The Batch&lt;/a&gt; deeplearning.ai’s weekly newsletter.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.kdnuggets.com/tag/machine-learning&quot;&gt;KDnuggets&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;free-online-books&quot;&gt;Free Online Books&lt;/h3&gt;
+
+&lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;http://neuralnetworksanddeeplearning.com/&quot;&gt;Neural Networks and Deep Learning&lt;/a&gt; by  Michael Nielsen (Dec 2014)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://research.microsoft.com/pubs/209355/DeepLearning-NowPublishing-Vol7-SIG-039.pdf&quot;&gt;Deep Learning&lt;/a&gt; by Microsoft Research (2013)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://deeplearning.net/tutorial/deeplearning.pdf&quot;&gt;Deep Learning Tutorial&lt;/a&gt; by LISA lab, University of Montreal (Jan 6 2015)&lt;/li&gt;
@@ -52,9 +247,11 @@
   &lt;li&gt;&lt;a href=&quot;http://aima.cs.berkeley.edu/&quot;&gt;Artificial Intelligence: A Modern Approach&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://arxiv.org/pdf/1404.7828v4.pdf&quot;&gt;Deep Learning in Neural Networks: An Overview&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/&quot;&gt;Artificial intelligence and machine learning: Topic wise explanation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://doc.lagout.org/science/Artificial%20Intelligence/Machine%20learning/Machine%20Learning_%20A%20Probabilistic%20Perspective%20%5BMurphy%202012-08-24%5D.pdf&quot;&gt;Machine Learning - A Probabilistic Perspective&lt;/a&gt; by Kevin Murphy.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://books.ranvier.ir/download.php?file=Cognitive_Model%20Thad%20A.%20Polk%20Colleen%20M.Seifert.pdf&quot;&gt;Cognitive Modeling&lt;/a&gt; by Thad A. Polk and Colleen M. Seifert.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h5 id=&quot;courses&quot;&gt;Courses&lt;/h5&gt;
+&lt;h3 id=&quot;courses&quot;&gt;Courses&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;https://class.coursera.org/ml-005&quot;&gt;Machine Learning - Stanford&lt;/a&gt; by Andrew Ng in Coursera (2010-2014)&lt;/li&gt;
@@ -86,7 +283,7 @@
   &lt;li&gt;&lt;a href=&quot;http://deeplearning.cs.cmu.edu/&quot;&gt;Introduction to Deep Learning&lt;/a&gt; by Prof. Bhiksha Raj (2017)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h5 id=&quot;videos-and-lectures&quot;&gt;Videos and Lectures&lt;/h5&gt;
+&lt;h3 id=&quot;videos-and-lectures&quot;&gt;Videos and Lectures&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=RIkxVci-R4k&quot;&gt;How To Create A Mind&lt;/a&gt; By Ray Kurzweil&lt;/li&gt;
@@ -108,9 +305,10 @@
   &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=FoO8qDB8gUU&quot;&gt;Introduction to Artificial Neural Networks and Deep Learning&lt;/a&gt; by Leo Isikdogan at Motorola Mobility HQ&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://nips.cc/Conferences/2016/Schedule&quot;&gt;NIPS 2016 lecture and workshop videos&lt;/a&gt; - NIPS 2016&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=oS5fz_mHVz0&amp;amp;list=PLWKotBjTDoLj3rXBL-nEIPRN9V3a9Cx07&quot;&gt;Deep Learning Crash Course&lt;/a&gt;: a series of mini-lectures by Leo Isikdogan on YouTube (2018)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html&quot;&gt;Neural Networks&lt;/a&gt;: by Hugo Larochelle.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h5 id=&quot;papers&quot;&gt;Papers&lt;/h5&gt;
+&lt;h3 id=&quot;papers&quot;&gt;Papers&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;You can also find the most cited deep learning papers from &lt;a href=&quot;https://github.com/terryum/awesome-deep-learning-papers&quot;&gt;here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;ol&gt;
@@ -158,7 +356,7 @@
   &lt;li&gt;&lt;a href=&quot;http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf&quot;&gt;Efficient BackProp&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h5 id=&quot;tutorials&quot;&gt;Tutorials&lt;/h5&gt;
+&lt;h3 id=&quot;tutorials&quot;&gt;Tutorials&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;http://deeplearning.stanford.edu/wiki/index.php/UFLDL_Tutorial&quot;&gt;UFLDL Tutorial 1&lt;/a&gt;&lt;/li&gt;
@@ -186,7 +384,7 @@
   &lt;li&gt;&lt;a href=&quot;https://github.com/yunjey/pytorch-tutorial&quot;&gt;Pytorch Tutorial by Yunjey Choi&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h5 id=&quot;researchers&quot;&gt;Researchers&lt;/h5&gt;
+&lt;h3 id=&quot;researchers&quot;&gt;Researchers&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;http://aaroncourville.wordpress.com&quot;&gt;Aaron Courville&lt;/a&gt;&lt;/li&gt;
@@ -290,7 +488,7 @@
   &lt;li&gt;&lt;a href=&quot;http://www.site.uottawa.ca/~laganier/&quot;&gt; Robert Laganière &lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h5 id=&quot;websites&quot;&gt;WebSites&lt;/h5&gt;
+&lt;h3 id=&quot;websites&quot;&gt;WebSites&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;http://deeplearning.net/&quot;&gt;deeplearning.net&lt;/a&gt;&lt;/li&gt;
@@ -322,7 +520,7 @@
   &lt;li&gt;&lt;a href=&quot;https://spandan-madan.github.io/DeepLearningProject/&quot;&gt;Deep Learning for Beginners&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h5 id=&quot;datasets&quot;&gt;Datasets&lt;/h5&gt;
+&lt;h3 id=&quot;datasets&quot;&gt;Datasets&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;http://yann.lecun.com/exdb/mnist/&quot;&gt;MNIST&lt;/a&gt; Handwritten digits&lt;/li&gt;
@@ -447,7 +645,7 @@
   &lt;li&gt;&lt;a href=&quot;http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html&quot;&gt;Large-scale Fashion (DeepFashion) Database&lt;/a&gt; - Contains over 800,000 diverse fashion images.  Each image in this dataset is labeled with 50 categories, 1,000 descriptive attributes, bounding box and clothing landmarks&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h5 id=&quot;conferences&quot;&gt;Conferences&lt;/h5&gt;
+&lt;h3 id=&quot;conferences&quot;&gt;Conferences&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;http://cvpr2018.thecvf.com&quot;&gt;CVPR - IEEE Conference on Computer Vision and Pattern Recognition&lt;/a&gt;&lt;/li&gt;
@@ -463,7 +661,7 @@
   &lt;li&gt;&lt;a href=&quot;https://www.aaai.org&quot;&gt;AAAI - Association for the Advancement of Artificial Intelligence&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h5 id=&quot;frameworks&quot;&gt;Frameworks&lt;/h5&gt;
+&lt;h3 id=&quot;frameworks&quot;&gt;Frameworks&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot;&gt;Caffe&lt;/a&gt;&lt;/li&gt;
@@ -518,7 +716,7 @@
   &lt;li&gt;&lt;a href=&quot;https://github.com/PAIR-code/deeplearnjs&quot;&gt;deeplearn.js - Hardware-accelerated deep learning and linear algebra (NumPy) library for the web&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h5 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h5&gt;
+&lt;h3 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;https://plus.google.com/communities/112866381580457264725&quot;&gt;Google Plus - Deep Learning Community&lt;/a&gt;&lt;/li&gt;
@@ -556,11 +754,11 @@
 &lt;/ol&gt;
 
 &lt;hr /&gt;
-&lt;h5 id=&quot;license&quot;&gt;License&lt;/h5&gt;
+&lt;h3 id=&quot;license&quot;&gt;License&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://creativecommons.org/publicdomain/zero/1.0/&quot;&gt;&lt;img src=&quot;http://i.creativecommons.org/p/zero/1.0/88x31.png&quot; alt=&quot;CC0&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;To the extent possible under law, &lt;a href=&quot;https://linkedin.com/in/Christofidis&quot;&gt;Christos Christofidis&lt;/a&gt; has waived all copyright and related or neighboring rights to this work.&lt;/p&gt;</content><author><name>Piyush Tiwary</name></author><category term="Machine Learning" /><category term="Resources" /><summary type="html">Resources Table of Contents</summary></entry><entry><title type="html">Competitive programming journal 2019</title><link href="http://localhost:4000/posts/2019-07-01-competitive-journal-2019.md/" rel="alternate" type="text/html" title="Competitive programming journal 2019" /><published>2019-07-01T00:00:00-07:00</published><updated>2019-07-01T00:00:00-07:00</updated><id>http://localhost:4000/posts/competitive-journal-2019</id><content type="html" xml:base="http://localhost:4000/posts/2019-07-01-competitive-journal-2019.md/">&lt;h4 id=&quot;4-january&quot;&gt;4 January&lt;/h4&gt;
+&lt;p&gt;To the extent possible under law, &lt;a href=&quot;https://linkedin.com/in/Christofidis&quot;&gt;Christos Christofidis&lt;/a&gt; has waived all copyright and related or neighboring rights to this work.&lt;/p&gt;</content><author><name>Piyush Tiwary</name></author><category term="Machine Learning" /><category term="Resources" /><summary type="html">Resources Table of Contents</summary></entry><entry><title type="html">Competitive programming journal 2019</title><link href="https://thebackpropogator.github.io/posts/2019-07-01-competitive-journal-2019.md/" rel="alternate" type="text/html" title="Competitive programming journal 2019" /><published>2019-07-01T00:00:00-07:00</published><updated>2019-07-01T00:00:00-07:00</updated><id>https://thebackpropogator.github.io/posts/competitive-journal-2019</id><content type="html" xml:base="https://thebackpropogator.github.io/posts/2019-07-01-competitive-journal-2019.md/">&lt;h4 id=&quot;4-january&quot;&gt;4 January&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;Participated in &lt;a href=&quot;https://codeforces.com/contest/1097&quot;&gt;Hello 2019&lt;/a&gt;. First 2 problems were easy, though the 2nd one couldn’t pass system tests just because size of one of the arrays was less than what it was expected, again dissappointed. Rank : 5617, 1340-&amp;gt;1292.&lt;/li&gt;
 &lt;/ul&gt;
@@ -935,7 +1133,7 @@
 &lt;ul&gt;
   &lt;li&gt;Solved &lt;a href=&quot;https://codeforces.com/problemset/problem/1185/A&quot;&gt;1185A - Ropewalkers&lt;/a&gt;. &lt;a href=&quot;/Competitive Programming/Codeforces/1185A.cpp&quot;&gt;Solution&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Solved &lt;a href=&quot;https://atcoder.jp/contests/dp/tasks/dp_h&quot;&gt;Grid 1&lt;/a&gt;. &lt;a href=&quot;/Competitive Programming/AtCoder/Grid1.cpp&quot;&gt;Solution&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Piyush Tiwary</name></author><category term="Competitive Programming" /><summary type="html">4 January Participated in Hello 2019. First 2 problems were easy, though the 2nd one couldn’t pass system tests just because size of one of the arrays was less than what it was expected, again dissappointed. Rank : 5617, 1340-&amp;gt;1292.</summary></entry><entry><title type="html">Competitive programming journal 2018</title><link href="http://localhost:4000/posts/2018-12-31-competitive-journal-2018.md/" rel="alternate" type="text/html" title="Competitive programming journal 2018" /><published>2018-12-31T00:00:00-08:00</published><updated>2018-12-31T00:00:00-08:00</updated><id>http://localhost:4000/posts/competitive-journal-2018</id><content type="html" xml:base="http://localhost:4000/posts/2018-12-31-competitive-journal-2018.md/">&lt;h4 id=&quot;may-2018&quot;&gt;May 2018&lt;/h4&gt;
+&lt;/ul&gt;</content><author><name>Piyush Tiwary</name></author><category term="Competitive Programming" /><summary type="html">4 January Participated in Hello 2019. First 2 problems were easy, though the 2nd one couldn’t pass system tests just because size of one of the arrays was less than what it was expected, again dissappointed. Rank : 5617, 1340-&amp;gt;1292.</summary></entry><entry><title type="html">Competitive programming journal 2018</title><link href="https://thebackpropogator.github.io/posts/2018-12-31-competitive-journal-2018.md/" rel="alternate" type="text/html" title="Competitive programming journal 2018" /><published>2018-12-31T00:00:00-08:00</published><updated>2018-12-31T00:00:00-08:00</updated><id>https://thebackpropogator.github.io/posts/competitive-journal-2018</id><content type="html" xml:base="https://thebackpropogator.github.io/posts/2018-12-31-competitive-journal-2018.md/">&lt;h4 id=&quot;may-2018&quot;&gt;May 2018&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://piyushtiwary31.wordpress.com/2018/05/&quot;&gt;May 2018 Journal&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
