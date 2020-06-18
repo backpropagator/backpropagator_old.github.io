@@ -151,7 +151,7 @@ $$
 C = \alpha_1 C_1 + \alpha_2 C_2 + \alpha_3 C_3
 $$
 
-Using $$(7)$$
+Using $$(5)$$
 
 $$
 C = \alpha_1 C_1 + \alpha_2 C_2 + \alpha3 (C_1 + 2C_2) \\
