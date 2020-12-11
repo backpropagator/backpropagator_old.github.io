@@ -17,6 +17,8 @@ I am actively looking for research-based projects.  I am working under Dr. Sudhi
 
 News
 ======
+* 05.12.2020 - Paper Accepted in [13th International Conference on COMmunication Systems & NETworkS](https://www.comsnets.org/accepted_posters.html).
+
 * 05.08.2020 - Received acceptance to participate in the **AI Summer School** hosted by **Google Research India**.
 
 * 04.05.2020 - The work in collaboration with [Prof. Sajal K. Das](https://sites.google.com/a/mst.edu/sdas/): Invited Paper accepted at The 29th International Conference on Computer Communications and Networks (ICCCN 2020), Honolulu, Hawaii, USA [h5 index: 23]
