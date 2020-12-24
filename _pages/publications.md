@@ -9,6 +9,11 @@ redirect_from:
 
 
 {% include base_path %}
+## Journals
+
+* Ankur Pandey, **Piyush Tiwary**, Sudhir Kumar and Sajal K Das, "Adaptive Mini-Batch Gradient Ascent based Localization for Indoor IoT Networks under Rayleigh Fading Conditions", IEEE Internet of Things Journal, (Accepted) (IF: 9.936, h5 index: 93)
+
+## Conferences
 
 * **Piyush Tiwary**, Ankur Pandey and Sudhir Kumar, Differential d-vectors for RSS based Localization in Dynamic IoT Networks, 13th International Conference on Communication Systems & Networks (COMSNETS), IEEE, Bengaluru, India, pp. xx-xx, Jan 2021  (h5 index: 19)
 
