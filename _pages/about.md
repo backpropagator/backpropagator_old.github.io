@@ -10,8 +10,7 @@ redirect_from:
 
 A Final Year Student at IIT Patna, pursuing B.Tech in Electrical Engineering and an inspired Machine Learning Researcher jaunting through different Research topics. \\
 I want to understand things clearly. I believe there is some mathematical mystery behind the interpretation of what Deep Neural Networks learn and why they learn so. \\
-I mostly work with sensor data in doing so, I face difficulty in applying a particular architecture on a test data which has a relatively different distribution than the training data (this problem is addressed called as Cold Start problem in literature), to tackle this I am exploring unsupervised methods that can solve this problem. \\
-I like learning and implementing new deep learning architectures. Many times, new architectures just come to my mind, some of them work while many fail disastrously. However, I am still not capable to answer why a particular network architecture works on certain data, while it fails on others mathematically. \\
+My interest lies in the area of Deep Learning and Statistical Machine Learning. Currently, my work is focussed towards generalizing deep learning methods across domains (also known as Domain Adaptation). \\
 I am actively looking for research-based projects.  I am working under Dr. Sudhir Kumar (IIT Patna) for 3 years now. I have also worked in collaboration with Prof. Sajal Das (Missouri University).
 
 
