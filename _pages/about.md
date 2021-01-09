@@ -9,13 +9,14 @@ redirect_from:
 ---
 
 A Final Year Student at IIT Patna, pursuing B.Tech in Electrical Engineering and an inspired Machine Learning Researcher jaunting through different Research topics. \\
-I want to understand things clearly. I believe there is some mathematical mystery behind the interpretation of what Deep Neural Networks learn and why they learn so. \\
-My interest lies in the area of Deep Learning and Statistical Machine Learning. Currently, my work is focussed towards generalizing deep learning methods across domains (also known as Domain Adaptation). \\
-I am actively looking for research-based projects.  I am working under Dr. Sudhir Kumar (IIT Patna) for 3 years now. I have also worked in collaboration with Prof. Sajal Das (Missouri University).
+I want to understand things clearly. My interest lies in the area of Deep Learning and Statistical Machine Learning. Currently, my work is focussed towards generalizing deep learning methods across domains (also known as Domain Adaptation). \\
+I am working under Dr. Sudhir Kumar (IIT Patna) for 3 years now. I have also worked in collaboration with Prof. Sajal Das (Missouri University).
 
 
 News
 ======
+* 08.01.2021 - Received **The Best Poster Presentation Award** for the paper titled "Differential d-vectors for RSS based Localization in Dynamic IoT Networks" at COMSNETS-2021.
+
 * 23.12.2020 - Journal Accepted in [IEEE Internet of Things Journal](https://ieee-iotj.org/). [IF: 9.936, h5 index: 93]
 
 * 05.12.2020 - Paper Accepted in [13th International Conference on COMmunication Systems & NETworkS](https://www.comsnets.org/accepted_posters.html). [h5 index: 19]
