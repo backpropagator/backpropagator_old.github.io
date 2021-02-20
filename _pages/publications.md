@@ -15,7 +15,8 @@ redirect_from:
 
 ## Conferences
 
-* **Piyush Tiwary**, Ankur Pandey and Sudhir Kumar, Differential d-vectors for RSS based Localization in Dynamic IoT Networks, 13th International Conference on Communication Systems & Networks (COMSNETS), IEEE, Bengaluru, India, pp. xx-xx, Jan 2021  (h5 index: 19) [**Best Poster Presentation Award**]
+* **Piyush Tiwary**, Ankur Pandey and Sudhir Kumar, Differential d-vectors for RSS based Localization in Dynamic IoT Networks, 13th International Conference on Communication Systems & Networks (COMSNETS), IEEE, Bengaluru, India, 2021, pp. 82-85, doi: 10.1109/COMSNETS51098.2021.9352896. (h5 index: 19) [**Best Poster Presentation Award**] [pdf](https://ieeexplore.ieee.org/document/9352896)
+
 
 * Ankur Pandey, **Piyush Tiwary**, Sudhir Kumar and Sajal K Das, Residual Neural Networks for Heterogeneous Smart Device Localization in IoT Networks, 29th International Conference on Computer Communication and Networks (ICCCN), IEEE, Honolulu, Hawaii, USA, pp. 1-9, 2020 (h5 index: 23) [pdf](https://ieeexplore.ieee.org/document/9209703)
 
