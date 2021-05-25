@@ -8,9 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-A Electrical Engineering graduate from IIT Patna, an inspired Machine Learning Researcher jaunting through different Research topics. \\
-I want to understand things clearly. My interest lies in the area of Deep Learning and Statistical Machine Learning. Currently, my work is focussed towards generalizing deep learning methods across domains (also known as Domain Adaptation). 
-
+Hi! I am an Electrical Engineering graduate from IIT Patna. I actively work in various Machine Learning related research areas. In my undergraduate, I have worked on solving the problem of localization in indoor environment using deep learning methods. Currently, my work is focussed towards generalizing deep learning methods across different domains (also known as Domain Adaptation). \\
+\\
+I was blessed to have [Dr. Sudhir Kumar](https://sites.google.com/site/ksudhiriitk/) (Assistant Professor, IIT Patna) as my Guide. I worked for about 3.5 years under him. In the course of my bachelors, I also had opportunity to collaborate with [Dr. Sajal K. Das](https://sites.google.com/a/mst.edu/sdas/home) (Professor, Missouri University of Science and Technology) and [Dr. Moustafa Youssef](https://scholar.google.com/citations?user=r6DUyxsAAAAJ&hl=en) (Professor, Alexandria University). \\
+\\
+I believe there is some mathematical mystery behind the interpretation of what Deep Neural Networks learn and why they learn so. Hence, I am always intrigued by works that try to give a mathematical explanation of interpretation of Neural Nets and I want to do the same in my research career.
 
 News
 ======
