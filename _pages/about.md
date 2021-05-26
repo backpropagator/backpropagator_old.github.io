@@ -16,7 +16,7 @@ I believe there is a mathematical mystery behind the interpretation of what Deep
 
 News
 ======
-* <u>[26.05.2021]</u> Paper Accepted in [2nd Workshop on Scholarly Document Processing at NAACL 2021](https://sdproc.org/2021/).
+* <u>[26.05.2021]</u> Paper Accepted in [2nd Workshop on Scholarly Document Processing at NAACL 2021](https://sdproc.org/2021/). [h5 index: 90]
 
 * <u>[20.05.2021]</u> - Paper titled "Novel Differential r-Vectors for Localization in IoT Networks" accepted in [IEEE Sensor Letters](https://ieee-sensors.org/sensors-letters/).
 
