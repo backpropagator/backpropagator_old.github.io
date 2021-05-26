@@ -12,10 +12,12 @@ Hi! I am an Electrical Engineering graduate from IIT Patna. I actively work in v
 \\
 I was blessed to have [Dr. Sudhir Kumar](https://sites.google.com/site/ksudhiriitk/) (Assistant Professor, IIT Patna) as my Guide. I worked for about 3.5 years under him. In the course of my bachelors, I also had opportunity to collaborate with [Dr. Sajal K. Das](https://sites.google.com/a/mst.edu/sdas/home) (Professor, Missouri University of Science and Technology) and [Dr. Moustafa Youssef](https://scholar.google.com/citations?user=r6DUyxsAAAAJ&hl=en) (Professor, Alexandria University). \\
 \\
-I believe there is some mathematical mystery behind the interpretation of what Deep Neural Networks learn and why they learn so. Hence, I am always intrigued by works that try to give a mathematical explanation of interpretation of Neural Nets and I want to do the same in my research career.
+I believe there is a mathematical mystery behind the interpretation of what Deep Neural Networks learn and why they learn so. Hence, I am always intrigued by works that try to give a mathematical explanation of interpretation of Neural Nets and I want to do the same in my research career.
 
 News
 ======
+* <u>[25.05.2021]</u> Paper Accepted in [2nd Workshop on Scholarly Document Processing at NAACL 2021](https://sdproc.org/2021/).
+
 * <u>[20.05.2021]</u> - Paper titled "Novel Differential r-Vectors for Localization in IoT Networks" accepted in [IEEE Sensor Letters](https://ieee-sensors.org/sensors-letters/).
 
 * <u>[08.01.2021]</u> - Received **The Best Poster Presentation Award** for the paper titled "Differential d-vectors for RSS based Localization in Dynamic IoT Networks" at COMSNETS-2021.
