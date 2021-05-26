@@ -18,7 +18,7 @@ redirect_from:
 ## Conferences
 
 * Kamal Varanasi, Tirthankar Ghosal, **Piyush Tiwary** and Muskaan Singh, "IITP@3C 2021: Citation Classification (Task A) and Citation Significance Detection (Task B)," The 2nd Workshop on Scholarly Document Processing at Annual Conference of the North American Chapter of Association for Computational Linguistics
-(NAACL) 2021, Virtual. (h5 index: 90) (Accepted)
+(NAACL) 2021, Virtual (h5 index: 90) (Accepted)
 
 * **Piyush Tiwary**, Ankur Pandey and Sudhir Kumar, Differential d-vectors for RSS based Localization in Dynamic IoT Networks, 13th International Conference on Communication Systems & Networks (COMSNETS), IEEE, Bengaluru, India, 2021, pp. 82-85, doi: 10.1109/COMSNETS51098.2021.9352896. (h5 index: 19) [**Best Poster Presentation Award**] [pdf](https://ieeexplore.ieee.org/document/9352896)
 
