@@ -31,12 +31,17 @@ Work experience
   * Mentor: Dr. Sudhir Kumar
   * Work: Location tracking using Hybrid Classifier
   
-Research Interest
+Research Interests
 ======
-* Deep Learning 
-* Acoustic Deep Learning
-* Deep Learning bases Indoor Localisation
-* Data Science
-* Computer Vision
+* Representation Learning 
+* Latent Space Modelling
+* Domain Adaptation
+
+Positions of Responsibility
+======
+* Badminton Coordinator of IIT Patna (2018-2020)
+* Advisor of NJACK (Computer Science Club of IIT Patna) (2020-2021)
+* Coordinator, Events and Operation of Celesta (Technical Fest of IIT Patna) (2019-2020)
+* Coordinator, Technical Affairs of Anwesha (Cultural Fest of IIT Patna) (2019-2020)
 
 
