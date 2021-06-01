@@ -39,9 +39,9 @@ Research Interests
 
 Positions of Responsibility
 ======
-* Badminton Coordinator of IIT Patna (2018-2020)
-* Advisor of NJACK (Computer Science Club of IIT Patna) (2020-2021)
-* Coordinator, Events and Operation of Celesta (Technical Fest of IIT Patna) (2019-2020)
-* Coordinator, Technical Affairs of Anwesha (Cultural Fest of IIT Patna) (2019-2020)
+* <u>[2018-2020]</u> Badminton Coordinator of IIT Patna
+* <u>[2020-2021]</u> Advisor of NJACK (Computer Science Club of IIT Patna)
+* <u>[2019-2020]</u> Coordinator, Events and Operation of Celesta (Technical Fest of IIT Patna)
+* <u>[2019-2020]</u> Coordinator, Technical Affairs of Anwesha (Cultural Fest of IIT Patna)
 
 
