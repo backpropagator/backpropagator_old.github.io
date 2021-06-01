@@ -13,7 +13,7 @@ redirect_from:
 
 Education
 ======
-* B.Tech in Electrical Engineering, Indian Institute of Technology Patna, 2017 - 2021
+* B.Tech in Electrical Engineering, Indian Institute of Technology Patna, 2017 - 2021 (CGPA: 8.53/10)
 
 Work experience
 ======
