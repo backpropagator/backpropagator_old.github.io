@@ -11,9 +11,9 @@ redirect_from:
 {% include base_path %}
 ## Journals
 
-2. **Piyush Tiwary**, Ankur Pandey, Sudhir Kumar and Moustafa Youssef, "Novel Differential r-Vectors for Localization in IoT Networks", in IEEE Sensors Letters, vol. 5, no. 6, pp. 1-8, June 2021, Art no. 7002204, DOI: 10.1109/LSENS.2021.3083500. [PDF](https://ieeexplore.ieee.org/document/9440753)
+2. **Piyush Tiwary**, Ankur Pandey, Sudhir Kumar and Moustafa Youssef, "Novel Differential r-Vectors for Localization in IoT Networks", in IEEE Sensors Letters, Vol. 5, No. 6, pp. 1-8, June 2021, Art no. 7002204, DOI: 10.1109/LSENS.2021.3083500. [PDF](https://ieeexplore.ieee.org/document/9440753)
 
-1. Ankur Pandey, **Piyush Tiwary**, Sudhir Kumar and Sajal K Das, "Adaptive Mini-Batch Gradient Ascent based Localization for Indoor IoT Networks under Rayleigh Fading Conditions", in IEEE Internet of Things Journal, vol. 8, no. 13, pp. 10665-10677, July 2021, DOI: 10.1109/JIOT.2020.3047982. (IF: 9.936, H5 Index: 93) [PDF](https://ieeexplore.ieee.org/document/9310318)
+1. Ankur Pandey, **Piyush Tiwary**, Sudhir Kumar and Sajal K Das, "Adaptive Mini-Batch Gradient Ascent based Localization for Indoor IoT Networks under Rayleigh Fading Conditions", in IEEE Internet of Things Journal, Vol. 8, No. 13, pp. 10665-10677, July 2021, DOI: 10.1109/JIOT.2020.3047982. (IF: 9.936, H5 Index: 93) [PDF](https://ieeexplore.ieee.org/document/9310318)
 
 ## Conferences
 
