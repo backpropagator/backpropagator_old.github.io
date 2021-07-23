@@ -14,6 +14,8 @@ I was blessed to have [Dr. Sudhir Kumar](https://sites.google.com/site/ksudhirii
 \\
 I believe there is a mathematical mystery behind the interpretation of what Deep Neural Networks learn and why they learn so. Hence, I am always intrigued by works that try to give a mathematical explanation of interpretation of Neural Nets and I want to do the same in my research career.
 
+Favourite Quote: कौन कहता है कि आसमां में सुराख नहीं हो सकता, एक पत्थर तो तबीयत से उछालो यारों! (Translation: Who says there cannot be a hole in the sky, atleast throw a stone by heart!)
+
 News
 ======
 * <u>[26.05.2021]</u> Paper Accepted in [2nd Workshop on Scholarly Document Processing at NAACL 2021](https://sdproc.org/2021/). [h5-Index: 90]
