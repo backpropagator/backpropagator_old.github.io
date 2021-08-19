@@ -13,6 +13,7 @@ redirect_from:
 
 Education
 ======
+* Ph.D. Scholar in Division of EECS at Indian Institute of Science Bangalore, 2021 - Present
 * B.Tech in Electrical Engineering, Indian Institute of Technology Patna, 2017 - 2021 (CGPA: 8.53/10)
 
 Work experience
