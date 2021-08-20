@@ -8,7 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a Research Scholar at Indian Institute of Science (IISc) Bangalore. I am working under the guidance of [Dr. Prathosh A.P.](https://sites.google.com/view/prathosh/home?authuser=0). I did my B.Tech in Electrical Engineering from Indian Institute of Technology (IIT) Patna. I actively work in various Machine Learning related research areas. In my undergraduate, I have worked on solving the problem of localization in indoor environment using deep learning methods. Currently, my work is focussed towards generalizing deep learning methods across different domains (also known as Domain Adaptation). \\
+Hi! I am a Research Scholar at Indian Institute of Science (IISc) Bangalore, working under the guidance of [Dr. Prathosh A.P.](https://sites.google.com/view/prathosh/home?authuser=0). \\
+\\
+ I completed my B.Tech in Electrical Engineering from Indian Institute of Technology (IIT) Patna. I actively work in various Machine Learning related research areas. In my undergraduate, I have also worked on solving the problem of localization in indoor environment using deep learning methods. Currently, my work is focussed towards generalizing deep learning methods across different domains (also known as Domain Adaptation). \\
 \\
 I was blessed to have [Dr. Sudhir Kumar](https://sites.google.com/site/ksudhiriitk/) (Assistant Professor, IIT Patna) as guide during my B.Tech. I worked for about 3.5 years under him. In the course of my bachelors, I also had opportunity to collaborate with [Dr. Sajal K. Das](https://sites.google.com/a/mst.edu/sdas/home) (Professor, Missouri University of Science and Technology) and [Dr. Moustafa Youssef](https://scholar.google.com/citations?user=r6DUyxsAAAAJ&hl=en) (Professor, Alexandria University). \\
 \\
