@@ -59,10 +59,7 @@ to get the product $$A\alpha$$.\\
 In terms of vectors, one can interpret the columns of matrix as vector directions of $$\hat i$$ & $$\hat j$$ and the multiplication $$A\alpha$$ is nothing but the vector $$ \alpha_1 \hat i + \alpha_2 \hat j $$.
 
 Cool! but what if the matrix isn't trivial like this one? say 
-$A = \begin{pmatrix}
-x_1 & x_2 \\\
-y_1 & y_2 \\\
-\end{pmatrix}$
+$$A = \left( \begin{array}{cc} x_1 & x_2 \\ y_1 & y_2 \\ \end{array} \right)$$
 this makes a very little difference. Instead of the component directions being $$\hat i$$ & $$\hat j$$, the direction of each column will be $$ (x_1 \hat i + y_1 \hat j) $$ & $$ (x_2 \hat i + y_2 \hat j) $$ respectively.
 And the product $$ A \alpha $$ is nothing but  $$ \alpha_1 (x_1 \hat i + y_1 \hat j)  + \alpha_2 (x_2 \hat i + y_2 \hat j)$$! This is really a nice way to look at matrix multiplications which relate Matrices to Vectors in such an intuitive way!
 
