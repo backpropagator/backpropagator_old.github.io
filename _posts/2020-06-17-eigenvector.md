@@ -124,12 +124,7 @@ Okay! so upto this point we have understood what is the physical significance of
 **Span**: The **span** of a set of vectors is the set of all Linear Combinations of the vectors. Implicitly, Span indicates the dimension that can be covered by using a set of vectors.
 
 **Rank**: Rank of a matrix is defined as the maximum number of linearly independent columns in a matrix. This is the textbook defiition of Rank. It's physical significance is that, Rank of a matrix denotes the dimension of the transformed coordinate system. To understand this, let's take an example 
-
-$A = \begin{pmatrix}
-1 & 2 & 5 \\\
-3 & 5 & 13 \\\
-7 & 6 & 19 \\\
-\end{pmatrix}$
+$$A = \left( \begin{array}{ccc} 1 & 2 & 5 \\ 3 & 5 & 13 \\ 7 & 6 & 19 \\ \end{array} \right)$$
 
 So, if a vector of dimension $$(3 \times 1)$$ is multiplied by A, we'll get a $$(3 \times 1)$$ vector. Seems nice! It looks like $$A$$ produces a vector in 3D. But, it's not the case! if we look carefully, then we can see that, there are only 2 independent column in $$A$$!
 
