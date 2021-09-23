@@ -16,7 +16,7 @@ Well to understand this, we need to understand what a **"Matrix"** is? Generally
 
 Let's take an example, let $$A =$$
 $\begin{pmatrix}
-1 & 0 \\\
+1 & 0 \\
 0 & 1
 \end{pmatrix}$.
 If we multiply any vector
