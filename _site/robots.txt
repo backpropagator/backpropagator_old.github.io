@@ -1,1 +1,1 @@
-Sitemap: https://thebackpropogator.github.io/sitemap.xml
+Sitemap: https://backpropagator.github.io/sitemap.xml

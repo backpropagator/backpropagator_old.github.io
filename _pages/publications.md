@@ -11,7 +11,7 @@ redirect_from:
 {% include base_path %}
 ## Journals
 
-3. Tirthankar Ghosal*, **Piyush Tiwary\***, Robert Patton and Christopher Stahl, "Towards Establishing a Research Lineage via Identification of Significant Citations" in Special Issue of Quantitative Science Studies (QSS) on "Scientific Knowledge Graphs and Research Impact Assessment". (Accepted)
+3. Tirthankar Ghosal*, **Piyush Tiwary\***, Robert Patton and Christopher Stahl, "Towards Establishing a Research Lineage via Identification of Significant Citations" in Special Issue of Quantitative Science Studies (QSS) on "Scientific Knowledge Graphs and Research Impact Assessment". [PDF](https://direct.mit.edu/qss/article/doi/10.1162/qss_a_00170/108042/Towards-Establishing-a-Research-Lineage-via)
 
 2. **Piyush Tiwary**, Ankur Pandey, Sudhir Kumar and Moustafa Youssef, "Novel Differential r-Vectors for Localization in IoT Networks", in IEEE Sensors Letters, Vol. 5, No. 6, pp. 1-4, June 2021, Art no. 7002204, DOI: 10.1109/LSENS.2021.3083500. (h5-Index: 23) [PDF](https://ieeexplore.ieee.org/document/9440753)
 

@@ -32,8 +32,8 @@
 <meta property="og:title" content="Pondering upon Eigenvectors">
 
 
-  <link rel="canonical" href="https://thebackpropogator.github.io/posts/eigenvector.md/">
-  <meta property="og:url" content="https://thebackpropogator.github.io/posts/eigenvector.md/">
+  <link rel="canonical" href="https://backpropagator.github.io/posts/eigenvector.md/">
+  <meta property="og:url" content="https://backpropagator.github.io/posts/eigenvector.md/">
 
 
 
@@ -66,7 +66,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Piyush Tiwary",
-      "url" : "https://thebackpropogator.github.io",
+      "url" : "https://backpropagator.github.io",
       "sameAs" : null
     }
   </script>
@@ -79,7 +79,7 @@
 <!-- end SEO -->
 
 
-<link href="https://thebackpropogator.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Piyush Tiwary Feed">
+<link href="https://backpropagator.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Piyush Tiwary Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -91,34 +91,34 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://thebackpropogator.github.io/assets/css/main.css">
+<link rel="stylesheet" href="https://backpropagator.github.io/assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
     
 
 <!-- start custom head snippets -->
 
-<link rel="apple-touch-icon" sizes="57x57" href="https://thebackpropogator.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="60x60" href="https://thebackpropogator.github.io/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="72x72" href="https://thebackpropogator.github.io/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="76x76" href="https://thebackpropogator.github.io/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="114x114" href="https://thebackpropogator.github.io/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="120x120" href="https://thebackpropogator.github.io/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="144x144" href="https://thebackpropogator.github.io/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="152x152" href="https://thebackpropogator.github.io/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="180x180" href="https://thebackpropogator.github.io/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
-<link rel="icon" type="image/png" href="https://thebackpropogator.github.io/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
-<link rel="icon" type="image/png" href="https://thebackpropogator.github.io/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
-<link rel="icon" type="image/png" href="https://thebackpropogator.github.io/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
-<link rel="icon" type="image/png" href="https://thebackpropogator.github.io/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
-<link rel="manifest" href="https://thebackpropogator.github.io/images/manifest.json?v=M44lzPylqQ">
-<link rel="mask-icon" href="https://thebackpropogator.github.io/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
-<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="57x57" href="https://backpropagator.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="https://backpropagator.github.io/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="https://backpropagator.github.io/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="https://backpropagator.github.io/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="https://backpropagator.github.io/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="https://backpropagator.github.io/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="https://backpropagator.github.io/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="https://backpropagator.github.io/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="https://backpropagator.github.io/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="https://backpropagator.github.io/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://backpropagator.github.io/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="https://backpropagator.github.io/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://backpropagator.github.io/images/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://backpropagator.github.io/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="https://backpropagator.github.io/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico">
 <meta name="msapplication-TileColor" content="#000000">
-<meta name="msapplication-TileImage" content="https://thebackpropogator.github.io/images/mstile-144x144.png?v=M44lzPylqQ">
-<meta name="msapplication-config" content="https://thebackpropogator.github.io/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="msapplication-TileImage" content="https://backpropagator.github.io/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://backpropagator.github.io/images/browserconfig.xml?v=M44lzPylqQ">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="https://thebackpropogator.github.io/assets/css/academicons.css"/>
+<link rel="stylesheet" href="https://backpropagator.github.io/assets/css/academicons.css"/>
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
 <script type="text/x-mathjax-config">
@@ -148,25 +148,25 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://thebackpropogator.github.io/">Piyush Tiwary</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://backpropagator.github.io/">Piyush Tiwary</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://thebackpropogator.github.io/publications/">Publications</a></li>
+            <li class="masthead__menu-item"><a href="https://backpropagator.github.io/publications/">Publications</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://thebackpropogator.github.io/talks/">Talks</a></li>
+            <li class="masthead__menu-item"><a href="https://backpropagator.github.io/talks/">Talks</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://thebackpropogator.github.io/projects/">Projects</a></li>
+            <li class="masthead__menu-item"><a href="https://backpropagator.github.io/projects/">Projects</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://thebackpropogator.github.io/blog-post/">Blog Posts</a></li>
+            <li class="masthead__menu-item"><a href="https://backpropagator.github.io/blog-post/">Blog Posts</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://thebackpropogator.github.io/cv/">CV</a></li>
+            <li class="masthead__menu-item"><a href="https://backpropagator.github.io/cv/">CV</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://thebackpropogator.github.io/contact/">Contact</a></li>
+            <li class="masthead__menu-item"><a href="https://backpropagator.github.io/contact/">Contact</a></li>
           
         </ul>
         <ul class="hidden-links hidden"></ul>
@@ -194,20 +194,20 @@
 
   <div class="author__avatar">
     
-    	<img src="https://thebackpropogator.github.io/images/profile.png" class="author__avatar" alt="Piyush Tiwary">
+    	<img src="https://backpropagator.github.io/images/profile.png" class="author__avatar" alt="Piyush Tiwary">
     
   </div>
 
   <div class="author__content">
     <h3 class="author__name">Piyush Tiwary</h3>
-    <p class="author__bio">B.Tech at IIT Patna</p>
+    <p class="author__bio">Ph.D. Scholar at IISc Bangalore</p>
   </div>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Bihar, India</li>
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Bangalore, India</li>
       
       
       
@@ -229,7 +229,7 @@
       
       
       
-        <li><a href="https://github.com/thebackpropogator"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+        <li><a href="https://github.com/backpropagator"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       
       
       
@@ -297,11 +297,8 @@
 
 <p>Well to understand this, we need to understand what a <strong>“Matrix”</strong> is? Generally, matrices are seen as a bunch of numbers inside a box used to perform collective operations. It’s one way to look at it. But a higher level insight is to look at matrices as a <strong>Transformation</strong>!</p>
 
-<p>Let’s take an example, let <script type="math/tex">A =</script>
-$\begin{pmatrix}
-1 &amp; 0 \\
-0 &amp; 1
-\end{pmatrix}$.
+<p>Let’s take an example, let <script type="math/tex">% <![CDATA[
+A = \left( \begin{array}{cc} 1 & 0 \\ 0 & 1 \end{array} \right) %]]></script>.
 If we multiply any vector
 <script type="math/tex">\alpha = \left( \begin{array}{c} \alpha_1 \\ \alpha_2 \\ \end{array} \right)</script> with <script type="math/tex">A</script>, we’ll get the same vector. Not interesting right?</p>
 
@@ -334,10 +331,8 @@ to get the product <script type="math/tex">A\alpha</script>.<br />
 In terms of vectors, one can interpret the columns of matrix as vector directions of <script type="math/tex">\hat i</script> &amp; <script type="math/tex">\hat j</script> and the multiplication <script type="math/tex">A\alpha</script> is nothing but the vector <script type="math/tex">\alpha_1 \hat i + \alpha_2 \hat j</script>.</p>
 
 <p>Cool! but what if the matrix isn’t trivial like this one? say 
-$A = \begin{pmatrix}
-x_1 &amp; x_2 \\
-y_1 &amp; y_2 \\
-\end{pmatrix}$
+<script type="math/tex">% <![CDATA[
+A = \left( \begin{array}{cc} x_1 & x_2 \\ y_1 & y_2 \\ \end{array} \right) %]]></script>
 this makes a very little difference. Instead of the component directions being <script type="math/tex">\hat i</script> &amp; <script type="math/tex">\hat j</script>, the direction of each column will be <script type="math/tex">(x_1 \hat i + y_1 \hat j)</script> &amp; <script type="math/tex">(x_2 \hat i + y_2 \hat j)</script> respectively.
 And the product <script type="math/tex">A \alpha</script> is nothing but  <script type="math/tex">\alpha_1 (x_1 \hat i + y_1 \hat j)  + \alpha_2 (x_2 \hat i + y_2 \hat j)</script>! This is really a nice way to look at matrix multiplications which relate Matrices to Vectors in such an intuitive way!</p>
 
@@ -383,13 +378,9 @@ means that we have to find basis of all the vectors for which <script type="math
 
 <p><strong>Span</strong>: The <strong>span</strong> of a set of vectors is the set of all Linear Combinations of the vectors. Implicitly, Span indicates the dimension that can be covered by using a set of vectors.</p>
 
-<p><strong>Rank</strong>: Rank of a matrix is defined as the maximum number of linearly independent columns in a matrix. This is the textbook defiition of Rank. It’s physical significance is that, Rank of a matrix denotes the dimension of the transformed coordinate system. To understand this, let’s take an example</p>
-
-<p>$A = \begin{pmatrix}
-1 &amp; 2 &amp; 5 \\
-3 &amp; 5 &amp; 13 \\
-7 &amp; 6 &amp; 19 \\
-\end{pmatrix}$</p>
+<p><strong>Rank</strong>: Rank of a matrix is defined as the maximum number of linearly independent columns in a matrix. This is the textbook defiition of Rank. It’s physical significance is that, Rank of a matrix denotes the dimension of the transformed coordinate system. To understand this, let’s take an example 
+<script type="math/tex">% <![CDATA[
+A = \left( \begin{array}{ccc} 1 & 2 & 5 \\ 3 & 5 & 13 \\ 7 & 6 & 19 \\ \end{array} \right) %]]></script></p>
 
 <p>So, if a vector of dimension <script type="math/tex">(3 \times 1)</script> is multiplied by A, we’ll get a <script type="math/tex">(3 \times 1)</script> vector. Seems nice! It looks like <script type="math/tex">A</script> produces a vector in 3D. But, it’s not the case! if we look carefully, then we can see that, there are only 2 independent column in <script type="math/tex">A</script>!</p>
 
@@ -461,11 +452,11 @@ So, thing to take away is the number of non-zero Eigenvectors will be equal to t
     
       
       
-      <a href="https://thebackpropogator.github.io/tags/#eigenvectors" class="page__taxonomy-item" rel="tag">Eigenvectors</a><span class="sep">, </span>
+      <a href="https://backpropagator.github.io/tags/#eigenvectors" class="page__taxonomy-item" rel="tag">Eigenvectors</a><span class="sep">, </span>
     
       
       
-      <a href="https://thebackpropogator.github.io/tags/#linear-algebra" class="page__taxonomy-item" rel="tag">Linear Algebra</a>
+      <a href="https://backpropagator.github.io/tags/#linear-algebra" class="page__taxonomy-item" rel="tag">Linear Algebra</a>
     
     </span>
   </p>
@@ -482,11 +473,11 @@ So, thing to take away is the number of non-zero Eigenvectors will be equal to t
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=https://thebackpropogator.github.io/posts/eigenvector.md/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://backpropagator.github.io/posts/eigenvector.md/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://thebackpropogator.github.io/posts/eigenvector.md/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://backpropagator.github.io/posts/eigenvector.md/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://thebackpropogator.github.io/posts/eigenvector.md/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://backpropagator.github.io/posts/eigenvector.md/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -494,7 +485,7 @@ So, thing to take away is the number of non-zero Eigenvectors will be equal to t
 
   <nav class="pagination">
     
-      <a href="https://thebackpropogator.github.io/posts/2019/08/blog-post-4/" class="pagination--pager" title="Useful links for research
+      <a href="https://backpropagator.github.io/posts/2019/08/blog-post-4/" class="pagination--pager" title="Useful links for research
 ">Previous</a>
     
     
@@ -537,7 +528,7 @@ So, thing to take away is the number of non-zero Eigenvectors will be equal to t
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://thebackpropogator.github.io/posts/2019/08/blog-post-4/" rel="permalink">Useful links for research
+        <a href="https://backpropagator.github.io/posts/2019/08/blog-post-4/" rel="permalink">Useful links for research
 </a>
       
     </h2>
@@ -585,7 +576,7 @@ So, thing to take away is the number of non-zero Eigenvectors will be equal to t
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://thebackpropogator.github.io/posts/ml.md/" rel="permalink">Machine Learning Resources
+        <a href="https://backpropagator.github.io/posts/ml.md/" rel="permalink">Machine Learning Resources
 </a>
       
     </h2>
@@ -629,7 +620,7 @@ So, thing to take away is the number of non-zero Eigenvectors will be equal to t
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://thebackpropogator.github.io/posts/2019-07-01-competitive-journal-2019.md/" rel="permalink">Competitive programming journal 2019
+        <a href="https://backpropagator.github.io/posts/2019-07-01-competitive-journal-2019.md/" rel="permalink">Competitive programming journal 2019
 </a>
       
     </h2>
@@ -675,7 +666,7 @@ So, thing to take away is the number of non-zero Eigenvectors will be equal to t
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://thebackpropogator.github.io/posts/2018-12-31-competitive-journal-2018.md/" rel="permalink">Competitive programming journal 2018
+        <a href="https://backpropagator.github.io/posts/2018-12-31-competitive-journal-2018.md/" rel="permalink">Competitive programming journal 2018
 </a>
       
     </h2>
@@ -731,10 +722,10 @@ So, thing to take away is the number of non-zero Eigenvectors will be equal to t
     
     
     
-      <li><a href="http://github.com/thebackpropogator"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+      <li><a href="http://github.com/backpropagator"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
-    <li><a href="https://thebackpropogator.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="https://backpropagator.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -743,7 +734,7 @@ So, thing to take away is the number of non-zero Eigenvectors will be equal to t
       </footer>
     </div>
 
-    <script src="https://thebackpropogator.github.io/assets/js/main.min.js"></script>
+    <script src="https://backpropagator.github.io/assets/js/main.min.js"></script>
 
 
 
