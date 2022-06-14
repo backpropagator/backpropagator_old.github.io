@@ -21,6 +21,8 @@ I believe there is a mathematical mystery behind the interpretation of what Deep
 
 News
 ======
+* <u>[12.06.2022]</u> Journal titled "FadeLoc: Smart Device Localization for Generalized $\kappa-\mu$ Faded IoT Environment" accepted at [IEEE Transaction on Signal Processing](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=78). [h5-Index: 99]
+
 * <u>[19.08.2021]</u> Journal titled "Towards Establishing a Research Lineage via Identification of Significant Citations" accepted at [Special Issue of Quantitative Science Studies (QSS) on "Scientific Knowledge Graphs and Research Impact Assessment"](https://skg.kmi.open.ac.uk/QSS-SI-SKG-AIMinScience/CfP.pdf).
 
 * <u>[26.05.2021]</u> Paper Accepted at [2nd Workshop on Scholarly Document Processing at NAACL 2021](https://sdproc.org/2021/). [h5-Index: 90]
