@@ -7,9 +7,13 @@ redirect_from:
   - /projects
 ---
 
-
 {% include base_path %}
+
+\* - denotes co-authorship.
+
 ## Journals
+
+4. Ankur Pandey, **Piyush Tiwary**, Sudhir Kumar and Sajal K Das, "FadeLoc: Smart Device Localization for Generalized $\kappa-\mu$ Faded IoT Environment", in IEEE Transaction on Signal Processing, June 2021, DOI: 10.1109/TSP.2022.3183527. (IF: 4931, h5-Index: 99)
 
 3. Tirthankar Ghosal*, **Piyush Tiwary\***, Robert Patton and Christopher Stahl, "Towards Establishing a Research Lineage via Identification of Significant Citations" in Special Issue of Quantitative Science Studies (QSS) on "Scientific Knowledge Graphs and Research Impact Assessment". [PDF](https://direct.mit.edu/qss/article/doi/10.1162/qss_a_00170/108042/Towards-Establishing-a-Research-Lineage-via)
 
@@ -33,4 +37,3 @@ redirect_from:
 (NAACL) 2021, Virtual (h5-Index: 90) [PDF](https://sdproc.org/2021/papers/varanasi_supervised.pdf)
 
 
-\* - denotes joint authorship.
