@@ -10,11 +10,11 @@ redirect_from:
 
 Hi! I am a Research Scholar at Indian Institute of Science (IISc) Bangalore, working under the guidance of [Dr. Prathosh A.P.](https://sites.google.com/view/prathosh/home?authuser=0). \\
 \\
- I completed my B.Tech in Electrical Engineering from Indian Institute of Technology (IIT) Patna. I actively work in various Machine Learning related research areas. In my undergraduate, I have also worked on solving the problem of localization in indoor environment using deep learning methods. Currently, my work is focussed towards generalizing deep learning methods across different domains (also known as Domain Adaptation). \\
+ I completed my B.Tech in Electrical Engineering from Indian Institute of Technology Patna (IIT Patna). Nowadays, I am focussing on different ways to use Energy Based Models (EBMs) in unsupervised settings.  Specifically, a typical EBM is trained using [contrastive divergence loss](https://www.robots.ox.ac.uk/~ojw/files/NotesOnCD.pdf) which requires samples from the target distribution which requires some sort of supervision. I wonder if there is some way to circumvent this. \\
+ \\
+In an earlier life, I worked on solving the problem of localization in indoor environment using deep learning methods. I was blessed to have [Dr. Sudhir Kumar](https://sites.google.com/site/ksudhiriitk/) (Assistant Professor, IIT Patna) as guide during my B.Tech. I worked for about 3.5 years under him. In the course of my bachelors, I also had opportunity to collaborate with [Dr. Sajal K. Das](https://sites.google.com/a/mst.edu/sdas/home) and [Dr. Moustafa Youssef](https://scholar.google.com/citations?user=r6DUyxsAAAAJ&hl=en). \\
 \\
-I was blessed to have [Dr. Sudhir Kumar](https://sites.google.com/site/ksudhiriitk/) (Assistant Professor, IIT Patna) as guide during my B.Tech. I worked for about 3.5 years under him. In the course of my bachelors, I also had opportunity to collaborate with [Dr. Sajal K. Das](https://sites.google.com/a/mst.edu/sdas/home) (Professor, Missouri University of Science and Technology) and [Dr. Moustafa Youssef](https://scholar.google.com/citations?user=r6DUyxsAAAAJ&hl=en) (Professor, Alexandria University). \\
-\\
-I believe there is a mathematical mystery behind the interpretation of what Deep Neural Networks learn and why they learn so. Hence, I am always intrigued by works that try to give a mathematical explanation of interpretation of Neural Nets and I want to do the same in my research career.
+If you are interested in discussing about theoretical interpretation of deep learning models in general, please ping me I am always excited to have these sorts of discussion.
 
 <u>Favourite Quote</u>: "कौन कहता है कि आसमां में सुराख हो नहीं सकता, एक पत्थर तो तबीयत से उछालो यारों!" ~Dushyant Kumar \\
 (Translation: Who says you can't make a hole in the sky, my dear friend atleast throw a stone by heart!)
